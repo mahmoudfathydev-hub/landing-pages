@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+
+<html class="dark" dir="rtl" lang="ar"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>سحابي للمنشآت - منصة الإدارة المتكاملة</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&amp;family=Noto+Sans+Arabic:wght@400;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#8c44ab",
+                        "background-light": "#f7f6f8",
+                        "background-dark": "#0d1117",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "Noto Sans Arabic", "sans-serif"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Noto Sans Arabic', 'Inter', sans-serif;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-white">
+<!-- TopNavBar -->
+<header class="sticky top-0 z-50 border-b border-solid border-[#322c35] bg-background-dark/80 backdrop-blur-md px-6 lg:px-40 py-3">
+<div class="max-w-[1200px] mx-auto flex items-center justify-between">
+<div class="flex items-center gap-4 text-white">
+<div class="size-8 text-primary">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_6_330)">
+<path clip-rule="evenodd" d="M24 0.757355L47.2426 24L24 47.2426L0.757355 24L24 0.757355ZM21 35.7574V12.2426L9.24264 24L21 35.7574Z" fill="currentColor" fill-rule="evenodd"></path>
+</g>
+<defs>
+<clippath id="clip0_6_330"><rect fill="white" height="48" width="48"></rect></clippath>
+</defs>
+</svg>
+</div>
+<h2 class="text-white text-xl font-black leading-tight tracking-tight">سحابي</h2>
+</div>
+<nav class="hidden md:flex items-center gap-9">
+<a class="text-white/80 hover:text-primary text-sm font-medium transition-colors" href="#features">المميزات</a>
+<a class="text-white/80 hover:text-primary text-sm font-medium transition-colors" href="#pricing">الأسعار</a>
+<a class="text-white/80 hover:text-primary text-sm font-medium transition-colors" href="#faq">الأسئلة الشائعة</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="hidden sm:flex min-w-[100px] cursor-pointer items-center justify-center rounded-lg h-10 px-5 bg-primary text-white text-sm font-bold transition-transform active:scale-95">
+<span class="truncate">ابدأ الآن</span>
+</button>
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10 border-2 border-primary/30" data-alt="صورة الملف الشخصي للمستخدم" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCXCa9SQL-uyAyp4rEDsp_eFZ1iaYwlI43L0abQYVNJG78esAdXTXCG4y2yr7okQzwi39pcl0jNPspcxN-mzIurITcWOB6VtRS2PAJwumzQSi8hohRYv8PvGDXTH7UQDcJ0AUSrLTUkyJv5bjbzsgL85ULVYh42Oj6sKmG2R7Qx6sVlG7SxhZBxPaXZx7ji61hvQquY-Kf-B2cJoIdvJOlxrWEF_gwBRCjmgfWqS-nYNXih98-14P240PFrayGh-WtwYQBmlIzNkVQM");'></div>
+</div>
+</div>
+</header>
+<!-- HeroSection -->
+<section class="px-6 lg:px-40 py-12 lg:py-24">
+<div class="max-w-[1200px] mx-auto">
+<div class="flex flex-col gap-10 lg:flex-row items-center">
+<div class="flex flex-col gap-8 flex-1">
+<div class="flex flex-col gap-4">
+<h1 class="text-white text-4xl lg:text-6xl font-black leading-tight lg:leading-[1.1]">
+                            ارتقِ بأعمالك إلى المستوى <span class="text-primary">التالي</span> مع منصتنا المتكاملة
+                        </h1>
+<p class="text-white/70 text-lg lg:text-xl font-normal leading-relaxed max-w-[540px]">
+                            الحل الأمثل لإدارة مشاريعك وفريق عملك بكل سهولة وأمان في بيئة عمل متطورة مصممة خصيصاً لاحتياجاتك.
+                        </p>
+</div>
+<div class="flex flex-wrap gap-4">
+<button class="flex min-w-[160px] cursor-pointer items-center justify-center rounded-lg h-14 px-8 bg-primary text-white text-base font-bold shadow-lg shadow-primary/20 hover:bg-primary/90 transition-all">
+<span>ابدأ التجربة المجانية</span>
+</button>
+<button class="flex min-w-[160px] cursor-pointer items-center justify-center rounded-lg h-14 px-8 bg-white/10 text-white text-base font-bold border border-white/20 hover:bg-white/20 transition-all">
+<span>مشاهدة العرض التجريبي</span>
+</button>
+</div>
+<div class="flex items-center gap-4 text-sm text-white/50">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-green-500 text-sm">check_circle</span> لا يلزم بطاقة ائتمان</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-green-500 text-sm">check_circle</span> تجربة 14 يوم مجاناً</span>
+</div>
+</div>
+<div class="w-full flex-1 relative">
+<div class="absolute -inset-4 bg-primary/20 blur-3xl rounded-full"></div>
+<div class="relative bg-center bg-no-repeat aspect-video bg-cover rounded-xl border border-white/10 shadow-2xl" data-alt="لقطة شاشة للوحة التحكم الخاصة بالمنصة تظهر الرسوم البيانية" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuARmXSYvuVj7NJM3PFkAd5tjqPxWpRHxJNf02lPnkblRlN3BQfSzRGu-NY20viu7GpDCQXVs4-tISwryNNWvVBblSPJ53Un5tXcQaYa-1BQLF2gfnOt6S-pod_WFlS5Hd4Lb7ePn9J5BJs6UgN4ANvcuVZg2LiWhDPheSWVSNRVQsKmIMaKXZ4juJ2zBkNMPZohyqbi9XhrIWwbcDdYYWb1xBZHEJDKj0BUdAn3Y8YRuT12g1m6pUZ09ybZZv205AWyVL65q6ZR990k");'></div>
+</div>
+</div>
+</div>
+</section>
+<!-- FeatureSection -->
+<section class="px-6 lg:px-40 py-20 bg-white/5" id="features">
+<div class="max-w-[1200px] mx-auto">
+<div class="flex flex-col gap-12">
+<div class="flex flex-col gap-4 text-center items-center">
+<h2 class="text-white text-3xl lg:text-4xl font-black">لماذا يختارنا المبدعون؟</h2>
+<p class="text-white/60 text-lg max-w-[600px]">نحن نوفر لك كافة الأدوات اللازمة للنمو والنجاح في سوق العمل المتسارع، مع التركيز على الكفاءة والجودة.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="flex flex-col gap-4 rounded-xl border border-white/10 bg-[#161b22] p-8 hover:border-primary/50 transition-all group">
+<div class="size-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all">
+<span class="material-symbols-outlined">rocket_launch</span>
+</div>
+<h3 class="text-white text-xl font-bold">السرعة القصوى</h3>
+<p class="text-white/60 leading-relaxed">أداء فائق السرعة يضمن لك إنجاز المهام دون تأخير، مع بنية تحتية سحابية متطورة.</p>
+</div>
+<div class="flex flex-col gap-4 rounded-xl border border-white/10 bg-[#161b22] p-8 hover:border-primary/50 transition-all group">
+<div class="size-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all">
+<span class="material-symbols-outlined">shield_lock</span>
+</div>
+<h3 class="text-white text-xl font-bold">أمان البيانات</h3>
+<p class="text-white/60 leading-relaxed">تشفير عالي المستوى لحماية بياناتك وبيانات عملائك، مع نسخ احتياطي دوري وتلقائي.</p>
+</div>
+<div class="flex flex-col gap-4 rounded-xl border border-white/10 bg-[#161b22] p-8 hover:border-primary/50 transition-all group">
+<div class="size-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all">
+<span class="material-symbols-outlined">dashboard_customize</span>
+</div>
+<h3 class="text-white text-xl font-bold">سهولة الاستخدام</h3>
+<p class="text-white/60 leading-relaxed">واجهة مستخدم بديهية مصممة لتناسب احتياجات الجميع، لا تتطلب خبرة تقنية مسبقة.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- PricingCards -->
+<section class="px-6 lg:px-40 py-20" id="pricing">
+<div class="max-w-[1200px] mx-auto">
+<div class="text-center mb-12">
+<h2 class="text-white text-3xl lg:text-4xl font-black mb-4">خطط تناسب طموحك</h2>
+<p class="text-white/60">اختر الخطة المناسبة لحجم أعمالك وابدأ النمو اليوم</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Basic -->
+<div class="flex flex-col gap-6 rounded-xl border border-white/10 bg-[#161b22] p-8 relative">
+<div class="flex flex-col gap-2">
+<h3 class="text-white/60 text-sm font-bold uppercase tracking-wider">الأساسي</h3>
+<div class="flex items-baseline gap-1">
+<span class="text-white text-4xl font-black">$29</span>
+<span class="text-white/50 text-base">/شهرياً</span>
+</div>
+</div>
+<button class="w-full rounded-lg h-12 bg-white/10 text-white font-bold hover:bg-white/20 transition-all">ابدأ الآن</button>
+<div class="flex flex-col gap-4 border-t border-white/10 pt-6">
+<div class="flex items-center gap-3 text-sm text-white/80">
+<span class="material-symbols-outlined text-primary text-xl">check</span> مستخدم واحد
+                        </div>
+<div class="flex items-center gap-3 text-sm text-white/80">
+<span class="material-symbols-outlined text-primary text-xl">check</span> 5 مشاريع نشطة
+                        </div>
+<div class="flex items-center gap-3 text-sm text-white/80">
+<span class="material-symbols-outlined text-primary text-xl">check</span> دعم فني عبر البريد
+                        </div>
+</div>
+</div>
+<!-- Pro -->
+<div class="flex flex-col gap-6 rounded-xl border-2 border-primary bg-[#161b22] p-8 relative scale-105 shadow-2xl shadow-primary/10">
+<div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary text-white text-[10px] font-black uppercase px-4 py-1 rounded-full">الأكثر شيوعاً</div>
+<div class="flex flex-col gap-2">
+<h3 class="text-primary text-sm font-bold uppercase tracking-wider">المحترف</h3>
+<div class="flex items-baseline gap-1">
+<span class="text-white text-4xl font-black">$79</span>
+<span class="text-white/50 text-base">/شهرياً</span>
+</div>
+</div>
+<button class="w-full rounded-lg h-12 bg-primary text-white font-bold hover:bg-primary/90 transition-all shadow-lg shadow-primary/20">اختر المحترف</button>
+<div class="flex flex-col gap-4 border-t border-white/10 pt-6">
+<div class="flex items-center gap-3 text-sm text-white/80">
+<span class="material-symbols-outlined text-primary text-xl">check</span> 10 مستخدمين
+                        </div>
+<div class="flex items-center gap-3 text-sm text-white/80">
+<span class="material-symbols-outlined text-primary text-xl">check</span> مشاريع غير محدودة
+                        </div>
+<div class="flex items-center gap-3 text-sm text-white/80">
+<span class="material-symbols-outlined text-primary text-xl">check</span> دعم ذو أولوية 24/7
+                        </div>
+<div class="flex items-center gap-3 text-sm text-white/80">
+<span class="material-symbols-outlined text-primary text-xl">check</span> تقارير متقدمة
+                        </div>
+</div>
+</div>
+<!-- Enterprise -->
+<div class="flex flex-col gap-6 rounded-xl border border-white/10 bg-[#161b22] p-8 relative">
+<div class="flex flex-col gap-2">
+<h3 class="text-white/60 text-sm font-bold uppercase tracking-wider">الشركات</h3>
+<div class="flex items-baseline gap-1">
+<span class="text-white text-4xl font-black">$149</span>
+<span class="text-white/50 text-base">/شهرياً</span>
+</div>
+</div>
+<button class="w-full rounded-lg h-12 bg-white/10 text-white font-bold hover:bg-white/20 transition-all">تواصل معنا</button>
+<div class="flex flex-col gap-4 border-t border-white/10 pt-6">
+<div class="flex items-center gap-3 text-sm text-white/80">
+<span class="material-symbols-outlined text-primary text-xl">check</span> مستخدمين غير محدودين
+                        </div>
+<div class="flex items-center gap-3 text-sm text-white/80">
+<span class="material-symbols-outlined text-primary text-xl">check</span> تخصيص كامل للنظام
+                        </div>
+<div class="flex items-center gap-3 text-sm text-white/80">
+<span class="material-symbols-outlined text-primary text-xl">check</span> مدير حساب مخصص
+                        </div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- FAQ -->
+<section class="px-6 lg:px-40 py-20 bg-white/5" id="faq">
+<div class="max-w-[800px] mx-auto">
+<h2 class="text-white text-3xl font-black mb-10 text-center">الأسئلة الشائعة</h2>
+<div class="flex flex-col gap-4">
+<div class="p-6 rounded-lg bg-background-dark border border-white/10">
+<h4 class="text-white font-bold mb-2">هل يمكنني إلغاء اشتراكي في أي وقت؟</h4>
+<p class="text-white/60 text-sm">نعم، يمكنك إلغاء اشتراكك في أي وقت من خلال لوحة التحكم الخاصة بك دون أي رسوم إضافية.</p>
+</div>
+<div class="p-6 rounded-lg bg-background-dark border border-white/10">
+<h4 class="text-white font-bold mb-2">هل بياناتي آمنة معكم؟</h4>
+<p class="text-white/60 text-sm">نحن نستخدم تشفير AES-256 ونتبع أفضل المعايير الأمنية العالمية لضمان حماية بياناتك بشكل كامل.</p>
+</div>
+<div class="p-6 rounded-lg bg-background-dark border border-white/10">
+<h4 class="text-white font-bold mb-2">هل تقدمون خصماً للاشتراكات السنوية؟</h4>
+<p class="text-white/60 text-sm">بالتأكيد! يمكنك توفير ما يصل إلى 20% عند اختيار الدفع السنوي بدلاً من الشهري.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Banner -->
+<section class="px-6 lg:px-40 py-20">
+<div class="max-w-[1200px] mx-auto">
+<div class="relative overflow-hidden rounded-2xl bg-gradient-to-r from-primary to-[#6d3285] p-12 text-center lg:text-right flex flex-col lg:flex-row items-center justify-between gap-8">
+<div class="relative z-10 flex flex-col gap-4">
+<h2 class="text-white text-3xl lg:text-4xl font-black leading-tight">جاهز للبدء في تنظيم أعمالك؟</h2>
+<p class="text-white/90 text-lg">انضم إلى أكثر من 5000 منشأة تستخدم سحابي يومياً.</p>
+</div>
+<div class="relative z-10">
+<button class="bg-white text-primary font-black px-10 py-5 rounded-xl hover:bg-white/90 transition-all text-lg shadow-xl">
+                        سجل الآن مجاناً
+                    </button>
+</div>
+<div class="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -mr-32 -mt-32 blur-3xl"></div>
+<div class="absolute bottom-0 left-0 w-64 h-64 bg-black/10 rounded-full -ml-32 -mb-32 blur-3xl"></div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="px-6 lg:px-40 py-12 border-t border-white/10">
+<div class="max-w-[1200px] mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="flex items-center gap-3">
+<div class="size-6 text-primary">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M24 0.757355L47.2426 24L24 47.2426L0.757355 24L24 0.757355ZM21 35.7574V12.2426L9.24264 24L21 35.7574Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<span class="text-white font-bold">سحابي للمنشآت</span>
+</div>
+<div class="flex gap-8">
+<a class="text-white/50 hover:text-white text-sm transition-colors" href="#">سياسة الخصوصية</a>
+<a class="text-white/50 hover:text-white text-sm transition-colors" href="#">شروط الاستخدام</a>
+<a class="text-white/50 hover:text-white text-sm transition-colors" href="#">اتصل بنا</a>
+</div>
+<p class="text-white/30 text-sm">© 2024 جميع الحقوق محفوظة.</p>
+</div>
+</footer>
+</body></html>

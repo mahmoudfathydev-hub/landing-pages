@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Photography Portfolio | Lens &amp; Light</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#f06292",
+                        "background-light": "#ffffff",
+                        "background-dark": "#111b21",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-800 dark:text-slate-100 antialiased">
+<!-- Top Navigation Bar -->
+<header class="sticky top-0 z-50 w-full bg-white/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-pink-50 dark:border-slate-800">
+<div class="max-w-[1200px] mx-auto px-6 h-20 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="size-8 bg-primary rounded-full flex items-center justify-center text-white">
+<span class="material-symbols-outlined text-xl">photo_camera</span>
+</div>
+<h1 class="text-xl font-bold tracking-tight text-slate-900 dark:text-white">Lens &amp; Light</h1>
+</div>
+<nav class="hidden md:flex items-center gap-10">
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#work">Work</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#about">About</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#testimonials">Client Love</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#contact">Contact</a>
+</nav>
+<button class="bg-primary hover:bg-primary/90 text-white px-6 py-2.5 rounded-full text-sm font-semibold transition-all shadow-md shadow-primary/20">
+                Book a Session
+            </button>
+</div>
+</header>
+<main class="max-w-[1200px] mx-auto overflow-x-hidden">
+<!-- Section 1: Hero Gallery -->
+<section class="py-10 px-6">
+<div class="relative w-full rounded-2xl overflow-hidden aspect-[21/9] shadow-2xl group">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="Breathtaking mountain landscape at golden hour sunset" style="background-image: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.5)), url('https://lh3.googleusercontent.com/aida-public/AB6AXuCjbAx6yDV3WwlNP3jZTC6EBF8-htxXAbPBkOWuP0oApTBxemUtRtbKG-3ca--R4Sfnnax_Oioh6LSYemSfxiTM8v7HqccZzLHuODOEotLiiTNI36gwM4914haHgcJpXjix-PsQ7tICAcUfhHhq6ivqkEU7HejveIvVLyHbgAA5d-PSSqPRmOi2WW7SrBc3jhsDrAfTxBsenjkDXmJWL_fsZQcmBIi0V2gc9HmVYvHCW8CbtkgCxKubiI5MEf49mLo65-9IE3oHJbeJ');"></div>
+<div class="absolute inset-0 flex flex-col justify-end p-12 text-white">
+<p class="uppercase tracking-[0.3em] text-xs font-bold mb-4 text-pink-100">Award Winning Photographer</p>
+<h2 class="text-5xl md:text-7xl font-bold leading-tight max-w-2xl">Capturing Moments, Defining Memories</h2>
+</div>
+</div>
+</section>
+<!-- Section 2: Portfolio Categories -->
+<section class="py-20 px-6" id="work">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+<div>
+<span class="text-primary font-bold text-sm uppercase tracking-widest">Portfolio</span>
+<h2 class="text-4xl font-bold mt-2 text-slate-900 dark:text-white">Featured Collections</h2>
+</div>
+<p class="text-slate-500 max-w-md">Every shutter click is a story waiting to be told. Explore our specialized photography categories tailored to your unique needs.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Wedding Card -->
+<div class="group cursor-pointer">
+<div class="relative aspect-[3/4] rounded-xl overflow-hidden mb-4 shadow-lg border border-pink-50 dark:border-slate-800">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Elegant wedding couple sharing a romantic moment" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC0YtTmuuIjYXIrLiRzwoqK44LXeqICEXw4rx5BX3RJrsV_EfleD_sCNMzebXKptwl3WLZGDGV9wiEP0hJ0EiCLBJbAHwOQS_T7S3miVQFjQJPyHPr2srxdLnE7kflyRIiT6nsuBxixSD9aoNEKeaMyAtBUcQx7HMttnWEOGz0VdjJwbp7V4v_oHqD-Sk1urs8Jdjsb_t3Sq9u35IbcOcqBGS7BqlE-V9SZXybmUzhwg9Kf1GO7ChInHQpDvk2sNPfjXyNOJFrQS4uh');"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
+<span class="text-white font-bold border-2 border-white px-6 py-2 rounded-full transform translate-y-4 group-hover:translate-y-0 transition-transform">View Gallery</span>
+</div>
+</div>
+<h3 class="text-xl font-bold text-slate-900 dark:text-white">Wedding</h3>
+<p class="text-slate-500 text-sm">Timeless romance and celebrations</p>
+</div>
+<!-- Nature Card -->
+<div class="group cursor-pointer">
+<div class="relative aspect-[3/4] rounded-xl overflow-hidden mb-4 shadow-lg border border-pink-50 dark:border-slate-800">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Majestic forest with morning mist and sunbeams" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBjd9D66df2tYN16-rXRwHCVi1eT8ysLLYrTpzb2iJETyRtJyGYnty8pjerTEBtAaI39vGGCzBW_gQlosUCVH1i4Nj74rFG0sp_Rs9dJgs5ZfCtYDqrUGTEo3Ci9uQzbdR-KO4MrswTJYKXjtlrjdBSxZJYai5YL0VrGws6N6YqXgbYyrHNa_QpW4teLIpbX3DuFRij9TCEZE8S_rNB1EtBV4j1mHu_VVT0j7wzcWR8iwRXfRwSl6iRVeAbjq1tzoqcY1jKO5_9BXUg');"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
+<span class="text-white font-bold border-2 border-white px-6 py-2 rounded-full transform translate-y-4 group-hover:translate-y-0 transition-transform">View Gallery</span>
+</div>
+</div>
+<h3 class="text-xl font-bold text-slate-900 dark:text-white">Nature</h3>
+<p class="text-slate-500 text-sm">Wild landscapes and macro wonders</p>
+</div>
+<!-- Portrait Card -->
+<div class="group cursor-pointer">
+<div class="relative aspect-[3/4] rounded-xl overflow-hidden mb-4 shadow-lg border border-pink-50 dark:border-slate-800">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Close-up artistic portrait with soft lighting" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBfw66h4oWhEOzKDWNSs-RZKDKSSFELBhdCsCKja8XTTc7xP7IVRVmWxvGXNRTHMfARKxTOxyPWTUXXiy2QWD-I1BObHrHXEdtH88iXg5oLpIbvXzU8LT2-bFrkFjH5yHTFKFxsSLOIGbjG2oexmXRjtXe6aB8nxMi-4sw8VYTz6_HsJBEgB31sJjJVXOaRPMbdr0b6yT7OJKdPBWvbKgBG6Bj4yENjooN2XfqPzpntJBzSeSr_Ww6MuoM-pXsCxNEs-0l1UtwZpD83');"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
+<span class="text-white font-bold border-2 border-white px-6 py-2 rounded-full transform translate-y-4 group-hover:translate-y-0 transition-transform">View Gallery</span>
+</div>
+</div>
+<h3 class="text-xl font-bold text-slate-900 dark:text-white">Portrait</h3>
+<p class="text-slate-500 text-sm">Authentic soul and personality</p>
+</div>
+</div>
+</section>
+<!-- Section 3: About the Photographer -->
+<section class="py-20 px-6 bg-pink-50/50 dark:bg-slate-900/50 rounded-3xl mx-6" id="about">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+<div class="relative">
+<div class="aspect-square rounded-2xl overflow-hidden shadow-2xl relative z-10" data-alt="Portrait of the professional photographer smiling">
+<img alt="Photographer Profile" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZxnn1CMsTTTmFFJRbfjaeIsqmVvHWzO9749Q3DuTKA6CWOzuTh-GZtxhD0polHp_XnJqdVQ0Fl2TiF828Iq6dgLNbo-Th_om6Rx3fukQ31gEzcggc5RPF0iJnZUU0u_SSp5lTmEjx-BA0jThLOEx1Q-V1bfSub571iEZrhlsQzLokp9ZyuBSlQaGujzNMMnMnhGQJtLxswAtU0doq3Ap3u86j0w41zkqbUvtLtbUujLplt3a3kaC1Hxm-omIMrvLgdKMJOD2MST-5"/>
+</div>
+<div class="absolute -bottom-6 -right-6 w-48 h-48 bg-primary rounded-full -z-0 opacity-20"></div>
+</div>
+<div>
+<span class="text-primary font-bold text-sm uppercase tracking-widest">The Story Behind the Lens</span>
+<h2 class="text-4xl font-bold mt-4 mb-6 text-slate-900 dark:text-white leading-tight">I believe every shadow tells a story.</h2>
+<div class="space-y-4 text-slate-600 dark:text-slate-400 leading-relaxed">
+<p>With over a decade of experience chasing light across continents, I've learned that the most profound moments are often found in the quiet intervals between poses.</p>
+<p>My approach is minimalist and candid. I work with natural light to preserve the authenticity of the atmosphere, ensuring that your memories look exactly how they felt in the moment.</p>
+</div>
+<div class="mt-10 flex gap-8 border-t border-pink-200 dark:border-slate-700 pt-8">
+<div>
+<p class="text-2xl font-bold text-primary">150+</p>
+<p class="text-xs text-slate-500 uppercase font-bold tracking-tighter">Weddings</p>
+</div>
+<div>
+<p class="text-2xl font-bold text-primary">12</p>
+<p class="text-xs text-slate-500 uppercase font-bold tracking-tighter">Awards Won</p>
+</div>
+<div>
+<p class="text-2xl font-bold text-primary">9k</p>
+<p class="text-xs text-slate-500 uppercase font-bold tracking-tighter">Followers</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 4: Client Testimonials -->
+<section class="py-24 px-6 text-center" id="testimonials">
+<h2 class="text-4xl font-bold mb-16 text-slate-900 dark:text-white">Voices of Gratitude</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="p-10 bg-white dark:bg-slate-800 rounded-2xl shadow-sm border border-pink-50 dark:border-slate-700 relative">
+<span class="material-symbols-outlined text-primary/20 text-6xl absolute top-4 right-6 select-none">format_quote</span>
+<div class="flex flex-col h-full">
+<p class="italic text-slate-600 dark:text-slate-300 mb-8 leading-relaxed">"The way you captured the light on our wedding day was pure magic. We didn't even notice you were there, yet you caught every emotion."</p>
+<div class="mt-auto">
+<p class="font-bold text-slate-900 dark:text-white">Sarah &amp; James</p>
+<p class="text-xs text-slate-400 uppercase tracking-widest mt-1">Wedding Clients</p>
+</div>
+</div>
+</div>
+<div class="p-10 bg-white dark:bg-slate-800 rounded-2xl shadow-md border-2 border-primary/10 relative">
+<span class="material-symbols-outlined text-primary/20 text-6xl absolute top-4 right-6 select-none">format_quote</span>
+<div class="flex flex-col h-full">
+<p class="italic text-slate-600 dark:text-slate-300 mb-8 leading-relaxed">"These nature prints have transformed my office space. There is a depth to the work that brings a sense of calm every time I look at them."</p>
+<div class="mt-auto">
+<p class="font-bold text-slate-900 dark:text-white">Michael Chen</p>
+<p class="text-xs text-slate-400 uppercase tracking-widest mt-1">Art Collector</p>
+</div>
+</div>
+</div>
+<div class="p-10 bg-white dark:bg-slate-800 rounded-2xl shadow-sm border border-pink-50 dark:border-slate-700 relative">
+<span class="material-symbols-outlined text-primary/20 text-6xl absolute top-4 right-6 select-none">format_quote</span>
+<div class="flex flex-col h-full">
+<p class="italic text-slate-600 dark:text-slate-300 mb-8 leading-relaxed">"I've never felt comfortable in front of a camera until this session. You have a gift for making people feel seen and relaxed."</p>
+<div class="mt-auto">
+<p class="font-bold text-slate-900 dark:text-white">Elena Rodriguez</p>
+<p class="text-xs text-slate-400 uppercase tracking-widest mt-1">Portrait Session</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 5: Contact Info -->
+<section class="py-20 px-6 border-t border-pink-100 dark:border-slate-800" id="contact">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-20">
+<div>
+<h2 class="text-4xl font-bold mb-6 text-slate-900 dark:text-white">Ready to capture your next chapter?</h2>
+<p class="text-slate-500 mb-10 text-lg">Whether it's a grand wedding or a personal portrait, I'd love to hear your vision. Let's create something beautiful together.</p>
+<div class="space-y-6">
+<div class="flex items-center gap-4">
+<div class="size-12 bg-pink-100 dark:bg-slate-800 rounded-full flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">mail</span>
+</div>
+<div>
+<p class="text-xs font-bold text-slate-400 uppercase">Email Me</p>
+<p class="font-medium">hello@lensandlight.com</p>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<div class="size-12 bg-pink-100 dark:bg-slate-800 rounded-full flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">share</span>
+</div>
+<div>
+<p class="text-xs font-bold text-slate-400 uppercase">Follow</p>
+<div class="flex gap-4 mt-1">
+<a class="hover:text-primary transition-colors" href="#">Instagram</a>
+<a class="hover:text-primary transition-colors" href="#">Behance</a>
+<a class="hover:text-primary transition-colors" href="#">Vimeo</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-white dark:bg-slate-900 p-8 rounded-2xl shadow-xl border border-pink-50 dark:border-slate-800">
+<form class="space-y-4">
+<div class="grid grid-cols-2 gap-4">
+<div class="flex flex-col gap-1.5">
+<label class="text-xs font-bold uppercase text-slate-500">First Name</label>
+<input class="w-full bg-slate-50 dark:bg-slate-800 border-none rounded-lg p-3 focus:ring-2 focus:ring-primary/20 transition-all" type="text"/>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="text-xs font-bold uppercase text-slate-500">Last Name</label>
+<input class="w-full bg-slate-50 dark:bg-slate-800 border-none rounded-lg p-3 focus:ring-2 focus:ring-primary/20 transition-all" type="text"/>
+</div>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="text-xs font-bold uppercase text-slate-500">Email Address</label>
+<input class="w-full bg-slate-50 dark:bg-slate-800 border-none rounded-lg p-3 focus:ring-2 focus:ring-primary/20 transition-all" type="email"/>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="text-xs font-bold uppercase text-slate-500">Message</label>
+<textarea class="w-full bg-slate-50 dark:bg-slate-800 border-none rounded-lg p-3 focus:ring-2 focus:ring-primary/20 transition-all" rows="4"></textarea>
+</div>
+<button class="w-full bg-primary hover:bg-primary/90 text-white font-bold py-4 rounded-lg shadow-lg shadow-primary/30 transition-all transform active:scale-95" type="submit">
+                            Send Message
+                        </button>
+</form>
+</div>
+</div>
+</section>
+</main>
+<footer class="py-12 border-t border-pink-50 dark:border-slate-800 mt-20">
+<div class="max-w-[1200px] mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="flex items-center gap-2">
+<div class="size-6 bg-primary rounded-full flex items-center justify-center text-white text-[10px]">
+<span class="material-symbols-outlined text-xs">photo_camera</span>
+</div>
+<p class="text-sm font-bold text-slate-900 dark:text-white">Lens &amp; Light Photography</p>
+</div>
+<p class="text-sm text-slate-400">© 2024 Photography Portfolio. All rights reserved.</p>
+<div class="flex gap-6">
+<a class="text-xs text-slate-400 hover:text-primary transition-colors uppercase font-bold tracking-widest" href="#">Privacy Policy</a>
+<a class="text-xs text-slate-400 hover:text-primary transition-colors uppercase font-bold tracking-widest" href="#">Terms of Service</a>
+</div>
+</div>
+</footer>
+</body></html>

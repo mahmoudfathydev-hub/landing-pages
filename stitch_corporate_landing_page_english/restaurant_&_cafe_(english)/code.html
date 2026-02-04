@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Savor &amp; Sip | Restaurant &amp; Cafe</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#2d99e1",
+                        "background-light": "#fff5e6",
+                        "background-dark": "#111b21",
+                        "accent-cream": "#fffcf7"
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-[#111517] dark:text-white transition-colors duration-300">
+<!-- Navigation -->
+<header class="fixed top-0 left-0 right-0 z-50 bg-background-light/90 dark:bg-background-dark/90 backdrop-blur-md border-b border-[#e67e22]/10 px-4 md:px-20 lg:px-40 py-3">
+<div class="max-w-[1200px] mx-auto flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="text-primary size-8">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M12.0799 24L4 19.2479L9.95537 8.75216L18.04 13.4961L18.0446 4H29.9554L29.96 13.4961L38.0446 8.75216L44 19.2479L35.92 24L44 28.7521L38.0446 39.2479L29.96 34.5039L29.9554 44H18.0446L18.04 34.5039L9.95537 39.2479L4 28.7521L12.0799 24Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h2 class="text-lg font-bold tracking-tight">Savor &amp; Sip</h2>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#menu">Menu</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#specials">Specials</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#gallery">Gallery</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#contact">Contact</a>
+<button class="bg-primary text-white text-sm font-bold px-5 py-2.5 rounded-lg hover:bg-primary/90 transition-all">
+                    Book a Table
+                </button>
+</nav>
+<button class="md:hidden material-symbols-outlined">menu</button>
+</div>
+</header>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="px-4 md:px-20 lg:px-40 py-10">
+<div class="max-w-[1200px] mx-auto">
+<div class="relative overflow-hidden rounded-2xl bg-[#2d3436] min-h-[520px] flex items-center justify-center p-8 text-center">
+<div class="absolute inset-0 bg-cover bg-center opacity-60 mix-blend-overlay" data-alt="Interior of a cozy sunlit cafe with wooden tables" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDaPTPXpHfHzLJoAzTQJJQU5YfqoQDQ6EHC9kxJLY6duNSjeq8GZbVuOB5LBHLZruoiTcCLtIsc9MJOn_rdbvsmeZIxRX609EuSiMm03bHR8TTWGxLCKyMFcjt_CxfcwMKzcRl3lxRrBJBoGpjZs86XUu2jlKUXKN27iqfSxyUclt-hAikt_gfbD9AFi54zY9vOqZwSEmcgZO6LEpqJNmp_D_KZ_NDlwYQn2AaqiQ1EULGvz2dUIWrVQUg8pwnqwY9VAUrrJ5CtbPjU");'></div>
+<div class="relative z-10 max-w-2xl">
+<span class="inline-block px-4 py-1 rounded-full bg-primary/20 text-primary text-xs font-bold uppercase tracking-widest mb-4">Established 2012</span>
+<h1 class="text-white text-4xl md:text-6xl font-black leading-tight mb-6">
+                            Where Every Meal Tells a Story
+                        </h1>
+<p class="text-white/90 text-lg md:text-xl font-normal mb-8">
+                            Experience the perfect blend of artisan coffee and locally-sourced seasonal dishes in our heart-warming sanctuary.
+                        </p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center">
+<button class="bg-primary text-white px-8 py-4 rounded-xl font-bold text-lg hover:scale-105 transition-transform">
+                                Explore Our Menu
+                            </button>
+<button class="bg-white/10 backdrop-blur-md text-white border border-white/20 px-8 py-4 rounded-xl font-bold text-lg hover:bg-white/20 transition-all">
+                                View Specials
+                            </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Visual Menu Section -->
+<section class="px-4 md:px-20 lg:px-40 py-16" id="menu">
+<div class="max-w-[1200px] mx-auto">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-8 px-4">
+<div>
+<h2 class="text-3xl font-black tracking-tight mb-2">Artisan Selection</h2>
+<p class="text-gray-600 dark:text-gray-400">Hand-picked ingredients from local organic farms</p>
+</div>
+<div class="mt-6 md:mt-0 flex gap-4 border-b border-gray-200 dark:border-gray-700 overflow-x-auto">
+<button class="pb-3 border-b-2 border-primary text-primary font-bold text-sm whitespace-nowrap">All Day Breakfast</button>
+<button class="pb-3 border-b-2 border-transparent text-gray-500 font-bold text-sm whitespace-nowrap hover:text-primary transition-colors">Signature Lunch</button>
+<button class="pb-3 border-b-2 border-transparent text-gray-500 font-bold text-sm whitespace-nowrap hover:text-primary transition-colors">Dinner Plates</button>
+<button class="pb-3 border-b-2 border-transparent text-gray-500 font-bold text-sm whitespace-nowrap hover:text-primary transition-colors">Craft Coffee</button>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-4">
+<!-- Item 1 -->
+<div class="bg-white dark:bg-background-dark p-3 rounded-xl shadow-sm hover:shadow-md transition-shadow border border-[#e67e22]/5">
+<div class="aspect-square rounded-lg mb-4 bg-center bg-cover" data-alt="Avocado toast with poached egg and seeds" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuADcFzrufHEtPYkRo6oE1eG8en6IS5i0v4nxBlKWzXKKTPuI8ru4OjdeJqri3BkuhOI91xdkjrWT01gFcP20YFa5jpVdQj4Bxvv4Rra6Ynv1EILA5zTJzXKo-6bbeUxTFYHnw0OwDvhzfoZX8P86IVWZVttBQ1bm9x0bJCra1XHQYVyD8vJM4rvGcUFdzta_fw6eV35JxdeAtCFBSQM8ZFxvdTZrJRdc8YbjNnaUQA6bUOj14jDQ9BJxTw9StAFLyHeTp4eU4OoMLbe");'></div>
+<div class="px-1">
+<h3 class="font-bold text-lg mb-1">Avocado Sourdough</h3>
+<p class="text-sm text-gray-500 dark:text-gray-400 mb-3 leading-snug">Poached organic eggs, chili flakes, and house seeds.</p>
+<div class="flex items-center justify-between">
+<span class="text-primary font-black">$14.50</span>
+<button class="size-8 flex items-center justify-center rounded-full bg-primary/10 text-primary hover:bg-primary hover:text-white transition-colors">
+<span class="material-symbols-outlined text-sm">add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="bg-white dark:bg-background-dark p-3 rounded-xl shadow-sm hover:shadow-md transition-shadow border border-[#e67e22]/5">
+<div class="aspect-square rounded-lg mb-4 bg-center bg-cover" data-alt="Gourmet breakfast pizza with eggs and arugula" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDr-NIqxF2XDlvQc2OkIImuMZuoH89mBsV93K8bTYOikZgHJGUUSzF3-7pijF3ecCAGZDo5ryS20R8uCkHwRlImMuLyGUT277xAOY-59SJm2n5nar1Qn0awU8nyXzxCwJCdCfwHc3hs2v17ktWb_Fuh_BdKWEXEdcrZF10XTCyDhs1i32cLJTokwkwLMcRG722Akvqc7XG-ERITger2_yfQ1ouiDsUDtW85p1SC1d3YD1bPe17WVsacpsDiB0E3stfGPGuvC5msMUXy");'></div>
+<div class="px-1">
+<h3 class="font-bold text-lg mb-1">Morning Flatbread</h3>
+<p class="text-sm text-gray-500 dark:text-gray-400 mb-3 leading-snug">Wood-fired dough, mozzarella, bacon, and farm eggs.</p>
+<div class="flex items-center justify-between">
+<span class="text-primary font-black">$16.00</span>
+<button class="size-8 flex items-center justify-center rounded-full bg-primary/10 text-primary hover:bg-primary hover:text-white transition-colors">
+<span class="material-symbols-outlined text-sm">add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="bg-white dark:bg-background-dark p-3 rounded-xl shadow-sm hover:shadow-md transition-shadow border border-[#e67e22]/5">
+<div class="aspect-square rounded-lg mb-4 bg-center bg-cover" data-alt="Acai bowl topped with granola and berries" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBJueE1duwOXfSglyy2ap_VAn12NfZlHSiLQbTE-dRUySyYRV3WaOPFLKpmw3qNb1yw2oo8k-m6_ar7SzY4qHUJa0UTgqvCAsGJXInjXhtDa8jYMTaXEiKXMBJf-Yav5AH_qA-D36v4NVNNqI4HQEHIOb9cwV4SbpZYzUTxW8iOeikmFs98JX6RtOHGsVB_AjwH77alnnd_mNbcD_K5SBFKB7Z1XNyJYrASX7aEA5JBG30Xqk0kC8uQZmZRoi5g__8WcvYnlg-mI2nJ");'></div>
+<div class="px-1">
+<h3 class="font-bold text-lg mb-1">Berry Acai Bowl</h3>
+<p class="text-sm text-gray-500 dark:text-gray-400 mb-3 leading-snug">Amazonian acai, gluten-free granola, and seasonal fruit.</p>
+<div class="flex items-center justify-between">
+<span class="text-primary font-black">$13.00</span>
+<button class="size-8 flex items-center justify-center rounded-full bg-primary/10 text-primary hover:bg-primary hover:text-white transition-colors">
+<span class="material-symbols-outlined text-sm">add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Item 4 -->
+<div class="bg-white dark:bg-background-dark p-3 rounded-xl shadow-sm hover:shadow-md transition-shadow border border-[#e67e22]/5">
+<div class="aspect-square rounded-lg mb-4 bg-center bg-cover" data-alt="Hot latte with milk foam art" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBW0_YHXhlEcfZtwBrKTAT6pA4lDFgSNq6-of9PmmckwOEnu4PR5dQVM9rCYNtQEE02MegzMS9TuZt1P2VT_MBEy1YhNKSpfpHwTI7SHOkK0l7HN9mAUHhnV4h7a2-S7TIyY7aRU-un_lL_iCKh4HdIP7hTMMNrGfnxf690ZMrv8V-7sPlBS9SHAv6nxHP9VLqxM_6blYII4IWMw-GNtHYXfBUbsI0i55ydrB-RgU7rGNawdNYRsJPGg-xcq63cWDHowzmhqzULDhOS");'></div>
+<div class="px-1">
+<h3 class="font-bold text-lg mb-1">Signature Latte</h3>
+<p class="text-sm text-gray-500 dark:text-gray-400 mb-3 leading-snug">Ethically sourced beans roasted in-house weekly.</p>
+<div class="flex items-center justify-between">
+<span class="text-primary font-black">$5.50</span>
+<button class="size-8 flex items-center justify-center rounded-full bg-primary/10 text-primary hover:bg-primary hover:text-white transition-colors">
+<span class="material-symbols-outlined text-sm">add</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Specials Highlight Section -->
+<section class="px-4 md:px-20 lg:px-40 py-16 bg-white dark:bg-background-dark/30" id="specials">
+<div class="max-w-[1200px] mx-auto">
+<div class="text-center mb-12">
+<h2 class="text-3xl font-black mb-4 tracking-tight">Chef's Weekly Specials</h2>
+<p class="text-gray-500 max-w-xl mx-auto">Limited time creations inspired by this week's harvest from our partner farmers.</p>
+</div>
+<div class="grid md:grid-cols-2 gap-8 px-4">
+<div class="group relative overflow-hidden rounded-2xl aspect-[16/9]">
+<div class="absolute inset-0 bg-cover bg-center group-hover:scale-110 transition-transform duration-500" data-alt="Grilled salmon with asparagus and lemon" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCdqZScxcOKq8Y0iQTPraiqVxPMKkn2hFohdVWmmBu80e-D_w18hrbsm7lVFZ5lWqqL_EuI06LWzgdfL-fch0st8cQkyFtljp83E4PXkvRJVu5fGcwcIlqcDOe2yZL4Fz4SDhUiIqFXvOU-qZAIqIT0k7mS__w0rIKlbGZqM-h1OAIcXQICoQe4w0aNGxXPS1mFoMTu-LpG3gsX0ttoHGYA-qfIzjjXKBcZa4cnSn4_RUdhKTQDBwy-qRmbSpfD0Ec8yEN_kQ_w7VTX");'></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-8">
+<span class="bg-primary text-white text-[10px] font-bold px-2 py-1 rounded uppercase mb-2 inline-block">Evening Exclusive</span>
+<h3 class="text-white text-2xl font-bold mb-2">Wild Caught Glazed Salmon</h3>
+<p class="text-white/80 text-sm mb-4">Honey-miso glaze, charred asparagus, and jasmine rice.</p>
+<p class="text-primary text-xl font-black">$28.00</p>
+</div>
+</div>
+<div class="group relative overflow-hidden rounded-2xl aspect-[16/9]">
+<div class="absolute inset-0 bg-cover bg-center group-hover:scale-110 transition-transform duration-500" data-alt="Healthy Buddha bowl with various vegetables" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDq0pzAz26qpQEYqen1CQvALom9cwKgdpvMjEMDTMX_M6pnOPkrxsOGVH0hf1r_2RU6e2fwzycf_GSLIFX984n6otrFVTO-KUQHJbiZuUiUvl7UzH0jK9APRX9ishBE260WvwgIE9tmNo3pJwUgwB10aHNB37ifgbFeth3_BkUmjJsq4i-f1IKf51xZdRyaE3vh-KWaFhwp6YEDUZ022sEbapDcrLqAZtnwrrw9qsYHdDerzWK8oJCuJfWU3T_ESLeJTWkDSghi6VL2");'></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-8">
+<span class="bg-[#27ae60] text-white text-[10px] font-bold px-2 py-1 rounded uppercase mb-2 inline-block">Plant Based</span>
+<h3 class="text-white text-2xl font-bold mb-2">Heritage Harvest Bowl</h3>
+<p class="text-white/80 text-sm mb-4">Roasted squash, quinoa, kale, and tahini dressing.</p>
+<p class="text-primary text-xl font-black">$22.00</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Photo Gallery Section -->
+<section class="px-4 md:px-20 lg:px-40 py-16" id="gallery">
+<div class="max-w-[1200px] mx-auto">
+<h2 class="text-2xl font-black mb-8 px-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">camera_alt</span>
+                    Capturing the Moment
+                </h2>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4 px-4">
+<div class="space-y-4">
+<div class="rounded-xl overflow-hidden h-64 bg-gray-200">
+<img class="w-full h-full object-cover" data-alt="Close up of steaming coffee cup" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1WDuOk5wtBjAAIePGxKmqN-QLDYmwtboDUxS-93IvHHbE-QwpDxLbKItGZQHhQBGjulcWrVrhBvcBVeqx_UhKuJLHyKenO8aZk2bumrP6GmANFdlG7SyUofdPPZphz_GxXyoxi_hBbJ1H6fsbDDVOefwPNqTBrZd6uBvGf15pf-D9PSudMH8nYRRPDs_3DgyIBmWeRfaj9RUmepaUfq__TpBxVogwVqFeYYL-l3OEnyjE-ThXQTxfHskTYxqFn2S3ycaKB9-U_Lnw"/>
+</div>
+<div class="rounded-xl overflow-hidden h-40 bg-gray-200">
+<img class="w-full h-full object-cover" data-alt="Customers enjoying lunch at the cafe" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqH680nQInEl-7PVCLp0VPoydd4vduepwC--QPvrVuxKFsBYM--ohN2tgDibB5tVj4q_TZD__dsFTK1i_qQGRUepVJ-eldeljB1mrmsoefnCxu-jmdf_aEQs0PHvpCx_l20J2zvrm09bck8U7dHZWFyTQ2fFV_uJ8oY_R-1rwRMUWGnVtXSiXDumKf9TvI1H4TqkLhp8gYTxSgGHLBWcOh8Ey4kc7BgKkDDf04pGbumhanvXXReWeSmVtrcIt2XjjipGQ6McF5IlGI"/>
+</div>
+</div>
+<div class="space-y-4 pt-8">
+<div class="rounded-xl overflow-hidden h-40 bg-gray-200">
+<img class="w-full h-full object-cover" data-alt="Waitress serving a fresh cocktail" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnhbtDLGFHuh3J_O_wWXVSPUOP2CE5NtE5kgJ8mJsj4mQPvr5f5iWAkJuVYHB6kgnvUzQ7yZl5GJMP-SSQ7tRcEddOyvaviLr1EmcOfMD4NrUO22FvgAJXn4imQQmltow0Sz5G-dnit_iO5M28MphnMERb9qzJnkPgNHSQ2DPNJH_p9dUCmWhf6JLfa6w8JjLZuoBCtB9LKk3uYSPQUJ8rVLIw-XPH-LCANX2XnsZuCdTy2Edm-wartsMC5yk6leGg3pmk1G7ELTvb"/>
+</div>
+<div class="rounded-xl overflow-hidden h-64 bg-gray-200">
+<img class="w-full h-full object-cover" data-alt="Plate of gourmet pasta with herbs" src="https://lh3.googleusercontent.com/aida-public/AB6AXuByrzAKN2vfxSfz9MHIg2z-0EXcK2NG2OsV3baUa3_8Eu_zLi-M-C-hup0y7TcbHv8KeC0MQJp8dKtNoZnDMXlysl2PO6K-5ecRtRKmPzNEsFcoCnzfRG3h2VjBl8eQovKeQPtDYH7e7_TbiZTcEr-BZwem3mGJY_G6BfbIOuLR08DPW_A2_yxxnQ0vWex7YjkaL8hEllHIhNhX1zdI-0QkeHc9_rNV852ylWPZpLd2vSlu0rW3Rm-iOUhKvHgZ9Y3Qxqx4aEOOICi8"/>
+</div>
+</div>
+<div class="space-y-4">
+<div class="rounded-xl overflow-hidden h-64 bg-gray-200">
+<img class="w-full h-full object-cover" data-alt="Rustic indoor dining area with plants" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZxoSSZrBgCZtswkreTPOS2Il-2oJDG25faPb1F0V0Lq50bjkhhuviAXVejdnXaIg83XZmXpCCTpdFl00vJJujFavIoRZMyfZ8FUT63m7QP1MR567zDT1E4OEFhKoaelfiGL9lKZCXFALb4H2gYMK0k-GJ0KabiyWOIejvU845Ne3SAPBoUcE-BZuTpWRT0KvW65FE7rid4toGDZBfSvXCIy2eRRcIloio7YCzi_JiCa_D2AsEmCnbcwt_BpS94lAdyrHDImj7xtCO"/>
+</div>
+<div class="rounded-xl overflow-hidden h-40 bg-gray-200">
+<img class="w-full h-full object-cover" data-alt="A assortment of pastries on display" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZjBTijihpawNbwR_1fog5-lPvl0FUqe7o2l1GVYGKbYi66epbXsCUJaqmk9VnYv4n3L3a6xOrio8FgYV_qLczrCvhOMTE9g5Z1yFMO_eHwjbDtHp4kUY5MsciF5tsBYRy5EQ5UO3ZwxrrquV7sZGFVHDWyJNXdyBopOqureIETZhxtppz3Eda2euMzaXoWbtwI1VzfcEtQt6vmGlBdITUF03X2SKKAZChAFF-rlgGgx2WL0eirolanoGVrjvoENj-XyHU5SovTevU"/>
+</div>
+</div>
+<div class="space-y-4 pt-8">
+<div class="rounded-xl overflow-hidden h-40 bg-gray-200">
+<img class="w-full h-full object-cover" data-alt="Exterior of the charming restaurant entrance" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCTIvpUViu8BwAedL49P4bucRFjYF_9C3orkUVQb07eMiK_VTi4bQzTevNU2dUp7NeOkPOFRpzZ2fNWEo7HsuuLQcY17x8LnpSfVOaXAk3l7GygBy0awRgOMK_3iLv9WdWTyng8FLnG1Gx_8zDdvdz3cZgaFSlQbllelDJ-IIjV6IsxsjgJvLuo-snAOXv0X7h6p-j_atxQ0GIl0NM7vUNH6zHKS138asGICFMwg6owrrMh2bxSXsPjZ2kowpl36WpR69UnR_N72ueu"/>
+</div>
+<div class="rounded-xl overflow-hidden h-64 bg-gray-200">
+<img class="w-full h-full object-cover" data-alt="Stack of fluffy pancakes with syrup" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBtQEH3q0x6eeLx3g5T0M7HE256MHEYsLyr3EcAWBX_5Wj1Y5Sq9CZTY3vR6Uk9ANJn7nzTAVME_IqOPYXr5hwiZ8TEYIFJho8VYfmTyQZuCBLvzVD01qzrXUufzgxJ3Dxdz1WapIE0KcZ09lxymzKq2MAya0lPDSD-2JMOVCcL4yrbS9poe_IoXWTG3_Pl2JVTG4qb33S4Z_UPyMC0JqsW_n-zYogsEd-sfo6o_P_QIn--C98zT1uXXc9w0fcMZcJv-EVcQK0AK9l"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Reservation & Contact Section -->
+<section class="px-4 md:px-20 lg:px-40 py-20 bg-accent-cream dark:bg-background-dark/20 border-t border-[#e67e22]/5" id="reservation">
+<div class="max-w-[1200px] mx-auto grid lg:grid-cols-2 gap-12 items-start">
+<!-- Reservation Form -->
+<div class="bg-white dark:bg-background-dark p-8 rounded-2xl shadow-xl border border-gray-100 dark:border-gray-800">
+<h2 class="text-2xl font-black mb-6">Book a Table</h2>
+<form class="space-y-5">
+<div class="grid grid-cols-2 gap-4">
+<div class="flex flex-col gap-1.5">
+<label class="text-xs font-bold text-gray-500 uppercase">First Name</label>
+<input class="rounded-lg border-gray-200 dark:bg-gray-800 dark:border-gray-700 focus:ring-primary focus:border-primary px-4 py-2.5" placeholder="John" type="text"/>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="text-xs font-bold text-gray-500 uppercase">Last Name</label>
+<input class="rounded-lg border-gray-200 dark:bg-gray-800 dark:border-gray-700 focus:ring-primary focus:border-primary px-4 py-2.5" placeholder="Doe" type="text"/>
+</div>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="text-xs font-bold text-gray-500 uppercase">Email Address</label>
+<input class="rounded-lg border-gray-200 dark:bg-gray-800 dark:border-gray-700 focus:ring-primary focus:border-primary px-4 py-2.5" placeholder="john@example.com" type="email"/>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="flex flex-col gap-1.5">
+<label class="text-xs font-bold text-gray-500 uppercase">Party Size</label>
+<select class="rounded-lg border-gray-200 dark:bg-gray-800 dark:border-gray-700 focus:ring-primary focus:border-primary px-4 py-2.5">
+<option>2 People</option>
+<option>4 People</option>
+<option>6 People</option>
+<option>Large Party (8+)</option>
+</select>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="text-xs font-bold text-gray-500 uppercase">Date</label>
+<input class="rounded-lg border-gray-200 dark:bg-gray-800 dark:border-gray-700 focus:ring-primary focus:border-primary px-4 py-2.5" type="date"/>
+</div>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="text-xs font-bold text-gray-500 uppercase">Special Requests</label>
+<textarea class="rounded-lg border-gray-200 dark:bg-gray-800 dark:border-gray-700 focus:ring-primary focus:border-primary px-4 py-2.5" placeholder="Any dietary requirements or special occasions?" rows="3"></textarea>
+</div>
+<button class="w-full bg-primary text-white font-bold py-4 rounded-xl hover:bg-primary/90 transition-all shadow-lg shadow-primary/20" type="submit">
+                            Confirm Reservation
+                        </button>
+</form>
+</div>
+<!-- Contact Info & Map -->
+<div class="lg:sticky lg:top-24" id="contact">
+<h2 class="text-2xl font-black mb-8">Get in Touch</h2>
+<div class="space-y-6 mb-10">
+<div class="flex items-start gap-4">
+<div class="size-10 rounded-full bg-primary/10 flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined">location_on</span>
+</div>
+<div>
+<h4 class="font-bold">Our Location</h4>
+<p class="text-gray-500 dark:text-gray-400">123 Artisan Alley, Culinary Quarter<br/>London, EC1V 4AD</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="size-10 rounded-full bg-primary/10 flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined">schedule</span>
+</div>
+<div>
+<h4 class="font-bold">Opening Hours</h4>
+<p class="text-gray-500 dark:text-gray-400">Mon - Fri: 8:00 AM - 10:00 PM<br/>Sat - Sun: 9:00 AM - 11:00 PM</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="size-10 rounded-full bg-primary/10 flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined">call</span>
+</div>
+<div>
+<h4 class="font-bold">Direct Line</h4>
+<p class="text-gray-500 dark:text-gray-400">+44 20 7123 4567</p>
+</div>
+</div>
+</div>
+<div class="rounded-2xl overflow-hidden border border-gray-200 dark:border-gray-800 aspect-video bg-gray-100 flex items-center justify-center relative">
+<div class="absolute inset-0 bg-cover bg-center grayscale opacity-60" data-alt="Map showing a city street layout" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBire-igVPnah5K0GEh6LRalrl5WVJSYP8WxX-DVbtUACi18xqCJQAUtCRsfXv6CoZmSM9cCRAgbdImnjIAQJrfKCZpTRJ_OD1DtDPVRWq367VgkwyAKnuPa57Yghxi10Be2QRY4umwXrmTfHc26PIUmQe1hPW0D2jiIFxjy86vkhwCdjogKjMPa6yM9FONZin_IJ7veEDw7IDZ8dMtbVRAl5pv5OyLT5t0RamAPkxTfsvmA903Wxo4xpHmhe3sjUCDnGORxF9BhoKh");'></div>
+<div class="relative z-10 text-center p-6 bg-white/90 dark:bg-background-dark/90 rounded-xl shadow-lg border border-white/20">
+<span class="material-symbols-outlined text-primary text-3xl mb-2">location_on</span>
+<p class="font-bold text-sm">London, UK</p>
+<a class="text-primary text-xs font-bold hover:underline" href="#">Get Directions</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="px-4 md:px-20 lg:px-40 py-12 bg-white dark:bg-background-dark border-t border-gray-100 dark:border-gray-800">
+<div class="max-w-[1200px] mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="flex items-center gap-3">
+<div class="text-primary size-6">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M12.0799 24L4 19.2479L9.95537 8.75216L18.04 13.4961L18.0446 4H29.9554L29.96 13.4961L38.0446 8.75216L44 19.2479L35.92 24L44 28.7521L38.0446 39.2479L29.96 34.5039L29.9554 44H18.0446L18.04 34.5039L9.95537 39.2479L4 28.7521L12.0799 24Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h2 class="text-base font-bold tracking-tight">Savor &amp; Sip</h2>
+</div>
+<p class="text-sm text-gray-500">© 2024 Savor &amp; Sip Restaurant Group. All rights reserved.</p>
+<div class="flex gap-6">
+<a class="text-gray-400 hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-lg">share</span></a>
+<a class="text-gray-400 hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-lg">public</span></a>
+<a class="text-gray-400 hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-lg">mail</span></a>
+</div>
+</div>
+</footer>
+</body></html>

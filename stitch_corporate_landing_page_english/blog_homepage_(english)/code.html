@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>BlogHub | Modern Insights</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#00b894",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#1e1e1e",
+                        "surface-dark": "#2d2d2d",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 min-h-screen">
+<!-- Top Navigation Bar -->
+<header class="sticky top-0 z-50 w-full border-b border-slate-200 dark:border-slate-800 bg-white/80 dark:bg-background-dark/80 backdrop-blur-md">
+<div class="max-w-[1280px] mx-auto px-4 md:px-10 h-16 flex items-center justify-between gap-4">
+<div class="flex items-center gap-8">
+<div class="flex items-center gap-2 text-primary">
+<span class="material-symbols-outlined text-3xl">terminal</span>
+<h2 class="text-xl font-black tracking-tight dark:text-white">BlogHub</h2>
+</div>
+<nav class="hidden lg:flex items-center gap-6">
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Technology</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Lifestyle</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Design</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Productivity</a>
+</nav>
+</div>
+<div class="flex flex-1 justify-end items-center gap-4">
+<div class="hidden md:flex relative max-w-xs w-full">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 text-xl">search</span>
+<input class="w-full bg-slate-100 dark:bg-surface-dark border-none rounded-lg pl-10 pr-4 py-2 text-sm focus:ring-2 focus:ring-primary transition-all placeholder:text-slate-500" placeholder="Search articles..." type="text"/>
+</div>
+<button class="bg-primary hover:bg-primary/90 text-white px-5 py-2 rounded-lg text-sm font-bold transition-all shadow-lg shadow-primary/20">
+                    Subscribe
+                </button>
+<div class="size-9 rounded-full bg-slate-200 dark:bg-surface-dark border border-slate-300 dark:border-slate-700 bg-cover bg-center" data-alt="User profile avatar with professional photo" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDPROcjefpjwC7MN8A4M27REM1YKciHZCd1-SEic5PhdZqcIJUkibO00KzGe0hMaKjAigaNb-mO25cuh50ehx27rS6YcCzZyVsOIxPAVW47RvYEvofb7RG8di5w3bRtXiNUTyrB0zF69ekYhoTvjuqoEiRGBlitoY8sjnvKONgjA6_Zohk-yfpBZi6P1235mkslnO2f8gUnHBdJlZYv4dLWne9ozaDnoL3xz6U4PL1nUVwoGW_hQfVV76SvofB887C6m6RFDYYNGsLS');"></div>
+</div>
+</div>
+</header>
+<main class="max-w-[1280px] mx-auto px-4 md:px-10 py-8">
+<!-- Hero Section: Featured Article -->
+<section class="mb-12">
+<div class="relative group cursor-pointer overflow-hidden rounded-xl bg-slate-900 aspect-[21/9] flex items-end">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="High tech workspace with neon lighting and multiple monitors" style="background-image: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.2) 60%, rgba(0,0,0,0.1) 100%), url('https://lh3.googleusercontent.com/aida-public/AB6AXuARQ-9oo2beXFGOcfhL0GqHpH7dD3f5iUkhUDi9W3zI79cND27dObGA3hDBHF_UiAQwuCVicZQmFCeE4byPYLvTbg64RpshjRx0nXHX972cOc0OXvGa7vHuFEsic45RPh33Hvy1nNt45uRG6Fsc2z3OT3IEJWI1_nABWZ5NQ5LKnWnlKFU9HjVvaCrn5gf7ZcMLq2q5uErEbzNANcryqxWqzlDrd7U3Zn0hPGVW1aezOu0PfQ76pitIaBsJaoPsrYiF5KHfk4q09Y8o');"></div>
+<div class="relative p-6 md:p-12 w-full max-w-3xl">
+<span class="bg-primary text-white text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded mb-4 inline-block">Featured Article</span>
+<h1 class="text-3xl md:text-5xl font-black text-white leading-tight mb-4 group-hover:text-primary transition-colors">
+                        The Future of Web Development: AI and Beyond
+                    </h1>
+<p class="text-slate-300 text-sm md:text-lg mb-6 line-clamp-2">
+                        Exploring how artificial intelligence, edge computing, and zero-runtime CSS are reshaping the digital landscape in 2024.
+                    </p>
+<div class="flex items-center gap-4">
+<button class="bg-primary text-white px-6 py-3 rounded-lg font-bold flex items-center gap-2 group/btn transition-all">
+                            Read More
+                            <span class="material-symbols-outlined text-sm group-hover/btn:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+<span class="text-slate-400 text-sm">Jan 15, 2024 • 12 min read</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Main Content Area with Sidebar -->
+<div class="flex flex-col lg:flex-row gap-12">
+<!-- Latest Posts Feed -->
+<div class="flex-1">
+<div class="flex items-center justify-between mb-8 border-b border-slate-200 dark:border-slate-800 pb-4">
+<h2 class="text-2xl font-bold dark:text-white flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">auto_awesome</span>
+                        Latest Stories
+                    </h2>
+<div class="flex gap-2">
+<button class="p-2 rounded-lg hover:bg-slate-100 dark:hover:bg-surface-dark transition-colors">
+<span class="material-symbols-outlined">grid_view</span>
+</button>
+<button class="p-2 rounded-lg bg-slate-100 dark:bg-surface-dark text-primary transition-colors">
+<span class="material-symbols-outlined">list</span>
+</button>
+</div>
+</div>
+<div class="space-y-10">
+<!-- Post Item 1 -->
+<article class="group flex flex-col md:flex-row gap-6">
+<div class="w-full md:w-64 h-44 overflow-hidden rounded-lg shrink-0">
+<div class="w-full h-full bg-center bg-cover transition-transform duration-500 group-hover:scale-110" data-alt="Abstract minimalist design illustration in teal tones" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCXQjHa7rxf2YKGYKvMbTayhF-s_HgNG5sHEbYnGgn8xhIbvxPBiHq9GyYArMtWvwRAgIgVTZmz2cqHmaQX-c03ydwhbAiin6US1d0ETZBJVPbsOyxnjEf-vttrX8JJWRlAde8PYXdn9pwb7Ajh02O0jExm2B508WrQU5CzbZBLVEE2ktCP2NiKN_XEE1Yr5cl0oSx-rNK_i0gbUxXPtf8y00kPGQ2GecGchzDb4HE2oSeLOaOlHHDDKYOtSHXEs3SqeMVJLMTHYQJw');"></div>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-3 mb-2">
+<span class="text-primary text-xs font-bold uppercase tracking-wider">Design</span>
+<span class="text-slate-400 text-xs">•</span>
+<span class="text-slate-400 text-xs">Jan 12, 2024</span>
+</div>
+<h3 class="text-xl font-bold mb-2 group-hover:text-primary transition-colors">Design Trends for 2024: Minimalism Reimagined</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed mb-4 line-clamp-2">
+                                How dark UI and glassmorphism are evolving to create more immersive user experiences across mobile and desktop platforms.
+                            </p>
+<div class="flex items-center justify-between mt-auto">
+<div class="flex items-center gap-2">
+<div class="size-6 rounded-full bg-slate-300" data-alt="Author headshot" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuALrzqTUR2to-T6WHgrSXyUzZtJzD-aACcRuxLBSAJBZoEgChSRAkBDbCo19Vv23PYyc9Ud52grbYhnekocoOEdFBtT4LvZEpqajomNg9cpjiB-0d6UsO33GvlW_HVDx1ZMpjRYULKrDVgqqoW_EeK_gQbqNO_ARXeHWJnHk6sPKWkOEgF02-GYzzxToURhToJGDmQHL7zynLGOr_gMR0NM5lrSqcT24UrHUgNadvdsPqil-IzeL1PwA8cCaLuxg-zykOzi0kzfwfKe');"></div>
+<span class="text-xs font-medium text-slate-600 dark:text-slate-300">Jane Doe</span>
+</div>
+<span class="text-xs text-slate-400">5 min read</span>
+</div>
+</div>
+</article>
+<!-- Post Item 2 -->
+<article class="group flex flex-col md:flex-row gap-6">
+<div class="w-full md:w-64 h-44 overflow-hidden rounded-lg shrink-0">
+<div class="w-full h-full bg-center bg-cover transition-transform duration-500 group-hover:scale-110" data-alt="Home office setup with plants and minimalist wooden desk" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAFBG0fOpm4zEO1vDs0piJ0Z4O-l4RLNeL-c1Z4Zvsy51qigz8768JW0pEFgsP25qn7hQhahdFQtNykSH72DHd0JSpCkyqG3RMldk2qa2bQqJaCf7YpkPvX1-vWKifbFYXijzyERCFBB36yRWsrV-gX71rPgbn1IEFuvmQWgKu8_9JlaQf2rraCst4OULVLr_QYBEhnBEnbCLQ1P93cvPCrn4fY6acQOYKQHsgMq8A-CLDjb3X9tVyNYx0ItMT6M7t8KimqpvCPjJDi');"></div>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-3 mb-2">
+<span class="text-primary text-xs font-bold uppercase tracking-wider">Productivity</span>
+<span class="text-slate-400 text-xs">•</span>
+<span class="text-slate-400 text-xs">Jan 10, 2024</span>
+</div>
+<h3 class="text-xl font-bold mb-2 group-hover:text-primary transition-colors">Mastering Remote Productivity in a Noisy World</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed mb-4 line-clamp-2">
+                                Strategies for maintaining deep work habits while working from anywhere. Learn how to optimize your environment.
+                            </p>
+<div class="flex items-center justify-between mt-auto">
+<div class="flex items-center gap-2">
+<div class="size-6 rounded-full bg-slate-300" data-alt="Author headshot" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDl0UAwC1U2gvzcKJES0QQHgBTbmVQA75QAY1aqU_40Vwch6lPqp7IsIc9MK9XctCuAdJbKTqfk3M00TFQHuiE6flTOFblaYxBbTvDokucIU_m-R3mbpbhq4SK9EGmOXAAxtxpHMMoLZx4e_ICMPBhgPv9RVP-57wkE_k7xxhtmyW2tbGQtsLt4w_x94OCPqEeBwYsChNIQ9aeabK858ZYIRkE5l_hZAQBBLRMnXxQ5iTApJQUX1Y4oBKDCy6NoC2FGjLhNFYy2R3jd');"></div>
+<span class="text-xs font-medium text-slate-600 dark:text-slate-300">John Smith</span>
+</div>
+<span class="text-xs text-slate-400">8 min read</span>
+</div>
+</div>
+</article>
+<!-- Post Item 3 -->
+<article class="group flex flex-col md:flex-row gap-6">
+<div class="w-full md:w-64 h-44 overflow-hidden rounded-lg shrink-0">
+<div class="w-full h-full bg-center bg-cover transition-transform duration-500 group-hover:scale-110" data-alt="Cloud computing server room with blue lights" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCtB4JibrizEHA9ajRScMybOeFo1z6GJDEvAlSngBEskuf3GXEIDeWWT_J_bq5lSHV1ljFiqXk94K6y6sL_ueyle9IAHa4d9lmbeQBTNbtIzCr262l57uq3M0nVZ0hXMxtZWxrsoc7o4lKTsxjGCpUnd_mvsDWZra-n61Jc-aw-qySU0QAOvzah2Iwy6zlkBtVT_b3BnvP8C2w0VErHUgj1NQTdlRsCsNga_XS7iRDUgDcjrI7RiYKhZQYaRl0_Vb2OD39mt9VFDzvv');"></div>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-3 mb-2">
+<span class="text-primary text-xs font-bold uppercase tracking-wider">Technology</span>
+<span class="text-slate-400 text-xs">•</span>
+<span class="text-slate-400 text-xs">Jan 08, 2024</span>
+</div>
+<h3 class="text-xl font-bold mb-2 group-hover:text-primary transition-colors">The Rise of Serverless Computing Paradigms</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed mb-4 line-clamp-2">
+                                Why developers are moving away from managed servers and embracing event-driven architectures for massive scale.
+                            </p>
+<div class="flex items-center justify-between mt-auto">
+<div class="flex items-center gap-2">
+<div class="size-6 rounded-full bg-slate-300" data-alt="Author headshot" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCAvWbp0JipHnSYT06m8OMxup8uM1ClOnVpN6zXdHAWeJYrgDXsp0WRl6QHiBLdelyMua90yQ6tw2G4vVti6s5tPyNdwTFzMMGDGmZhY8BC-H3wi7eJbWdtZU-mZfYmMkxLLocGLW3Q1oCfSArH7vvNNd8n2HuAmYjzaZ_kSQTbAYUDZKyjG_tu7v08eeDlG0rsclGJndTdFvwKM9iS8bQg_dnQPY7_Rs21e82wMrxk2sl-_A-WCCE3wQGbR4nX4MJWuQ5NSv_4U1gb');"></div>
+<span class="text-xs font-medium text-slate-600 dark:text-slate-300">Sarah Moss</span>
+</div>
+<span class="text-xs text-slate-400">10 min read</span>
+</div>
+</div>
+</article>
+</div>
+<button class="w-full mt-12 py-4 border border-slate-200 dark:border-slate-800 rounded-lg font-bold hover:bg-slate-50 dark:hover:bg-surface-dark transition-colors">
+                    Load More Articles
+                </button>
+</div>
+<!-- Sidebar -->
+<aside class="w-full lg:w-80 space-y-10">
+<!-- Categories Sidebar Widget -->
+<div class="bg-slate-50 dark:bg-surface-dark p-6 rounded-xl border border-slate-200 dark:border-slate-800">
+<h3 class="text-lg font-bold mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">category</span>
+                        Browse Categories
+                    </h3>
+<div class="grid grid-cols-1 gap-2">
+<a class="flex items-center justify-between p-3 rounded-lg hover:bg-white dark:hover:bg-background-dark group transition-all" href="#">
+<span class="text-sm font-medium group-hover:text-primary">Development</span>
+<span class="text-xs text-slate-400 bg-slate-200 dark:bg-slate-700 px-2 py-1 rounded-full">24</span>
+</a>
+<a class="flex items-center justify-between p-3 rounded-lg hover:bg-white dark:hover:bg-background-dark group transition-all" href="#">
+<span class="text-sm font-medium group-hover:text-primary">UX Research</span>
+<span class="text-xs text-slate-400 bg-slate-200 dark:bg-slate-700 px-2 py-1 rounded-full">18</span>
+</a>
+<a class="flex items-center justify-between p-3 rounded-lg hover:bg-white dark:hover:bg-background-dark group transition-all" href="#">
+<span class="text-sm font-medium group-hover:text-primary">Marketing</span>
+<span class="text-xs text-slate-400 bg-slate-200 dark:bg-slate-700 px-2 py-1 rounded-full">12</span>
+</a>
+<a class="flex items-center justify-between p-3 rounded-lg hover:bg-white dark:hover:bg-background-dark group transition-all" href="#">
+<span class="text-sm font-medium group-hover:text-primary">Startup</span>
+<span class="text-xs text-slate-400 bg-slate-200 dark:bg-slate-700 px-2 py-1 rounded-full">31</span>
+</a>
+</div>
+</div>
+<!-- Newsletter Subscription Widget -->
+<div class="bg-primary/10 border border-primary/20 p-6 rounded-xl">
+<h3 class="text-lg font-bold mb-2 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">mail</span>
+                        Stay Updated
+                    </h3>
+<p class="text-sm text-slate-500 dark:text-slate-400 mb-6">
+                        Get the latest articles and curated insights delivered straight to your inbox every week.
+                    </p>
+<form class="space-y-3">
+<input class="w-full bg-white dark:bg-background-dark border-slate-200 dark:border-slate-800 rounded-lg px-4 py-2 text-sm focus:ring-primary focus:border-primary" placeholder="Your email address" type="email"/>
+<button class="w-full bg-primary text-white py-2 rounded-lg font-bold text-sm hover:brightness-110 transition-all">
+                            Join Community
+                        </button>
+</form>
+<p class="text-[10px] text-slate-400 mt-4 text-center">No spam, ever. Unsubscribe anytime.</p>
+</div>
+<!-- Trending Posts -->
+<div>
+<h3 class="text-lg font-bold mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">trending_up</span>
+                        Trending Now
+                    </h3>
+<div class="space-y-6">
+<div class="flex gap-4 group cursor-pointer">
+<span class="text-2xl font-black text-slate-200 dark:text-slate-800 group-hover:text-primary transition-colors">01</span>
+<div>
+<h4 class="text-sm font-bold group-hover:text-primary transition-colors line-clamp-2">Why Rust is taking over the Web backend landscape</h4>
+<span class="text-xs text-slate-400">4 min read</span>
+</div>
+</div>
+<div class="flex gap-4 group cursor-pointer">
+<span class="text-2xl font-black text-slate-200 dark:text-slate-800 group-hover:text-primary transition-colors">02</span>
+<div>
+<h4 class="text-sm font-bold group-hover:text-primary transition-colors line-clamp-2">How to build a personal brand as a designer</h4>
+<span class="text-xs text-slate-400">6 min read</span>
+</div>
+</div>
+<div class="flex gap-4 group cursor-pointer">
+<span class="text-2xl font-black text-slate-200 dark:text-slate-800 group-hover:text-primary transition-colors">03</span>
+<div>
+<h4 class="text-sm font-bold group-hover:text-primary transition-colors line-clamp-2">The state of Tailwind CSS in 2024</h4>
+<span class="text-xs text-slate-400">3 min read</span>
+</div>
+</div>
+</div>
+</div>
+</aside>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-50 dark:bg-surface-dark border-t border-slate-200 dark:border-slate-800 pt-16 pb-8 mt-20">
+<div class="max-w-[1280px] mx-auto px-4 md:px-10">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+<div class="col-span-1 md:col-span-1">
+<div class="flex items-center gap-2 text-primary mb-6">
+<span class="material-symbols-outlined text-3xl">terminal</span>
+<h2 class="text-xl font-black tracking-tight dark:text-white">BlogHub</h2>
+</div>
+<p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">
+                        A modern publication platform dedicated to the future of technology, design, and digital craftsmanship.
+                    </p>
+</div>
+<div>
+<h4 class="text-sm font-bold uppercase tracking-widest mb-6">Explore</h4>
+<ul class="space-y-4 text-sm text-slate-500 dark:text-slate-400">
+<li><a class="hover:text-primary transition-colors" href="#">Featured Posts</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Popular Categories</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Authors</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Case Studies</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-sm font-bold uppercase tracking-widest mb-6">Company</h4>
+<ul class="space-y-4 text-sm text-slate-500 dark:text-slate-400">
+<li><a class="hover:text-primary transition-colors" href="#">About Us</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Careers</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Advertise</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Contact</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-sm font-bold uppercase tracking-widest mb-6">Social</h4>
+<div class="flex gap-4">
+<a class="size-10 rounded-lg bg-slate-200 dark:bg-background-dark flex items-center justify-center hover:bg-primary hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined">share</span>
+</a>
+<a class="size-10 rounded-lg bg-slate-200 dark:bg-background-dark flex items-center justify-center hover:bg-primary hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined">public</span>
+</a>
+<a class="size-10 rounded-lg bg-slate-200 dark:bg-background-dark flex items-center justify-center hover:bg-primary hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined">alternate_email</span>
+</a>
+</div>
+</div>
+</div>
+<div class="pt-8 border-t border-slate-200 dark:border-slate-800 flex flex-col md:row justify-between items-center gap-4 text-xs text-slate-400">
+<p>© 2024 BlogHub Media Inc. All rights reserved.</p>
+<div class="flex gap-6">
+<a class="hover:text-primary" href="#">Privacy Policy</a>
+<a class="hover:text-primary" href="#">Terms of Service</a>
+<a class="hover:text-primary" href="#">Cookie Settings</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

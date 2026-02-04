@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Corporate Landing Page</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#2d99e1",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#111b21",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-white dark:bg-background-dark text-[#111517] dark:text-white font-display">
+<!-- Sticky Navigation Bar -->
+<nav class="sticky top-0 z-50 w-full border-b border-solid border-[#f0f3f4] dark:border-gray-800 bg-white/90 dark:bg-background-dark/90 backdrop-blur-md px-6 md:px-40 py-4">
+<div class="max-w-[1280px] mx-auto flex items-center justify-between">
+<div class="flex items-center gap-4 text-primary">
+<div class="size-8">
+<svg fill="currentColor" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M44 4H30.6666V17.3334H17.3334V30.6666H4V44H44V4Z"></path>
+</svg>
+</div>
+<h2 class="text-[#111517] dark:text-white text-xl font-bold leading-tight tracking-[-0.015em]">NexusCorp</h2>
+</div>
+<div class="hidden md:flex flex-1 justify-end gap-10 items-center">
+<div class="flex items-center gap-8">
+<a class="text-[#111517] dark:text-gray-300 text-sm font-medium hover:text-primary transition-colors" href="#">Home</a>
+<a class="text-[#111517] dark:text-gray-300 text-sm font-medium hover:text-primary transition-colors" href="#">Services</a>
+<a class="text-[#111517] dark:text-gray-300 text-sm font-medium hover:text-primary transition-colors" href="#">About</a>
+<a class="text-[#111517] dark:text-gray-300 text-sm font-medium hover:text-primary transition-colors" href="#">Contact</a>
+</div>
+<button class="flex min-w-[120px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 transition-all shadow-md">
+<span>Get Started</span>
+</button>
+</div>
+<!-- Mobile Menu Toggle (Simplified) -->
+<div class="md:hidden">
+<span class="material-symbols-outlined text-[#111517] dark:text-white">menu</span>
+</div>
+</div>
+</nav>
+<!-- Hero Section -->
+<main class="w-full">
+<section class="px-6 md:px-40 py-16 md:py-24 bg-white dark:bg-background-dark">
+<div class="max-w-[1280px] mx-auto">
+<div class="flex flex-col gap-10 @container md:flex-row items-center">
+<div class="flex flex-col gap-6 md:w-1/2 @[480px]:gap-8">
+<div class="flex flex-col gap-4 text-left">
+<h1 class="text-[#111517] dark:text-white text-4xl md:text-6xl font-black leading-tight tracking-[-0.033em]">
+                                Empowering Your Business Evolution
+                            </h1>
+<p class="text-[#111517] dark:text-gray-400 text-lg font-normal leading-relaxed max-w-[540px]">
+                                We provide cutting-edge solutions for modern enterprises to scale and succeed in the digital age. Secure, scalable, and built for performance.
+                            </p>
+</div>
+<div class="flex gap-4">
+<button class="flex min-w-[160px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 md:h-14 px-6 bg-primary text-white text-base font-bold leading-normal tracking-[0.015em] hover:scale-105 transition-transform">
+<span class="truncate">Start Free Trial</span>
+</button>
+<button class="flex min-w-[160px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 md:h-14 px-6 border border-gray-300 dark:border-gray-700 bg-transparent text-[#111517] dark:text-white text-base font-bold leading-normal tracking-[0.015em] hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors">
+<span class="truncate">Learn More</span>
+</button>
+</div>
+</div>
+<div class="w-full md:w-1/2">
+<div class="w-full bg-center bg-no-repeat aspect-[4/3] bg-cover rounded-xl shadow-2xl" data-alt="Modern corporate office with digital technology overlays" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCLzyD9vLIAJndGYz1xXaJDC5oNMZnHiCbj8y457CTSyaKiNg2HVaPm8XRqL-FOEMg9T2wB0MJcTmlDP9NV0_Ox5iYJGqbfOZLF3yJOMGISMaMBMibESPL71n8_q3tNAs9g__aHlWw-2HPciZsRjmq3UOFppbjr1QvNAZaH7I3U0sRNleIxEeTimqFQ5IlFymePaQVQHBcphNd9JS4C-ilOxLseOokyMisfmcQpdoU3B6t2ao6NslLQyWg8QRM0w56uVLyiGG95Tm2n");'>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Section -->
+<section class="px-6 md:px-40 py-20 bg-background-light dark:bg-gray-900/50">
+<div class="max-w-[1280px] mx-auto">
+<div class="flex flex-col gap-4 mb-12">
+<h2 class="text-primary text-sm font-bold uppercase tracking-widest">Our Expertise</h2>
+<h3 class="text-[#111517] dark:text-white text-3xl md:text-4xl font-black tracking-tight">Tailored Solutions for Growth</h3>
+<p class="text-[#647987] dark:text-gray-400 text-base max-w-[600px]">Comprehensive services designed to meet your business needs through innovative technology and strategic insight.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="flex flex-col gap-4 rounded-xl border border-[#dce1e5] dark:border-gray-800 bg-white dark:bg-background-dark p-8 hover:shadow-xl transition-shadow group">
+<div class="bg-primary/10 w-12 h-12 rounded-lg flex items-center justify-center text-primary mb-2 group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-3xl">trending_up</span>
+</div>
+<h4 class="text-[#111517] dark:text-white text-xl font-bold leading-tight">Strategic Consulting</h4>
+<p class="text-[#647987] dark:text-gray-400 text-sm leading-relaxed">Expert guidance to streamline your business operations and identify new revenue streams in emerging markets.</p>
+<a class="mt-4 text-primary text-sm font-bold flex items-center gap-1 hover:gap-2 transition-all" href="#">
+                            Details <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<div class="flex flex-col gap-4 rounded-xl border border-[#dce1e5] dark:border-gray-800 bg-white dark:bg-background-dark p-8 hover:shadow-xl transition-shadow group">
+<div class="bg-primary/10 w-12 h-12 rounded-lg flex items-center justify-center text-primary mb-2 group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-3xl">monitoring</span>
+</div>
+<h4 class="text-[#111517] dark:text-white text-xl font-bold leading-tight">Digital Transformation</h4>
+<p class="text-[#647987] dark:text-gray-400 text-sm leading-relaxed">Modernize your workflows with the latest technology, ensuring your legacy systems don't hold back your future growth.</p>
+<a class="mt-4 text-primary text-sm font-bold flex items-center gap-1 hover:gap-2 transition-all" href="#">
+                            Details <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<div class="flex flex-col gap-4 rounded-xl border border-[#dce1e5] dark:border-gray-800 bg-white dark:bg-background-dark p-8 hover:shadow-xl transition-shadow group">
+<div class="bg-primary/10 w-12 h-12 rounded-lg flex items-center justify-center text-primary mb-2 group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-3xl">cloud</span>
+</div>
+<h4 class="text-[#111517] dark:text-white text-xl font-bold leading-tight">Cloud Infrastructure</h4>
+<p class="text-[#647987] dark:text-gray-400 text-sm leading-relaxed">Secure and scalable cloud solutions for your data, optimized for speed, reliability, and global accessibility.</p>
+<a class="mt-4 text-primary text-sm font-bold flex items-center gap-1 hover:gap-2 transition-all" href="#">
+                            Details <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials Section -->
+<section class="px-6 md:px-40 py-20 bg-white dark:bg-background-dark">
+<div class="max-w-[1280px] mx-auto text-center">
+<h2 class="text-[#111517] dark:text-white text-3xl md:text-4xl font-black mb-16">What Our Clients Say</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+<div class="flex flex-col items-center gap-6 p-6">
+<div class="relative">
+<div class="w-20 h-20 rounded-full bg-cover bg-center border-4 border-primary/20" data-alt="Portrait of a female CEO" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCSsvee_nSlyYdrqIQe_JffgTjtI7XUot56UpVjT2SoQ1C646YyB4huFQRpGvPQqTKqnTHNNW7FO1Q3kEaNFpkjn91utF9Oj4S_orS7RxBzys6U4tf8YP0ffhnmRam6j-0sM7r9bhJmV8N943_qWFjY6aZveSLvrswn3JdjiuvFANZXxT888kd8EUmyAvE7NxEdTZbkAnEAcjFoRYBVZF3q4mfdPzB2uwnEVtaUp7KFPFTUCMayU2JVdBJ4xq02sVe15A9y_q1ctcI6");'></div>
+<span class="absolute -bottom-2 -right-2 bg-primary text-white p-1 rounded-full material-symbols-outlined text-sm">format_quote</span>
+</div>
+<p class="text-[#111517] dark:text-gray-300 italic text-lg leading-relaxed">
+                            "NexusCorp transformed our legacy infrastructure in record time. Their team is professional, highly skilled, and responsive."
+                        </p>
+<div>
+<p class="font-bold text-[#111517] dark:text-white">Sarah Jenkins</p>
+<p class="text-sm text-[#647987] dark:text-gray-500">CEO, CloudStream</p>
+</div>
+</div>
+<div class="flex flex-col items-center gap-6 p-6">
+<div class="relative">
+<div class="w-20 h-20 rounded-full bg-cover bg-center border-4 border-primary/20" data-alt="Portrait of a professional businessman" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDCAslu-JeczVtYeUzpTjGeUTRG0T9wUaclIlK3ojitfb3V4gfml2FLlTXPcU4VtppaEMzDiwPxG_pOeGc_E9JiAD_I-DMLa2UyrSEJDwI3lCxbiuOowOuouZ02UMqSCnlJtWV9E9uSFTA_VDxd2lgakuHcFGPdtgYTCBNoLtogdDSWfAJZj0zJs9v0y6YxB3ozA6ICFTNAJEMS8KKWpNEM2uL6v0zxqc1Qjde7SLB06DS8_fdPkS91zjCCeCb9ZZ4MNxaF7GhszTu_");'></div>
+<span class="absolute -bottom-2 -right-2 bg-primary text-white p-1 rounded-full material-symbols-outlined text-sm">format_quote</span>
+</div>
+<p class="text-[#111517] dark:text-gray-300 italic text-lg leading-relaxed">
+                            "The strategic consulting we received was invaluable. It helped us pivot our business model and double our annual growth rate."
+                        </p>
+<div>
+<p class="font-bold text-[#111517] dark:text-white">Michael Chen</p>
+<p class="text-sm text-[#647987] dark:text-gray-500">VP Operations, Fintech Global</p>
+</div>
+</div>
+<div class="flex flex-col items-center gap-6 p-6">
+<div class="relative">
+<div class="w-20 h-20 rounded-full bg-cover bg-center border-4 border-primary/20" data-alt="Portrait of a creative director" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBpdeMBi6u1vhFioIAgV57cdKGCgTMnRTZmJQqaNXDd_BL4waS9_e3jgeMJDrHtUy4ogibga9gzZxhcMf9g4Zfe_HyBfshHu2Ebm6r1n1BHN_tmw7ZcIJrnzBxwk17N6GvAD-BQk_9ZVN9ujQJjz16v0U4QE7xYzCbdEyICTM6ZRdZi_NQEsT8aOL1aKGhhKZtQRmXoh5dbc2nY0ZsCwXrGu8lROzA0Ub3z6BRrZj-j56ZPcToXLtkjYoXyZuVlQS9-pZLL1iAO_1LF");'></div>
+<span class="absolute -bottom-2 -right-2 bg-primary text-white p-1 rounded-full material-symbols-outlined text-sm">format_quote</span>
+</div>
+<p class="text-[#111517] dark:text-gray-300 italic text-lg leading-relaxed">
+                            "Innovation is at the heart of everything they do. Working with them was the best decision for our digital overhaul."
+                        </p>
+<div>
+<p class="font-bold text-[#111517] dark:text-white">Elena Rodriguez</p>
+<p class="text-sm text-[#647987] dark:text-gray-500">Project Manager, CreativeHub</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-gray-50 dark:bg-[#0a0f12] border-t border-[#f0f3f4] dark:border-gray-800 px-6 md:px-40 py-16">
+<div class="max-w-[1280px] mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+<div class="flex flex-col gap-6">
+<div class="flex items-center gap-2 text-primary">
+<div class="size-6">
+<svg fill="currentColor" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M44 4H30.6666V17.3334H17.3334V30.6666H4V44H44V4Z"></path>
+</svg>
+</div>
+<h2 class="text-[#111517] dark:text-white text-lg font-bold">NexusCorp</h2>
+</div>
+<p class="text-sm text-[#647987] dark:text-gray-400">Building the future of enterprise technology with excellence and innovation since 2010.</p>
+<div class="flex gap-4">
+<a class="text-[#647987] hover:text-primary" href="#"><span class="material-symbols-outlined">share</span></a>
+<a class="text-[#647987] hover:text-primary" href="#"><span class="material-symbols-outlined">public</span></a>
+<a class="text-[#647987] hover:text-primary" href="#"><span class="material-symbols-outlined">alternate_email</span></a>
+</div>
+</div>
+<div>
+<h5 class="text-[#111517] dark:text-white font-bold mb-6">Services</h5>
+<ul class="flex flex-col gap-4 text-sm text-[#647987] dark:text-gray-400">
+<li><a class="hover:text-primary transition-colors" href="#">Strategic Consulting</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Digital Transformation</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Cloud Solutions</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Cybersecurity</a></li>
+</ul>
+</div>
+<div>
+<h5 class="text-[#111517] dark:text-white font-bold mb-6">Company</h5>
+<ul class="flex flex-col gap-4 text-sm text-[#647987] dark:text-gray-400">
+<li><a class="hover:text-primary transition-colors" href="#">About Us</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Our Team</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Careers</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">News &amp; Blog</a></li>
+</ul>
+</div>
+<div>
+<h5 class="text-[#111517] dark:text-white font-bold mb-6">Newsletter</h5>
+<p class="text-sm text-[#647987] dark:text-gray-400 mb-4">Stay updated with our latest news and offers.</p>
+<div class="flex gap-2">
+<input class="w-full h-10 px-3 rounded-lg border border-[#dce1e5] dark:border-gray-800 dark:bg-gray-900 text-sm focus:ring-1 focus:ring-primary outline-none" placeholder="Email address" type="email"/>
+<button class="bg-primary text-white px-4 rounded-lg h-10 hover:bg-primary/90">
+<span class="material-symbols-outlined text-sm">send</span>
+</button>
+</div>
+</div>
+</div>
+<div class="border-t border-[#f0f3f4] dark:border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-xs text-[#647987] dark:text-gray-500">© 2024 NexusCorp International. All rights reserved.</p>
+<div class="flex gap-6 text-xs text-[#647987] dark:text-gray-500">
+<a class="hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="hover:text-primary transition-colors" href="#">Terms of Service</a>
+<a class="hover:text-primary transition-colors" href="#">Cookie Settings</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

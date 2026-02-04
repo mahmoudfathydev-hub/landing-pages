@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Product Detail Page - ShopEase</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ff6f61", // Using the Coral requested by the user
+                        "background-light": "#f5f5f5",
+                        "background-dark": "#111b21",
+                        "neutral-grey": "#647987",
+                        "dark-text": "#111517",
+                    },
+                    fontFamily: {
+                        "display": ["Inter"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .material-symbols-outlined.filled {
+            font-variation-settings: 'FILL' 1;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-dark-text min-h-screen">
+<!-- Top Navigation Bar -->
+<header class="sticky top-0 z-50 bg-white dark:bg-background-dark border-b border-solid border-[#f0f3f4] dark:border-gray-800">
+<div class="max-w-[1280px] mx-auto px-4 sm:px-10 py-3 flex items-center justify-between whitespace-nowrap">
+<div class="flex items-center gap-8">
+<div class="flex items-center gap-2 text-primary">
+<div class="size-8 flex items-center justify-center">
+<span class="material-symbols-outlined text-3xl">shopping_bag</span>
+</div>
+<h2 class="text-dark-text dark:text-white text-xl font-bold leading-tight tracking-[-0.015em]">ShopEase</h2>
+</div>
+<nav class="hidden md:flex items-center gap-9">
+<a class="text-dark-text dark:text-gray-300 text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Shop</a>
+<a class="text-dark-text dark:text-gray-300 text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Categories</a>
+<a class="text-dark-text dark:text-gray-300 text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Deals</a>
+<a class="text-dark-text dark:text-gray-300 text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Support</a>
+</nav>
+</div>
+<div class="flex flex-1 justify-end gap-4 sm:gap-8 items-center">
+<label class="hidden lg:flex flex-col min-w-40 !h-10 max-w-64">
+<div class="flex w-full flex-1 items-stretch rounded-lg h-full">
+<div class="text-neutral-grey flex border-none bg-gray-100 dark:bg-gray-800 items-center justify-center pl-4 rounded-l-lg">
+<span class="material-symbols-outlined text-xl">search</span>
+</div>
+<input class="form-input flex w-full min-w-0 flex-1 border-none bg-gray-100 dark:bg-gray-800 dark:text-white focus:ring-0 h-full placeholder:text-neutral-grey px-4 rounded-r-lg text-base font-normal" placeholder="Search products..." value=""/>
+</div>
+</label>
+<div class="flex gap-2">
+<button class="flex items-center justify-center rounded-lg h-10 w-10 bg-gray-100 dark:bg-gray-800 text-dark-text dark:text-white hover:bg-gray-200 transition-colors">
+<span class="material-symbols-outlined">favorite</span>
+</button>
+<button class="relative flex items-center justify-center rounded-lg h-10 w-10 bg-gray-100 dark:bg-gray-800 text-dark-text dark:text-white hover:bg-gray-200 transition-colors">
+<span class="material-symbols-outlined">shopping_cart</span>
+<span class="absolute -top-1 -right-1 bg-primary text-white text-[10px] font-bold rounded-full h-4 w-4 flex items-center justify-center">3</span>
+</button>
+</div>
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10 border-2 border-primary" data-alt="User profile avatar" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBw_l1Jm4-eIMJ3rDx5SbOFvYyyCNTY1AcriXTR1K-trceHn_a_KAJrKPzCN_tHKR3ruE8BdDH7XDH_vxBQbeag7TEjS_9vXsIROqvhiXUMQWXmAvGU4gIj7WA-z7YAcDi1Kb5z_fky_1fF9FI5V6zo-TaPDZxRtwagd-aqtZ9rai0wk-no9c4ApFrnx0CpdFq3Er2y4KVTJQ9gqZ8zknTlqi2VgMLP5sH3s7l7vfA5Y3k5r4LdnsoyYqXgr-WBzc2a5qTEaoianSQL");'></div>
+</div>
+</div>
+</header>
+<main class="max-w-[1280px] mx-auto px-4 sm:px-10 py-6">
+<!-- Breadcrumbs -->
+<div class="flex flex-wrap items-center gap-2 mb-6">
+<a class="text-neutral-grey dark:text-gray-400 text-sm font-medium hover:text-primary" href="#">Home</a>
+<span class="text-neutral-grey text-sm">/</span>
+<a class="text-neutral-grey dark:text-gray-400 text-sm font-medium hover:text-primary" href="#">Outerwear</a>
+<span class="text-neutral-grey text-sm">/</span>
+<span class="text-dark-text dark:text-white text-sm font-semibold">Premium Lightweight Jacket</span>
+</div>
+<!-- Product Hero Section -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-10 bg-white dark:bg-background-dark p-6 rounded-xl shadow-sm">
+<!-- Gallery (Left Column) -->
+<div class="lg:col-span-7 flex flex-col md:flex-row-reverse gap-4">
+<div class="flex-1 aspect-square rounded-xl overflow-hidden bg-gray-50">
+<div class="w-full h-full bg-center bg-no-repeat bg-cover" data-alt="Main product view: light-grey premium jacket" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDIj4NJOPwcjmlg0S-YU4rnW6cQI6dVbr3D_xYklmoQh3gbulaDxkKy8ccHEH7pi0sx4zs6o55bQVC-AgRiPauyuXlKwJiDIHrtOVbm0u5jZRdyzDDXnpZoyP7k5FFgyqxgPRuO7f9mFOVqX-MY8N5dPO2T_n_7wKwbI3QJ5CZt_ru6NJF-SnDWQQw6TTVhrECLC6WqysrIsCf5ebzjM52tnxJypTqy_YAiYyxo0FeTG7GrRmEQWd2NhNmt6qUXrCYH0fiMTrwTLCDm");'></div>
+</div>
+<div class="flex md:flex-col gap-3 overflow-x-auto md:overflow-y-auto">
+<div class="size-20 flex-shrink-0 rounded-lg border-2 border-primary overflow-hidden cursor-pointer">
+<div class="w-full h-full bg-center bg-no-repeat bg-cover" data-alt="Jacket front view thumbnail" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBSCDpeuw4aR1lmCDBTsMeNTY2ylriesjUvmUM35bzy0g8k9HGSUtsF6baY7MbaEgd3ryx375FI2JRSZqSoeVHCJAq9T0HM8w5wU6LNT1neI0Oj6RLR86lp2OB1rgikbOVvshzv6LRLDx1G-ZVvATHkg8Z8LDQgNnCxJetOQBxdwoIMmyyFF9qFrRwtTcSxf7n9OzZt03EAG-v1QND7TaBXATO0sCe5yYViTi35adPMZK3tRin4fIgICBQmx-qCo909IIV2IdkE22R7");'></div>
+</div>
+<div class="size-20 flex-shrink-0 rounded-lg border-2 border-transparent hover:border-gray-300 overflow-hidden cursor-pointer">
+<div class="w-full h-full bg-center bg-no-repeat bg-cover" data-alt="Jacket side view thumbnail" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDrDgVue7puyJXVUezJA4Tiyni6DUnDl5suoCX9Y_ImhYyE6ynn9QPoKBvwCjUcnM4aYQS2jvqexvql8OnFGuj74my7fWWeeah4ZvqaYPVRO8lxbxyBOgbTpM0N3oUCZfKoFOkBdEP482QRa63vqTfJ1kFlaRa5-hMPp6CrchfZuCW0h_1csRFHMeRJ-oLY5H8_LRg_DNOoH2ZlljMtQAd2J9tkHgWpx9V6sBrhnTOVcJ-2VJtQTrSJt3Gu3EoJu2il2WUcB_97QgZy");'></div>
+</div>
+<div class="size-20 flex-shrink-0 rounded-lg border-2 border-transparent hover:border-gray-300 overflow-hidden cursor-pointer">
+<div class="w-full h-full bg-center bg-no-repeat bg-cover" data-alt="Jacket back view thumbnail" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAp2tjLjqZAqVN4K1jO2fMcDagm_V9aH62l4An5Hc68dwdhc74WrrpNWSli_s-s-OZNJYhyg-QDv-SZIEOE7-giYVp31xwc4xNXiXiGWu6mFilJ16AfWi5tfHymYycsOCx4pm_lvfwpk4rMAvFI7rTiVqzZjtkCmwlPAe91-EMKtQQ3gkPDa_WLW0IEgDZhyhIwmLKJ8kt5AcWIAfWTMq5Itm-BPpUyhL5OIT-0YL7-kFqav6gQuYFM8-iNys2D9gO8megHjiTuScq6");'></div>
+</div>
+<div class="size-20 flex-shrink-0 rounded-lg border-2 border-transparent hover:border-gray-300 overflow-hidden cursor-pointer">
+<div class="w-full h-full bg-center bg-no-repeat bg-cover" data-alt="Jacket lifestyle thumbnail" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCDE2-VGjUGuZSvUye2FKGFh7Iew1BJowRL36rNDPeJNM9A5sxCcBKPoFJ3MbYPN8bm2rg0tERJgwMloVRB4ZBSoXZpjQzxz0BMqwR0IiT7mZ-1hPQ5Du2kUhhzlh6IIcS7Vev-nAi5KuGDhcq547IqY05wcnre4Ps80ae3WlnVqZ1_sUq7poBgXVZrZfG8wkOQcye_RcCG7qVVr8_GjkhGsexOBRWBRX6cBqh0Dt6om1ufrSwOGIujpZGCcZ6FoyEiInGZHfHvXsEX");'></div>
+</div>
+</div>
+</div>
+<!-- Product Info (Right Column) -->
+<div class="lg:col-span-5 flex flex-col gap-6">
+<div>
+<span class="text-primary font-bold text-sm tracking-widest uppercase">UrbanStyle Premium</span>
+<h1 class="text-dark-text dark:text-white text-3xl md:text-4xl font-black leading-tight tracking-tight mt-1">Premium Lightweight Jacket</h1>
+<div class="flex items-center gap-2 mt-3">
+<div class="flex text-primary">
+<span class="material-symbols-outlined filled text-lg">star</span>
+<span class="material-symbols-outlined filled text-lg">star</span>
+<span class="material-symbols-outlined filled text-lg">star</span>
+<span class="material-symbols-outlined filled text-lg">star</span>
+<span class="material-symbols-outlined text-lg">star</span>
+</div>
+<span class="text-neutral-grey text-sm font-medium underline underline-offset-4 cursor-pointer">128 reviews</span>
+</div>
+</div>
+<div class="flex items-baseline gap-3">
+<span class="text-3xl font-bold text-dark-text dark:text-white">$99.00</span>
+<span class="text-neutral-grey line-through text-lg">$149.00</span>
+<span class="bg-primary/20 text-primary px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider">Save 33%</span>
+</div>
+<div class="border-y border-gray-100 dark:border-gray-800 py-6 flex flex-col gap-6">
+<div>
+<span class="block text-sm font-bold text-dark-text dark:text-white mb-3">Color: Moon Rock</span>
+<div class="flex gap-3">
+<button class="size-8 rounded-full ring-2 ring-primary ring-offset-2 bg-gray-300" title="Moon Rock"></button>
+<button class="size-8 rounded-full ring-1 ring-gray-200 bg-blue-900" title="Midnight Blue"></button>
+<button class="size-8 rounded-full ring-1 ring-gray-200 bg-gray-900" title="Onyx Black"></button>
+</div>
+</div>
+<div>
+<div class="flex justify-between items-center mb-3">
+<span class="text-sm font-bold text-dark-text dark:text-white">Select Size</span>
+<a class="text-xs font-medium text-neutral-grey underline underline-offset-2" href="#">Size Guide</a>
+</div>
+<div class="grid grid-cols-5 gap-2">
+<button class="h-10 border border-gray-200 dark:border-gray-700 rounded-lg flex items-center justify-center text-sm font-bold hover:border-primary transition-colors">S</button>
+<button class="h-10 border-2 border-primary rounded-lg flex items-center justify-center text-sm font-bold text-primary">M</button>
+<button class="h-10 border border-gray-200 dark:border-gray-700 rounded-lg flex items-center justify-center text-sm font-bold hover:border-primary transition-colors">L</button>
+<button class="h-10 border border-gray-200 dark:border-gray-700 rounded-lg flex items-center justify-center text-sm font-bold hover:border-primary transition-colors text-neutral-grey opacity-50 cursor-not-allowed">XL</button>
+<button class="h-10 border border-gray-200 dark:border-gray-700 rounded-lg flex items-center justify-center text-sm font-bold hover:border-primary transition-colors">XXL</button>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-3">
+<div class="flex gap-3">
+<button class="flex-1 bg-primary text-white h-14 rounded-lg font-bold text-lg flex items-center justify-center gap-2 hover:brightness-110 transition-all shadow-lg shadow-primary/20">
+<span class="material-symbols-outlined">shopping_cart</span>
+                            Add to Cart
+                        </button>
+<button class="w-14 h-14 border-2 border-gray-100 dark:border-gray-800 rounded-lg flex items-center justify-center hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors">
+<span class="material-symbols-outlined text-dark-text dark:text-white">favorite</span>
+</button>
+</div>
+<p class="text-xs text-center text-neutral-grey mt-2">
+<span class="material-symbols-outlined align-middle text-sm mr-1">local_shipping</span>
+                        Free shipping on orders over $150. Easy 30-day returns.
+                    </p>
+</div>
+</div>
+</div>
+<!-- Details & Reviews Section -->
+<div class="mt-12 grid grid-cols-1 lg:grid-cols-12 gap-10">
+<!-- Left: Description & Specs -->
+<div class="lg:col-span-8 flex flex-col gap-8">
+<div class="bg-white dark:bg-background-dark p-8 rounded-xl shadow-sm">
+<h3 class="text-xl font-bold mb-4">Product Description</h3>
+<p class="text-neutral-grey dark:text-gray-300 leading-relaxed">
+                        The Premium Lightweight Jacket is designed for the modern explorer. Crafted with high-performance water-resistant fabric and a breathable mesh lining, it offers the perfect balance of protection and comfort for any weather. Whether you're commuting to work or hiking on the weekend, this versatile piece fits seamlessly into your lifestyle.
+                    </p>
+<ul class="mt-6 space-y-3">
+<li class="flex items-center gap-3 text-sm text-neutral-grey dark:text-gray-300">
+<span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+                            100% Recycled Polyester Ripstop
+                        </li>
+<li class="flex items-center gap-3 text-sm text-neutral-grey dark:text-gray-300">
+<span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+                            Water-repellent (DWR) coating
+                        </li>
+<li class="flex items-center gap-3 text-sm text-neutral-grey dark:text-gray-300">
+<span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+                            Adjustable hood and cuffs
+                        </li>
+</ul>
+</div>
+<!-- Reviews -->
+<div class="bg-white dark:bg-background-dark p-8 rounded-xl shadow-sm">
+<div class="flex justify-between items-center mb-8">
+<h3 class="text-xl font-bold">Customer Reviews</h3>
+<button class="text-primary font-bold text-sm border-2 border-primary px-4 py-2 rounded-lg hover:bg-primary hover:text-white transition-all">Write a Review</button>
+</div>
+<div class="flex flex-col md:flex-row gap-10 mb-10 pb-10 border-b border-gray-100 dark:border-gray-800">
+<div class="flex flex-col items-center justify-center p-6 bg-background-light dark:bg-gray-800 rounded-xl min-w-[200px]">
+<span class="text-5xl font-black text-dark-text dark:text-white">4.8</span>
+<div class="flex text-primary my-2">
+<span class="material-symbols-outlined filled">star</span>
+<span class="material-symbols-outlined filled">star</span>
+<span class="material-symbols-outlined filled">star</span>
+<span class="material-symbols-outlined filled">star</span>
+<span class="material-symbols-outlined filled">star_half</span>
+</div>
+<span class="text-xs text-neutral-grey">Based on 128 reviews</span>
+</div>
+<div class="flex-1 space-y-2">
+<div class="flex items-center gap-4">
+<span class="text-xs font-bold w-4">5</span>
+<div class="flex-1 h-2 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
+<div class="h-full bg-primary w-[85%]"></div>
+</div>
+<span class="text-xs text-neutral-grey w-8">85%</span>
+</div>
+<div class="flex items-center gap-4">
+<span class="text-xs font-bold w-4">4</span>
+<div class="flex-1 h-2 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
+<div class="h-full bg-primary w-[10%]"></div>
+</div>
+<span class="text-xs text-neutral-grey w-8">10%</span>
+</div>
+<div class="flex items-center gap-4">
+<span class="text-xs font-bold w-4">3</span>
+<div class="flex-1 h-2 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
+<div class="h-full bg-primary w-[3%]"></div>
+</div>
+<span class="text-xs text-neutral-grey w-8">3%</span>
+</div>
+<div class="flex items-center gap-4 text-neutral-grey opacity-50">
+<span class="text-xs font-bold w-4">2</span>
+<div class="flex-1 h-2 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
+<div class="h-full bg-primary w-[1%]"></div>
+</div>
+<span class="text-xs w-8">1%</span>
+</div>
+<div class="flex items-center gap-4 text-neutral-grey opacity-50">
+<span class="text-xs font-bold w-4">1</span>
+<div class="flex-1 h-2 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
+<div class="h-full bg-primary w-[1%]"></div>
+</div>
+<span class="text-xs w-8">1%</span>
+</div>
+</div>
+</div>
+<div class="space-y-8">
+<!-- Review Comment -->
+<div class="flex flex-col gap-3">
+<div class="flex justify-between">
+<div class="flex items-center gap-3">
+<div class="size-10 rounded-full bg-primary/10 flex items-center justify-center font-bold text-primary">JD</div>
+<div>
+<p class="text-sm font-bold dark:text-white">Jane Doe</p>
+<p class="text-[10px] text-neutral-grey uppercase tracking-widest">Verified Buyer</p>
+</div>
+</div>
+<span class="text-xs text-neutral-grey">2 days ago</span>
+</div>
+<div class="flex text-primary">
+<span class="material-symbols-outlined filled text-sm">star</span>
+<span class="material-symbols-outlined filled text-sm">star</span>
+<span class="material-symbols-outlined filled text-sm">star</span>
+<span class="material-symbols-outlined filled text-sm">star</span>
+<span class="material-symbols-outlined filled text-sm">star</span>
+</div>
+<p class="text-sm text-neutral-grey dark:text-gray-300">
+                                Absolutely love this jacket! The fit is perfect and the material feels premium. It's surprisingly warm for how lightweight it is. Highly recommended for spring weather.
+                            </p>
+</div>
+<div class="flex flex-col gap-3 pt-6 border-t border-gray-100 dark:border-gray-800">
+<div class="flex justify-between">
+<div class="flex items-center gap-3">
+<div class="size-10 rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center font-bold text-gray-500">MK</div>
+<div>
+<p class="text-sm font-bold dark:text-white">Mark K.</p>
+<p class="text-[10px] text-neutral-grey uppercase tracking-widest">Verified Buyer</p>
+</div>
+</div>
+<span class="text-xs text-neutral-grey">1 week ago</span>
+</div>
+<div class="flex text-primary">
+<span class="material-symbols-outlined filled text-sm">star</span>
+<span class="material-symbols-outlined filled text-sm">star</span>
+<span class="material-symbols-outlined filled text-sm">star</span>
+<span class="material-symbols-outlined filled text-sm">star</span>
+<span class="material-symbols-outlined text-sm">star</span>
+</div>
+<p class="text-sm text-neutral-grey dark:text-gray-300">
+                                Great quality but runs a bit small. I'd suggest sizing up if you plan on wearing a hoodie underneath. Other than that, the color is exactly as pictured.
+                            </p>
+</div>
+</div>
+</div>
+</div>
+<!-- Right: Side Info / FAQ / Shipping -->
+<div class="lg:col-span-4 flex flex-col gap-6">
+<div class="bg-primary text-white p-6 rounded-xl">
+<h4 class="font-bold mb-2">Member Special Offer</h4>
+<p class="text-sm text-white/90 mb-4">Join our rewards program and get an extra 15% off your next purchase plus free priority shipping.</p>
+<button class="w-full bg-white text-primary font-bold py-2 rounded-lg text-sm hover:bg-gray-100 transition-colors">Join Now</button>
+</div>
+<div class="bg-white dark:bg-background-dark p-6 rounded-xl shadow-sm space-y-4">
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary">local_shipping</span>
+<div>
+<p class="text-sm font-bold dark:text-white">Fast Delivery</p>
+<p class="text-xs text-neutral-grey">Estimated arrival in 3-5 business days</p>
+</div>
+</div>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary">assignment_return</span>
+<div>
+<p class="text-sm font-bold dark:text-white">Hassle-free Returns</p>
+<p class="text-xs text-neutral-grey">30-day return policy for a full refund</p>
+</div>
+</div>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary">verified_user</span>
+<div>
+<p class="text-sm font-bold dark:text-white">Secure Payment</p>
+<p class="text-xs text-neutral-grey">Your information is protected by SSL encryption</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Related Products Section -->
+<div class="mt-20 pb-20">
+<div class="flex justify-between items-center mb-8">
+<h3 class="text-2xl font-bold dark:text-white">You May Also Like</h3>
+<div class="flex gap-2">
+<button class="size-10 rounded-full border border-gray-200 flex items-center justify-center hover:bg-white transition-colors">
+<span class="material-symbols-outlined">chevron_left</span>
+</button>
+<button class="size-10 rounded-full border border-gray-200 flex items-center justify-center hover:bg-white transition-colors">
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+<!-- Related Product Card -->
+<div class="group cursor-pointer">
+<div class="aspect-[3/4] rounded-xl bg-gray-100 mb-4 overflow-hidden relative">
+<div class="w-full h-full bg-center bg-no-repeat bg-cover group-hover:scale-105 transition-transform duration-500" data-alt="Technical parka in forest green" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDwzMDCDpQ9et5O6pt4ghLL2Vsk47F3KhMQHeirSZMpRDuR5ZLMb-x-H1vCfxgozM1AcFIVhQCtnjUr6XOq9f9CYk7nHJCcdAd4CNpIvWYXt90jPYCD5BC6QaO1c4bd-X3Rxv-Kyy2bPssHlC9AM9qDYULMH8zRO5E9MhHU5nW_f4Ar14dLpD0O-URqiUbZFsFKiDKEaRI2tbBEhrG9uKl6TYZc8M8Mx9X2iSgmacE9qoXJMhdSHAK3nJFGWGkJa876Y-GTCo_EmTWF");'></div>
+<button class="absolute bottom-4 right-4 bg-white size-10 rounded-full shadow-lg flex items-center justify-center opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all">
+<span class="material-symbols-outlined text-dark-text">add_shopping_cart</span>
+</button>
+</div>
+<h4 class="font-bold text-sm mb-1 group-hover:text-primary transition-colors dark:text-white">Tech Shell Parka</h4>
+<p class="text-xs text-neutral-grey mb-2">Winter Edition</p>
+<p class="font-bold text-dark-text dark:text-white">$149.00</p>
+</div>
+<div class="group cursor-pointer">
+<div class="aspect-[3/4] rounded-xl bg-gray-100 mb-4 overflow-hidden relative">
+<div class="w-full h-full bg-center bg-no-repeat bg-cover group-hover:scale-105 transition-transform duration-500" data-alt="Classic windbreaker in navy blue" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB9LWfEYYxrTiRRD23WVyHC02ORUtqvh2f-wi_X-lWOEDBh266jrewhatE0OjnpIzo8wk_aGzR-x8MxpWsU_PlnRjRaWyUFsOzTw8HS4ZdGQSY2h85aOc-7KcggDPiSV_Y7662D-dhxSuHhqf_tQOsioM8rsd2YWtDzeXSe7euZBoNJp9nXHtDbm0XYKPJC3QjHVwBwvgpYhf8-hIJg682IKPCeXsBu3v2gwRx-LpWtAEe5Y_LluFqx2kdw4wfmKDaN_g49sVW3J5uB");'></div>
+<button class="absolute bottom-4 right-4 bg-white size-10 rounded-full shadow-lg flex items-center justify-center opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all">
+<span class="material-symbols-outlined text-dark-text">add_shopping_cart</span>
+</button>
+</div>
+<h4 class="font-bold text-sm mb-1 group-hover:text-primary transition-colors dark:text-white">Classic Windbreaker</h4>
+<p class="text-xs text-neutral-grey mb-2">Essential Collection</p>
+<p class="font-bold text-dark-text dark:text-white">$79.00</p>
+</div>
+<div class="group cursor-pointer">
+<div class="aspect-[3/4] rounded-xl bg-gray-100 mb-4 overflow-hidden relative">
+<div class="w-full h-full bg-center bg-no-repeat bg-cover group-hover:scale-105 transition-transform duration-500" data-alt="Padded vest in slate grey" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAKY5butupG0OUFB5VsFNF_Mjk9jnoksJIgPezIBdKGRVhY8rlmSY4eSehBErgPegfe2_O5Ol5mxoWffeDJm6reHpcIdZ4AEXGSogSMdRZxwP0NMtmXIv4ep8eYneZmXtCUJ3CJrLYfahU9zuX-9gNjhIwlH9RBH84DYykAaXQrRTXc5A69sTBmMiYqTngZnzI27lDpMZbVRJlVKY3M3Es_wYw6Sk_VTIovBHYtEOFBmdiDwk0s9YZMM8ZtYsfizxd0CoceLIkvLD26");'></div>
+<button class="absolute bottom-4 right-4 bg-white size-10 rounded-full shadow-lg flex items-center justify-center opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all">
+<span class="material-symbols-outlined text-dark-text">add_shopping_cart</span>
+</button>
+</div>
+<h4 class="font-bold text-sm mb-1 group-hover:text-primary transition-colors dark:text-white">Padded Utility Vest</h4>
+<p class="text-xs text-neutral-grey mb-2">Active Series</p>
+<p class="font-bold text-dark-text dark:text-white">$65.00</p>
+</div>
+<div class="group cursor-pointer">
+<div class="aspect-[3/4] rounded-xl bg-gray-100 mb-4 overflow-hidden relative">
+<div class="w-full h-full bg-center bg-no-repeat bg-cover group-hover:scale-105 transition-transform duration-500" data-alt="Softshell hoodie in charcoal" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAuDjXxNqkqrYpVoj0sbBrkJU09YSx_66wgB92WYQ59v1Cr4CWVkau2e0hb13ujtwI2Yq4wMNXYOS0NnfuW8OYzysdST8gxCFk-Uo7Y0RKRFnYUSUbuduvFi245QmyQstB3XBOl_ojXx56L66RfYXNwGAWRAPGgDP2rj4bMnmoqmNHeNPRErfYeoVoUbxf6yuW_SI8tX7gz0SjtgfORpcxZc2dXwXTcwvYrvn-m1YEsusF7AziZ81MaqauPxoZKzzv6RU12VqTBrOFQ");'></div>
+<button class="absolute bottom-4 right-4 bg-white size-10 rounded-full shadow-lg flex items-center justify-center opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all">
+<span class="material-symbols-outlined text-dark-text">add_shopping_cart</span>
+</button>
+</div>
+<h4 class="font-bold text-sm mb-1 group-hover:text-primary transition-colors dark:text-white">Softshell Hoodie</h4>
+<p class="text-xs text-neutral-grey mb-2">Outdoor Essentials</p>
+<p class="font-bold text-dark-text dark:text-white">$89.00</p>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-white dark:bg-background-dark border-t border-gray-100 dark:border-gray-800 pt-16 pb-8">
+<div class="max-w-[1280px] mx-auto px-10">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 mb-16">
+<div class="lg:col-span-2">
+<div class="flex items-center gap-2 text-primary mb-6">
+<span class="material-symbols-outlined text-2xl">shopping_bag</span>
+<h2 class="text-dark-text dark:text-white text-xl font-bold leading-tight">ShopEase</h2>
+</div>
+<p class="text-neutral-grey text-sm mb-6 max-w-xs">Elevating your everyday style with premium quality clothing and sustainable practices.</p>
+<div class="flex gap-4">
+<a class="size-8 rounded-full bg-gray-100 flex items-center justify-center hover:bg-primary hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined text-sm">public</span>
+</a>
+<a class="size-8 rounded-full bg-gray-100 flex items-center justify-center hover:bg-primary hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined text-sm">alternate_email</span>
+</a>
+<a class="size-8 rounded-full bg-gray-100 flex items-center justify-center hover:bg-primary hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined text-sm">share</span>
+</a>
+</div>
+</div>
+<div>
+<h5 class="font-bold mb-6 dark:text-white">Company</h5>
+<ul class="space-y-4 text-sm text-neutral-grey">
+<li><a class="hover:text-primary" href="#">About Us</a></li>
+<li><a class="hover:text-primary" href="#">Careers</a></li>
+<li><a class="hover:text-primary" href="#">Affiliates</a></li>
+<li><a class="hover:text-primary" href="#">Sustainability</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-bold mb-6 dark:text-white">Support</h5>
+<ul class="space-y-4 text-sm text-neutral-grey">
+<li><a class="hover:text-primary" href="#">Help Center</a></li>
+<li><a class="hover:text-primary" href="#">Returns &amp; Exchanges</a></li>
+<li><a class="hover:text-primary" href="#">Shipping Info</a></li>
+<li><a class="hover:text-primary" href="#">Contact Us</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-bold mb-6 dark:text-white">Newsletter</h5>
+<p class="text-xs text-neutral-grey mb-4">Subscribe to receive updates and exclusive offers.</p>
+<div class="flex">
+<input class="bg-gray-100 border-none rounded-l-lg text-sm w-full focus:ring-1 focus:ring-primary" placeholder="Email address" type="email"/>
+<button class="bg-primary text-white px-4 py-2 rounded-r-lg hover:brightness-110 transition-all">
+<span class="material-symbols-outlined">send</span>
+</button>
+</div>
+</div>
+</div>
+<div class="border-t border-gray-100 dark:border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-xs text-neutral-grey">© 2024 ShopEase E-commerce. All rights reserved.</p>
+<div class="flex gap-6 text-xs text-neutral-grey">
+<a class="hover:text-primary" href="#">Privacy Policy</a>
+<a class="hover:text-primary" href="#">Terms of Service</a>
+<a class="hover:text-primary" href="#">Cookies</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

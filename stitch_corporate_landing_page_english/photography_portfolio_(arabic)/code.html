@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+
+<html class="light" dir="rtl" lang="ar"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>معرض المصور الفوتوغرافي</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#e77e23",
+                        "background-light": "#f8f7f6",
+                        "background-dark": "#211811",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-[#181411] dark:text-white transition-colors duration-300">
+<!-- Navigation -->
+<div class="layout-container flex h-full grow flex-col">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-[#e5e0dc] dark:border-white/10 bg-white dark:bg-background-dark px-10 py-3 sticky top-0 z-50">
+<div class="flex items-center gap-4 text-primary">
+<div class="size-6">
+<span class="material-symbols-outlined text-3xl">photo_camera</span>
+</div>
+<h2 class="text-[#181411] dark:text-white text-xl font-bold leading-tight tracking-[-0.015em] mr-2">عدسة مبدع</h2>
+</div>
+<div class="flex flex-1 justify-end gap-8">
+<nav class="hidden md:flex items-center gap-9">
+<a class="text-[#181411] dark:text-white text-sm font-medium hover:text-primary transition-colors" href="#">الرئيسية</a>
+<a class="text-[#181411] dark:text-white text-sm font-medium hover:text-primary transition-colors" href="#gallery">الأقسام</a>
+<a class="text-[#181411] dark:text-white text-sm font-medium hover:text-primary transition-colors" href="#about">من أنا</a>
+<a class="text-[#181411] dark:text-white text-sm font-medium hover:text-primary transition-colors" href="#contact">اتصل بنا</a>
+</nav>
+<button class="flex min-w-[120px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal transition-transform active:scale-95">
+<span class="truncate tracking-wide">احجز موعدك</span>
+</button>
+</div>
+</header>
+<main class="flex flex-col flex-1">
+<!-- Hero Section -->
+<section class="w-full max-w-[1200px] mx-auto px-4 py-8">
+<div class="@container">
+<div class="bg-cover bg-center flex flex-col justify-end overflow-hidden bg-white dark:bg-background-dark rounded-xl min-h-[500px] shadow-2xl relative group" data-alt="Professional camera lens focusing on a golden sunset landscape" style='background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 50%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuCdJ5i4eSyJOKfSmPzKiTw6rlxZDGjFUsVRuTFC5y5k1IJE-wEJengzDqAd1XIHJlywPyISRAgAgyCwmppNwPzxxkqkfW4YpjbDXAwcnHgs8QUTm95-2TzlwKsOmzAQMCydV5FFhAm36ArXsUZAaUY5ZOqA1CUmL6kJYyd2lB8SiXeJWTZE6Zd22kkd_oJbxt0kyg9du8OA5XNEK7FfHEQDZcCHuPy-bKgLKs4smhu5E2qz93iVF9Ym1iUzsns3Q4BKgmsT8tB0rWqZ");'>
+<div class="flex flex-col p-8 md:p-12 gap-4">
+<h1 class="text-white text-4xl md:text-6xl font-extrabold leading-tight">أعمالي الفوتوغرافية</h1>
+<p class="text-white/90 text-lg md:text-xl max-w-2xl leading-relaxed">نلتقط اللحظات التي تدوم للأبد، نوثق مشاعركم بأعلى معايير الدقة والجمال الفني</p>
+<div class="mt-4">
+<button class="bg-primary text-white px-8 py-3 rounded-lg font-bold hover:bg-opacity-90 transition-all flex items-center gap-2 w-fit">
+                                    مشاهدة المعرض <span class="material-symbols-outlined">arrow_back</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Portfolio Categories & Filter -->
+<section class="w-full max-w-[1200px] mx-auto px-4 py-12" id="gallery">
+<div class="flex flex-col items-center text-center mb-10">
+<h2 class="text-[#181411] dark:text-white text-3xl font-bold mb-4">أقسام التصوير</h2>
+<div class="w-20 h-1 bg-primary rounded-full"></div>
+</div>
+<div class="pb-8">
+<div class="flex border-b border-[#e5e0dc] dark:border-white/10 px-4 gap-4 md:gap-12 justify-center overflow-x-auto whitespace-nowrap no-scrollbar">
+<a class="flex flex-col items-center justify-center border-b-[3px] border-primary text-primary pb-4 pt-4 px-2" href="#">
+<p class="text-sm font-bold leading-normal">الكل</p>
+</a>
+<a class="flex flex-col items-center justify-center border-b-[3px] border-transparent text-[#887463] dark:text-gray-400 pb-4 pt-4 px-2 hover:text-primary transition-colors" href="#">
+<p class="text-sm font-bold leading-normal">حفلات زفاف</p>
+</a>
+<a class="flex flex-col items-center justify-center border-b-[3px] border-transparent text-[#887463] dark:text-gray-400 pb-4 pt-4 px-2 hover:text-primary transition-colors" href="#">
+<p class="text-sm font-bold leading-normal">طبيعة</p>
+</a>
+<a class="flex flex-col items-center justify-center border-b-[3px] border-transparent text-[#887463] dark:text-gray-400 pb-4 pt-4 px-2 hover:text-primary transition-colors" href="#">
+<p class="text-sm font-bold leading-normal">بورتريه</p>
+</a>
+<a class="flex flex-col items-center justify-center border-b-[3px] border-transparent text-[#887463] dark:text-gray-400 pb-4 pt-4 px-2 hover:text-primary transition-colors" href="#">
+<p class="text-sm font-bold leading-normal">تجاري</p>
+</a>
+</div>
+</div>
+<!-- Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-4">
+<div class="group relative overflow-hidden rounded-xl bg-white dark:bg-background-dark shadow-md">
+<div class="w-full bg-center bg-no-repeat aspect-[4/5] bg-cover transition-transform duration-500 group-hover:scale-110" data-alt="Beautiful bride and groom portrait in a garden" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBOi_ThTzrnuB_SJqxmleHuNOauP41t3e4kmaWO0_MdaiRcgXMI6LvhGGwVzaQM_e3xqoGRZxhjlIUd3EVtC1Eu5y6UwyoL8SBCT6C8FODtx_q-tTtxriGci5hcGmPW5hYen8tYKDfUkwQHlTLQkOE1lnlE-iBS21KRlumwL5_d3IxYvAVSpSa1FmLRxJANIbmN783FWexhpWnenWkECYCo8yngYZEvIsLNw6MACd7wY5Xze77frNzn74sjhj9zomP8b9l0YjZsx8QE");'></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-6">
+<span class="text-primary font-bold text-sm">حفلات زفاف</span>
+<h3 class="text-white font-bold text-xl">قصة حب خالدة</h3>
+</div>
+</div>
+<div class="group relative overflow-hidden rounded-xl bg-white dark:bg-background-dark shadow-md">
+<div class="w-full bg-center bg-no-repeat aspect-[4/5] bg-cover transition-transform duration-500 group-hover:scale-110" data-alt="Dramatic mountain landscape during blue hour" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD2vESCiui7k9kyiQVazLmF2WOmmPbNRU_3-l3zebJX4idKliqUcinc1kOD3tQIfZWCUtiBI2HFl3i7ETDi871YCrRNhVeGT0wVvBfo_VX_z1G3l-NFAyyAeoGhODulqjlBJUzcTouk-0f5kq-bvsrArM1tUnbrRSEl5Xg4P_VD4ChjZePFjkaT1YZfA-hhmh64sEhoiJb9up-y4bTeFCc2r52M9QVm6H1shVkmafcT0wK1bAHnm7l6W3hUjqlNHq7ZUgmDyNKCqInO");'></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-6">
+<span class="text-primary font-bold text-sm">طبيعة</span>
+<h3 class="text-white font-bold text-xl">سحر الجبال</h3>
+</div>
+</div>
+<div class="group relative overflow-hidden rounded-xl bg-white dark:bg-background-dark shadow-md">
+<div class="w-full bg-center bg-no-repeat aspect-[4/5] bg-cover transition-transform duration-500 group-hover:scale-110" data-alt="Close-up artistic portrait of an elderly man" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB8XxIMS55AWhrUc_3pPLqU_TijeF46pP1prckEGyl4nLQhWwFfjB5s5OuOtk6Hqyw2jtmBVlCa0rwW375B6-PQK-q4zT5iTXeqKcNd04nBKoz2SYH9f_0cBf36TUuk9QWg6kPehgd9b8-d_SmQmy2xLTvxXxKr-1hyatdx81CKoLpYz7ZnwKO5uPfQGZjo0VsssfPHZq21CfDzwd_eslvrRtJgDzx22Bn43kBhyLMs3M0HLtXhXRMnX3cRGr1DWoR6Raw7ol7oS6Hf");'></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-6">
+<span class="text-primary font-bold text-sm">بورتريه</span>
+<h3 class="text-white font-bold text-xl">ملامح وتفاصيل</h3>
+</div>
+</div>
+<div class="group relative overflow-hidden rounded-xl bg-white dark:bg-background-dark shadow-md">
+<div class="w-full bg-center bg-no-repeat aspect-[4/5] bg-cover transition-transform duration-500 group-hover:scale-110" data-alt="High-end product photography of a luxury watch" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCNuP77Lgd1NKwx-c2sPuYUJQLU-Ij7XZAr4lQbZuJ9Tp2nqXDlKF6Ij7xvD2w5pZdDgZjZHkcfrZYikVq230Jpf8Jk1lz5_NpWyJXK23w1w-p5kdqGd82LF9qn7qyPNvcr-LiRqp5VnKNheFNqgLsnKSYQ4uMI2mpklfI-8HoTx8shmrJn5Er8Nm937GU_y2eeSWO7TrkytY6uDGuaCpYlWLe6YpO0GxpGN2053Wq-vsy8Teoa52bn3Cdi4KbcRmjDGhQKP5KmgA_B");'></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-6">
+<span class="text-primary font-bold text-sm">تجاري</span>
+<h3 class="text-white font-bold text-xl">إبداع المنتجات</h3>
+</div>
+</div>
+<div class="group relative overflow-hidden rounded-xl bg-white dark:bg-background-dark shadow-md">
+<div class="w-full bg-center bg-no-repeat aspect-[4/5] bg-cover transition-transform duration-500 group-hover:scale-110" data-alt="Modern architectural structure with geometric patterns" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAQa-84C6M-ur0Nr2CNV_pzKybd_VCRe-KcKoDBVmE9d4amUwVYfSP6oh8kVpmm2LXYD1mQ2EhhUPwooHPyKFo3pd8LImuT2okpG57M6YBI7za_8rcNVaESWE4NEsipCf4HiSxWnFlB1xORHnbCbMluMDotSFPqSMeTGJN3r4r4qf1R6dKGUfH6k4KPEYRnjB5YHCQlZjoONkOfnYpJ4E3y_Cm_n1YQXSa0C5Tb9YMz_Svl6Ry2-uwKI70Cv-EkfGvOTnJzQu6NspZA");'></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-6">
+<span class="text-primary font-bold text-sm">معماري</span>
+<h3 class="text-white font-bold text-xl">هندسة الضوء</h3>
+</div>
+</div>
+<div class="group relative overflow-hidden rounded-xl bg-white dark:bg-background-dark shadow-md">
+<div class="w-full bg-center bg-no-repeat aspect-[4/5] bg-cover transition-transform duration-500 group-hover:scale-110" data-alt="Delicious gourmet food plate macro shot" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCYGh5tt7VzUM4PpmqjkTA5I7SciywrPRY3AawfKy6ee9NOzj-d3sTA6Na_M2A3xACDZri5N3KVzVl0puuIakvBfy3eq3Mnj81O4aMwwsLylRxMIx0y4tV_u4HDP_IzbZIcN2w5fP7qbPanzfq6j8SDHPnoSEXSEyaIQdjpzG-NWpzBN6L6juJxnoOZVGl4xN1w40BDxRpwcL5shtQi_ONSgiAnm_IjhNUAS-Uwt61Ce5MiPf2-NyKlrMgM9I-W8svZmmJS-xvT1QDT");'></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-6">
+<span class="text-primary font-bold text-sm">أطعمة</span>
+<h3 class="text-white font-bold text-xl">مذاق الصورة</h3>
+</div>
+</div>
+</div>
+</section>
+<!-- About Section -->
+<section class="bg-white dark:bg-[#1a130e] py-20 px-4" id="about">
+<div class="max-w-[1200px] mx-auto grid md:grid-cols-2 gap-12 items-center">
+<div class="relative">
+<div class="w-full aspect-square rounded-2xl bg-primary/10 overflow-hidden">
+<img alt="Photographer holding camera" class="w-full h-full object-cover" data-alt="Professional photographer holding a DSLR camera outdoors" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQu-7A2DNO2tde_8vj3gBqqPg0L1FaeJ_TatpbKl7j-ItevdPXLWlQHrs-IzUHYbZDeRpDdSETOfX_8R2Z2KRoi6UniDMb12BZoBG58U16Qzxs_9csktijxwjq5WxuUHp8YzCzJl996Vf42SI6dOnyuUw2WmfLW-cjmL8uCVXeGXFkGQXinytkMdpnhyPKiPVuuAytuGIuoiy1eRab9dHWgiN1Yzniby2RUY6JMWL_dZxvJ7YTjBuN24qXOSL46ILFI7xnKV1zVu3_"/>
+</div>
+<div class="absolute -bottom-6 -right-6 bg-primary p-6 rounded-xl hidden md:block">
+<p class="text-white font-bold text-4xl">+10</p>
+<p class="text-white/90 text-sm">سنوات خبرة</p>
+</div>
+</div>
+<div class="flex flex-col gap-6">
+<span class="text-primary font-bold tracking-widest uppercase">من أنا</span>
+<h2 class="text-[#181411] dark:text-white text-4xl font-extrabold">أنا أحمد، أسعى لتخليد ذكرياتكم بصورة فنية</h2>
+<p class="text-[#887463] dark:text-gray-300 text-lg leading-relaxed">
+                            بدأت رحلتي في عالم التصوير منذ عقد من الزمان، مؤمناً بأن كل صورة تحكي قصة لا تستطيع الكلمات وصفها. تخصصت في توثيق اللحظات العفوية والمشاعر الحقيقية في حفلات الزفاف والمناسبات الخاصة، بالإضافة إلى التصوير التجاري للماركات العالمية.
+                        </p>
+<ul class="flex flex-col gap-4">
+<li class="flex items-center gap-3 text-[#181411] dark:text-white font-medium">
+<span class="material-symbols-outlined text-primary">check_circle</span>
+                                استخدام أحدث معدات التصوير والعدسات
+                            </li>
+<li class="flex items-center gap-3 text-[#181411] dark:text-white font-medium">
+<span class="material-symbols-outlined text-primary">check_circle</span>
+                                معالجة احترافية للصور بألوان طبيعية
+                            </li>
+<li class="flex items-center gap-3 text-[#181411] dark:text-white font-medium">
+<span class="material-symbols-outlined text-primary">check_circle</span>
+                                الالتزام بالمواعيد والتسليم الفوري
+                            </li>
+</ul>
+</div>
+</div>
+</section>
+<!-- Testimonials -->
+<section class="py-20 bg-background-light dark:bg-background-dark overflow-hidden">
+<div class="max-w-[1200px] mx-auto px-4">
+<div class="text-center mb-12">
+<h2 class="text-3xl font-bold mb-4">ماذا يقول العملاء</h2>
+<p class="text-[#887463]">ثقتكم هي سر نجاحنا المستمر</p>
+</div>
+<div class="flex gap-6 overflow-x-auto pb-8 no-scrollbar snap-x">
+<div class="min-w-[320px] md:min-w-[400px] bg-white dark:bg-[#1a130e] p-8 rounded-2xl shadow-sm border border-[#e5e0dc] dark:border-white/5 snap-start">
+<span class="material-symbols-outlined text-primary text-5xl mb-4">format_quote</span>
+<p class="text-[#181411] dark:text-white text-lg italic mb-6 leading-relaxed">"تجربة رائعة جداً، الصور كانت تفوق التوقعات والتعامل قمة في الاحترافية والرقي. أنصح به بشدة."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-gray-200 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Client portrait testimonial" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDEmoXbGG7MFtaG-7dNbwfqED8EwG4XbiGgA0zpS8exga6nI069uqzA42VNt4VpcUrfa4Sb4Y1Ce3l1Dt9W-8KNfjBcxdG4czqXuWm-Xs_dwCzbKp52OTYa0eIh8l6y1Mn4-BA-AcPvvmMntrMeM9WwmFjF_NYy1nsbawdoO1hC0cX03njNSryY0Mpu49L8_esQILJRiz-lpnA2L7UYYaV_VUbol3q3b7xNtx5cZbWqIKjWgKBdZ5iKSFeaPN6LK30oJtb0yKeRGLv6"/>
+</div>
+<div>
+<h4 class="font-bold">سارة العمري</h4>
+<p class="text-sm text-[#887463]">عروس - يوليو 2023</p>
+</div>
+</div>
+</div>
+<div class="min-w-[320px] md:min-w-[400px] bg-white dark:bg-[#1a130e] p-8 rounded-2xl shadow-sm border border-[#e5e0dc] dark:border-white/5 snap-start">
+<span class="material-symbols-outlined text-primary text-5xl mb-4">format_quote</span>
+<p class="text-[#181411] dark:text-white text-lg italic mb-6 leading-relaxed">"دقة في المواعيد وروح فنية عالية. استطاع أن يبرز تفاصيل منتجاتنا بشكل جذاب جداً ساهم في زيادة مبيعاتنا."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-gray-200 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Client portrait testimonial male" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAM298FQCAbHKQtMovy3jg3CQDldQ7J70EMF7pXw2C6GQKNXn1Dogg7D8ZMzEyEpHtHEe67I97jRzopqtw3yQyDq298HWb2d6vFZGcaA0fakCadt5-voC3hYTgP9HCZ2ezjcKLoQUBB_kU-09EWFXopJpVLd_uC2lPGOqeGI6CKr6gXSZxoSqjoYrlWcn8uHqCRPeRn5am30Y9PCi8FlwruyExNMU1SrKjo_38QVTSV72r1HR-iIbBsX3al1P_x8q3cIk0Kt3skf7g6"/>
+</div>
+<div>
+<h4 class="font-bold">محمد الهاشمي</h4>
+<p class="text-sm text-[#887463]">مدير شركة تجارية</p>
+</div>
+</div>
+</div>
+<div class="min-w-[320px] md:min-w-[400px] bg-white dark:bg-[#1a130e] p-8 rounded-2xl shadow-sm border border-[#e5e0dc] dark:border-white/5 snap-start">
+<span class="material-symbols-outlined text-primary text-5xl mb-4">format_quote</span>
+<p class="text-[#181411] dark:text-white text-lg italic mb-6 leading-relaxed">"أجمل جلسة تصوير عائلية قمنا بها على الإطلاق. شكراً لك على صبرك مع الأطفال والنتائج المذهلة."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-gray-200 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Client portrait testimonial woman" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMAt9-LR1HM-YtmRL3cai78UOMCiuB30wWus--mTrppuEepyU0dxAm8xnNSnDiJrMzqjaAo-dWoTmdRsSu2f_-jkk36xEX-PR7JeTzwDlFo_aBZEJt8cSab4RmcZlwiISf3-nW8ouwvdlCbAtrjRSsJlrFF1f8JPBGfBlJBfnndh5wcleCGa2B5ncPB6iWLiN-f_yKs38p-dvGpXwoUUmexEXxPVYh93O4RnVmV5pIuuJ1n0gdsl4KPVqAnSx7S1GvX95jt3kL1oe4"/>
+</div>
+<div>
+<h4 class="font-bold">ليلى خالد</h4>
+<p class="text-sm text-[#887463]">تصوير عائلي</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Form Section -->
+<section class="py-20 px-4 bg-white dark:bg-[#1a130e]" id="contact">
+<div class="max-w-[1200px] mx-auto grid md:grid-cols-2 gap-12">
+<div class="flex flex-col gap-8">
+<div>
+<h2 class="text-3xl font-bold mb-4">تواصل معي</h2>
+<p class="text-[#887463] dark:text-gray-400">هل لديك مشروع قادم؟ دعنا نتحدث حول كيف يمكنني مساعدتك في توثيقه.</p>
+</div>
+<div class="flex flex-col gap-6">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">mail</span>
+</div>
+<div>
+<p class="text-sm text-[#887463]">البريد الإلكتروني</p>
+<p class="font-bold">hello@photographer.com</p>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">call</span>
+</div>
+<div>
+<p class="text-sm text-[#887463]">رقم الهاتف</p>
+<p class="font-bold">+966 50 123 4567</p>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">location_on</span>
+</div>
+<div>
+<p class="text-sm text-[#887463]">الموقع</p>
+<p class="font-bold" data-location="Riyadh, Saudi Arabia">الرياض، المملكة العربية السعودية</p>
+</div>
+</div>
+</div>
+</div>
+<form class="bg-background-light dark:bg-background-dark p-8 rounded-2xl flex flex-col gap-4 shadow-sm border border-[#e5e0dc] dark:border-white/5">
+<div class="flex flex-col gap-2">
+<label class="text-sm font-bold">الاسم الكامل</label>
+<input class="rounded-lg border-[#e5e0dc] dark:border-white/10 dark:bg-background-dark focus:border-primary focus:ring-primary h-12 px-4" placeholder="أدخل اسمك هنا" type="text"/>
+</div>
+<div class="flex flex-col gap-2">
+<label class="text-sm font-bold">البريد الإلكتروني</label>
+<input class="rounded-lg border-[#e5e0dc] dark:border-white/10 dark:bg-background-dark focus:border-primary focus:ring-primary h-12 px-4" placeholder="email@example.com" type="email"/>
+</div>
+<div class="flex flex-col gap-2">
+<label class="text-sm font-bold">نوع الخدمة</label>
+<select class="rounded-lg border-[#e5e0dc] dark:border-white/10 dark:bg-background-dark focus:border-primary focus:ring-primary h-12 px-4">
+<option>تصوير زفاف</option>
+<option>تصوير منتجات</option>
+<option>جلسة بورتريه</option>
+<option>أخرى</option>
+</select>
+</div>
+<div class="flex flex-col gap-2">
+<label class="text-sm font-bold">رسالتك</label>
+<textarea class="rounded-lg border-[#e5e0dc] dark:border-white/10 dark:bg-background-dark focus:border-primary focus:ring-primary p-4" placeholder="اكتب تفاصيل طلبك هنا..." rows="4"></textarea>
+</div>
+<button class="bg-primary text-white font-bold py-4 rounded-lg mt-4 hover:bg-opacity-90 transition-all" type="submit">إرسال الرسالة</button>
+</form>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#181411] text-white py-12 px-10">
+<div class="max-w-[1200px] mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary text-4xl">photo_camera</span>
+<h2 class="text-2xl font-bold">عدسة مبدع</h2>
+</div>
+<div class="flex gap-6">
+<a class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary transition-colors" href="#">
+<span class="material-symbols-outlined">public</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary transition-colors" href="#">
+<span class="material-symbols-outlined">share</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary transition-colors" href="#">
+<span class="material-symbols-outlined">camera</span>
+</a>
+</div>
+<div class="text-white/60 text-sm">
+                    © 2024 جميع الحقوق محفوظة لعدسة مبدع
+                </div>
+</div>
+</footer>
+</div>
+</body></html>

@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+
+<html class="dark" dir="rtl" lang="ar"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>حافظة أعمالي | المطور العربي</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Noto+Sans+Arabic:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#f39c12",
+                        "background-light": "#f8f7f5",
+                        "background-dark": "#121212",
+                        "card-dark": "#1e1e1e",
+                    },
+                    fontFamily: {
+                        "display": ["Noto Sans Arabic", "Plus Jakarta Sans", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Noto Sans Arabic', 'Plus Jakarta Sans', sans-serif;
+        }
+        .glass-nav {
+            backdrop-filter: blur(10px);
+            background-color: rgba(18, 18, 18, 0.8);
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white transition-colors duration-300">
+<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+<!-- Top Navigation -->
+<header class="fixed top-0 z-50 w-full glass-nav border-b border-white/10">
+<div class="max-w-[1200px] mx-auto flex items-center justify-between px-6 py-4">
+<div class="flex items-center gap-3 text-primary">
+<span class="material-symbols-outlined text-3xl">terminal</span>
+<h2 class="text-xl font-bold tracking-tight">محفظتي الرقمية</h2>
+</div>
+<nav class="hidden md:flex items-center gap-10">
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#home">الرئيسية</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#about">عني</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#projects">المشاريع</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#blog">المدونة</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#contact">اتصل بي</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="bg-primary text-background-dark px-5 py-2 rounded-lg text-sm font-bold hover:bg-white transition-all">
+                        تحميل السيرة الذاتية
+                    </button>
+</div>
+</div>
+</header>
+<main class="mt-20">
+<!-- Hero Section -->
+<section class="max-w-[1200px] mx-auto px-6 py-16 md:py-24" id="home">
+<div class="flex flex-col-reverse md:flex-row items-center gap-12">
+<div class="flex-1 space-y-8">
+<div class="space-y-4">
+<h1 class="text-4xl md:text-6xl font-black leading-tight">
+                                أهلاً بك، أنا <span class="text-primary">مصمم ومطور</span> واجهات المستخدم
+                            </h1>
+<p class="text-lg text-slate-400 max-w-xl leading-relaxed">
+                                أقوم ببناء تجارب رقمية استثنائية تجمع بين الإبداع والأداء العالي. متخصص في تحويل الأفكار المعقدة إلى واجهات بسيطة وجذابة.
+                            </p>
+</div>
+<div class="flex flex-wrap gap-4">
+<button class="bg-primary text-background-dark px-8 py-4 rounded-lg font-bold hover:scale-105 transition-transform flex items-center gap-2">
+<span class="material-symbols-outlined">work</span>
+                                عرض أعمالي
+                            </button>
+<button class="border border-white/20 bg-white/5 px-8 py-4 rounded-lg font-bold hover:bg-white/10 transition-colors flex items-center gap-2">
+<span class="material-symbols-outlined">mail</span>
+                                تواصل معي
+                            </button>
+</div>
+</div>
+<div class="w-full md:w-1/2 flex justify-center">
+<div class="relative group">
+<div class="absolute -inset-1 bg-primary rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
+<div class="relative w-64 h-64 md:w-80 md:h-80 bg-card-dark rounded-2xl overflow-hidden border border-white/10">
+<div class="w-full h-full bg-cover bg-center" data-alt="Professional portrait of a web developer" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBvNmJtSEdVLZ3BmDKXzvkQv21Ydxn2m5Vtl4Tj2Z3X9qoH6NvSKmKfqI7vnJMxVBAxT5xk9Xt_UvM3K4yC35hFOO2AtROUjiZwBdNCWS_cLwVaUw2BmmTlYM5go-uE4SvZDk8tdxIBN8eSvyDfYkbB1Zx3LYU8dfCm3hx4a18n7mp4E8JIv8284Ri9w8YHEJfO2oal8w8HNyhGudxUb7Yh8aC7HVVqoJrMR9krABxmiGUQxG5Ctru09tR_w6F0EDWmD6L7GAbjzp_q');"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- About Section -->
+<section class="bg-white/5 py-20" id="about">
+<div class="max-w-[1200px] mx-auto px-6">
+<div class="flex items-center gap-4 mb-8">
+<span class="h-px w-12 bg-primary"></span>
+<h2 class="text-2xl font-bold tracking-tight">من أنا؟</h2>
+</div>
+<div class="grid md:grid-cols-2 gap-12 items-start">
+<div class="space-y-6">
+<p class="text-lg leading-relaxed text-slate-300">
+                                أنا مصمم ومطور واجهات مستخدم شغوف بإنشاء حلول رقمية مبتكرة. لدي خبرة تزيد عن 5 سنوات في العمل على مشاريع متنوعة تهدف إلى تحسين تجربة المستخدم وتقديم تصاميم عصرية وجذابة تعكس هوية العلامة التجارية.
+                            </p>
+<p class="text-lg leading-relaxed text-slate-300">
+                                أؤمن بأن التصميم الجيد هو الذي يحل المشكلات ويجعل حياة الناس أسهل. أهتم جداً بالتفاصيل الصغيرة وأسعى دائماً لمواكبة أحدث التقنيات في عالم الويب.
+                            </p>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="bg-card-dark p-6 rounded-xl border border-white/5">
+<h3 class="text-3xl font-bold text-primary mb-2">+50</h3>
+<p class="text-sm text-slate-400">مشروع مكتمل</p>
+</div>
+<div class="bg-card-dark p-6 rounded-xl border border-white/5">
+<h3 class="text-3xl font-bold text-primary mb-2">+5</h3>
+<p class="text-sm text-slate-400">سنوات خبرة</p>
+</div>
+<div class="bg-card-dark p-6 rounded-xl border border-white/5">
+<h3 class="text-3xl font-bold text-primary mb-2">12</h3>
+<p class="text-sm text-slate-400">جائزة تصميم</p>
+</div>
+<div class="bg-card-dark p-6 rounded-xl border border-white/5">
+<h3 class="text-3xl font-bold text-primary mb-2">100%</h3>
+<p class="text-sm text-slate-400">رضا العملاء</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Skills Section -->
+<section class="py-20">
+<div class="max-w-[1200px] mx-auto px-6">
+<div class="flex items-center gap-4 mb-12">
+<span class="h-px w-12 bg-primary"></span>
+<h2 class="text-2xl font-bold tracking-tight">المهارات التقنية</h2>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
+<!-- Skill Item -->
+<div class="flex flex-col items-center gap-4 p-6 bg-card-dark rounded-xl border border-white/5 hover:border-primary/50 transition-colors">
+<span class="material-symbols-outlined text-4xl text-primary">html</span>
+<span class="font-bold">HTML5</span>
+</div>
+<div class="flex flex-col items-center gap-4 p-6 bg-card-dark rounded-xl border border-white/5 hover:border-primary/50 transition-colors">
+<span class="material-symbols-outlined text-4xl text-primary">css</span>
+<span class="font-bold">CSS3</span>
+</div>
+<div class="flex flex-col items-center gap-4 p-6 bg-card-dark rounded-xl border border-white/5 hover:border-primary/50 transition-colors">
+<span class="material-symbols-outlined text-4xl text-primary">javascript</span>
+<span class="font-bold">JavaScript</span>
+</div>
+<div class="flex flex-col items-center gap-4 p-6 bg-card-dark rounded-xl border border-white/5 hover:border-primary/50 transition-colors">
+<span class="material-symbols-outlined text-4xl text-primary">category</span>
+<span class="font-bold">React.js</span>
+</div>
+<div class="flex flex-col items-center gap-4 p-6 bg-card-dark rounded-xl border border-white/5 hover:border-primary/50 transition-colors">
+<span class="material-symbols-outlined text-4xl text-primary">palette</span>
+<span class="font-bold">UI/UX Design</span>
+</div>
+<div class="flex flex-col items-center gap-4 p-6 bg-card-dark rounded-xl border border-white/5 hover:border-primary/50 transition-colors">
+<span class="material-symbols-outlined text-4xl text-primary">layers</span>
+<span class="font-bold">Tailwind CSS</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Projects Section -->
+<section class="py-20 bg-white/5" id="projects">
+<div class="max-w-[1200px] mx-auto px-6">
+<div class="flex items-center justify-between mb-12">
+<div class="flex items-center gap-4">
+<span class="h-px w-12 bg-primary"></span>
+<h2 class="text-2xl font-bold tracking-tight">أحدث المشاريع</h2>
+</div>
+<a class="text-primary font-bold hover:underline" href="#">عرض الكل</a>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<!-- Project Card 1 -->
+<div class="group bg-card-dark rounded-xl overflow-hidden border border-white/5 hover:border-primary/30 transition-all">
+<div class="aspect-video w-full bg-cover bg-center overflow-hidden" data-alt="Modern e-commerce website design" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCS-umfHD1Tr4yDze6wr3pV3Mcbe4fHJPb_h3qd-cyDoVyiaRTUXLGVq7AuCTFP83RWtvoo6EYp8RXg7VLvScC6LHLMDpGDed_Pnc27SkH8C--7zBVqPkUlaBX7MgRndh6P2X3eJF2sQ9iVPDNftAWE4Z3BoxiqsUAOUWrgmTaoSH7morVio_wkRAT-jJex8t6hXft3P6AKc7jKddyTjgIMad-JHS6SaDp9I53Lf-QWnUUMJ9KhgGYIVnOiG1pKaezubt_lHpuwOdBM');">
+<div class="w-full h-full bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<button class="bg-primary text-background-dark p-3 rounded-full">
+<span class="material-symbols-outlined">visibility</span>
+</button>
+</div>
+</div>
+<div class="p-6">
+<div class="flex gap-2 mb-3">
+<span class="text-[10px] px-2 py-1 rounded bg-primary/20 text-primary font-bold">REACT</span>
+<span class="text-[10px] px-2 py-1 rounded bg-primary/20 text-primary font-bold">NODE</span>
+</div>
+<h3 class="text-xl font-bold mb-2">منصة متجر إلكتروني متكامل</h3>
+<p class="text-slate-400 text-sm mb-4">تصميم وتطوير متجر إلكتروني مع لوحة تحكم ونظام دفع متكامل.</p>
+<a class="text-primary text-sm font-bold flex items-center gap-1 group/link" href="#">
+                                    عرض التفاصيل
+                                    <span class="material-symbols-outlined text-sm group-hover:translate-x-[-4px] transition-transform">arrow_back</span>
+</a>
+</div>
+</div>
+<!-- Project Card 2 -->
+<div class="group bg-card-dark rounded-xl overflow-hidden border border-white/5 hover:border-primary/30 transition-all">
+<div class="aspect-video w-full bg-cover bg-center overflow-hidden" data-alt="Mobile banking app UI kit" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAhIB8DR9aUI0LYfa8Ogm2aCULagVY9egav4doLAaGiAAuWUxvTNhrZ6QX0VUx59JemUT7lHYsKCRECv6BxPHM9vDdDi2OxhNlznSTgmzpp5DR1fMIk1xzzqowvxZ85dGpV-V6eTBBi1ujfTxCCJ2H1X-qE-t63Z6KMFW_3s-fI6zH3DiImkQXXxfkI5MvodUzV8lFjO0CrD_xz2I-X7nc2ZbJ_EiOMzvkGyBMlTC9utqRFtj4gVgBcUuaoRLeLrQ9-TjkkAQk11lKf');">
+<div class="w-full h-full bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<button class="bg-primary text-background-dark p-3 rounded-full">
+<span class="material-symbols-outlined">visibility</span>
+</button>
+</div>
+</div>
+<div class="p-6">
+<div class="flex gap-2 mb-3">
+<span class="text-[10px] px-2 py-1 rounded bg-primary/20 text-primary font-bold">FIGMA</span>
+<span class="text-[10px] px-2 py-1 rounded bg-primary/20 text-primary font-bold">MOBILE</span>
+</div>
+<h3 class="text-xl font-bold mb-2">تطبيق الخدمات المصرفية</h3>
+<p class="text-slate-400 text-sm mb-4">واجهة مستخدم عصرية لتطبيق بنكي يركز على سهولة الاستخدام والأمان.</p>
+<a class="text-primary text-sm font-bold flex items-center gap-1 group/link" href="#">
+                                    عرض التفاصيل
+                                    <span class="material-symbols-outlined text-sm group-hover:translate-x-[-4px] transition-transform">arrow_back</span>
+</a>
+</div>
+</div>
+<!-- Project Card 3 -->
+<div class="group bg-card-dark rounded-xl overflow-hidden border border-white/5 hover:border-primary/30 transition-all">
+<div class="aspect-video w-full bg-cover bg-center overflow-hidden" data-alt="Corporate analytics dashboard" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAWIbLZkXPojLFSWv8XKw7RdR6sOoIpjUEKJRb1Mu7lPW0QtyxMiH-dJG_isp1XD1qEi0i1VkhNgsOefVp_1jzpVWxeC6tKCPthbeQ7Wh6s4RrYpLN9irZcAW5yvUa_fezN6MWcBWiXFWxWZkjsu0c3zrmelA7CPQ7fcWXLujg3wq1Q3AbPJUAGpQOMlCUHLqgybR2mHgKwXQmIqE0Ribs42Eatj9eDzbq3D9-mUbYpcqOrt9PxD33ydUjqTQbdasXb-878UE_TY0K7');">
+<div class="w-full h-full bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<button class="bg-primary text-background-dark p-3 rounded-full">
+<span class="material-symbols-outlined">visibility</span>
+</button>
+</div>
+</div>
+<div class="p-6">
+<div class="flex gap-2 mb-3">
+<span class="text-[10px] px-2 py-1 rounded bg-primary/20 text-primary font-bold">DASHBOARD</span>
+<span class="text-[10px] px-2 py-1 rounded bg-primary/20 text-primary font-bold">VUE</span>
+</div>
+<h3 class="text-xl font-bold mb-2">لوحة تحكم البيانات الذكية</h3>
+<p class="text-slate-400 text-sm mb-4">نظام لتحليل البيانات الضخمة وعرضها بشكل مرئي مبسط للشركات.</p>
+<a class="text-primary text-sm font-bold flex items-center gap-1 group/link" href="#">
+                                    عرض التفاصيل
+                                    <span class="material-symbols-outlined text-sm group-hover:translate-x-[-4px] transition-transform">arrow_back</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Blog Section -->
+<section class="py-20" id="blog">
+<div class="max-w-[1200px] mx-auto px-6">
+<div class="flex items-center gap-4 mb-12">
+<span class="h-px w-12 bg-primary"></span>
+<h2 class="text-2xl font-bold tracking-tight">آخر المقالات</h2>
+</div>
+<div class="space-y-6">
+<!-- Blog Post 1 -->
+<div class="flex flex-col md:flex-row gap-6 p-6 bg-card-dark rounded-xl border border-white/5 hover:border-primary/20 transition-all">
+<div class="w-full md:w-48 h-32 bg-cover bg-center rounded-lg shrink-0" data-alt="Illustration of futuristic web technologies" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA2XTz8TwTD6NQKxvRLMSXLUQMG9CdPTox50gDvvWnp9EhP9QY7YlJfiUvbXT-LwPs3qUACK-cTD3AbRs3fMw8lZ9CY0xZ2agHvqto0syhAz4kIuoTjFB-IHLFTd1SsxH8QjwAjMcFZbqjmVxURKUCI1oEKz0Kmu_juofGPGG6MWk02rSeSUJHf5MH6uQX_XgJ270Owolr-AVsfiIyobJQZTWMvRa182kGl9wORERLIPgAQwGFmHesy61KL_uSiMQU0bFfUi5SiEntL');"></div>
+<div class="flex-1 space-y-2">
+<span class="text-primary text-xs font-bold uppercase tracking-widest">تكنولوجيا</span>
+<h3 class="text-xl font-bold hover:text-primary transition-colors cursor-pointer">مستقبل تقنيات الويب في 2024</h3>
+<p class="text-slate-400 text-sm line-clamp-2">تعرف على أهم التوجهات الجديدة في عالم تطوير واجهات المستخدم وكيف سيؤثر الذكاء الاصطناعي على عمل المطورين.</p>
+<div class="flex items-center gap-4 text-xs text-slate-500 pt-2">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-xs">calendar_today</span> 15 مايو 2024</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-xs">timer</span> 5 دقائق قراءة</span>
+</div>
+</div>
+</div>
+<!-- Blog Post 2 -->
+<div class="flex flex-col md:flex-row gap-6 p-6 bg-card-dark rounded-xl border border-white/5 hover:border-primary/20 transition-all">
+<div class="w-full md:w-48 h-32 bg-cover bg-center rounded-lg shrink-0" data-alt="Color palette and UI design tools" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCdm3ERCFRnLmaFT5ZfYEgTaeIBWxcuflRrMpq1Oe48J6gg7tJWhdDGIchBbkrSQH8UxEbgyCp80JtZbEbVvaTAoRXYLhBLsoKM4KMtEtCs8KlIaZ-X_XhOBj--1Fkzgn_00jH9ldY-HoH-hlJB5aINZttCfs06d5jTB4bOz1AYAuwKwv8U3JLVDUI8nzO2wBVifQs9u4s79rP0LwM3WQi4hb3neKps3FTNfxVHHFK1Vg-YSzt_p-QOLZJEPsJW8t9xoZLCiFaW-z2P');"></div>
+<div class="flex-1 space-y-2">
+<span class="text-primary text-xs font-bold uppercase tracking-widest">تصميم</span>
+<h3 class="text-xl font-bold hover:text-primary transition-colors cursor-pointer">كيف تختار الألوان المناسبة لعلامتك التجارية</h3>
+<p class="text-slate-400 text-sm line-clamp-2">سيكولوجية الألوان وتأثيرها على تجربة المستخدم، وكيفية بناء لوحة ألوان متناسقة وجذابة لمشروعك القادم.</p>
+<div class="flex items-center gap-4 text-xs text-slate-500 pt-2">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-xs">calendar_today</span> 10 مايو 2024</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-xs">timer</span> 8 دقائق قراءة</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-20 bg-white/5" id="contact">
+<div class="max-w-[1200px] mx-auto px-6">
+<div class="grid md:grid-cols-2 gap-16">
+<div class="space-y-8">
+<div class="flex items-center gap-4">
+<span class="h-px w-12 bg-primary"></span>
+<h2 class="text-2xl font-bold tracking-tight">هل لديك مشروع؟</h2>
+</div>
+<h3 class="text-4xl font-black">دعنا نتحدث عن <span class="text-primary">فكرتك القادمة</span></h3>
+<p class="text-slate-400 text-lg">أنا متاح حالياً للعمل الحر والمشاريع الجديدة. إذا كنت تبحث عن مطور يساعدك في بناء منتجك الرقمي، لا تتردد في التواصل معي.</p>
+<div class="space-y-4">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-lg bg-primary/20 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">mail</span>
+</div>
+<div>
+<p class="text-xs text-slate-500">البريد الإلكتروني</p>
+<p class="font-bold">info@example.com</p>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-lg bg-primary/20 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">location_on</span>
+</div>
+<div>
+<p class="text-xs text-slate-500">الموقع</p>
+<p class="font-bold">الرياض، المملكة العربية السعودية</p>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-card-dark p-8 rounded-2xl border border-white/10 shadow-xl">
+<form class="space-y-6">
+<div class="grid md:grid-cols-2 gap-4">
+<div class="space-y-2">
+<label class="text-sm font-bold text-slate-300">الاسم الكامل</label>
+<input class="w-full bg-background-dark border border-white/10 rounded-lg p-3 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all" placeholder="مثلاً: محمد علي" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="text-sm font-bold text-slate-300">البريد الإلكتروني</label>
+<input class="w-full bg-background-dark border border-white/10 rounded-lg p-3 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all" placeholder="example@mail.com" type="email"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="text-sm font-bold text-slate-300">الموضوع</label>
+<input class="w-full bg-background-dark border border-white/10 rounded-lg p-3 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all" placeholder="بخصوص مشروع جديد" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="text-sm font-bold text-slate-300">الرسالة</label>
+<textarea class="w-full bg-background-dark border border-white/10 rounded-lg p-3 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all" placeholder="اكتب تفاصيل مشروعك هنا..." rows="4"></textarea>
+</div>
+<button class="w-full bg-primary text-background-dark font-black py-4 rounded-lg hover:shadow-lg hover:shadow-primary/20 transition-all flex items-center justify-center gap-2" type="submit">
+                                    إرسال الرسالة
+                                    <span class="material-symbols-outlined">send</span>
+</button>
+</form>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="border-t border-white/10 py-12 px-6">
+<div class="max-w-[1200px] mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
+<div class="flex items-center gap-3 text-primary">
+<span class="material-symbols-outlined text-3xl">terminal</span>
+<h2 class="text-xl font-bold tracking-tight">محفظتي</h2>
+</div>
+<p class="text-slate-500 text-sm">
+                    © 2024 جميع الحقوق محفوظة. صمم بكل شغف.
+                </p>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary hover:text-background-dark transition-all" href="#">
+<span class="material-symbols-outlined text-xl">share</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary hover:text-background-dark transition-all" href="#">
+<span class="material-symbols-outlined text-xl">link</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary hover:text-background-dark transition-all" href="#">
+<span class="material-symbols-outlined text-xl">alternate_email</span>
+</a>
+</div>
+</div>
+</footer>
+</div>
+</body></html>

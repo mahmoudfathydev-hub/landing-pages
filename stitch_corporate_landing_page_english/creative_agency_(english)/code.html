@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Creative Agency | Bold Digital Experiences</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#9b59b6",
+                        "background-light": "#fafafa",
+                        "background-dark": "#111b21",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-[#111517] dark:text-white transition-colors duration-300">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<!-- Navigation -->
+<header class="fixed top-0 z-50 w-full bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-solid border-[#f0f3f4] dark:border-white/10 px-6 md:px-20 py-4">
+<div class="max-w-[1200px] mx-auto flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="text-primary">
+<svg class="w-8 h-8" fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M24 4H42V17.3333V30.6667H24V44H6V30.6667V17.3333H24V4Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h2 class="text-xl font-black tracking-tighter uppercase">Creative.Agy</h2>
+</div>
+<div class="hidden md:flex items-center gap-10">
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#services">Services</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#work">Work</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#team">Team</a>
+<button class="bg-primary hover:bg-primary/90 text-white text-sm font-bold px-6 py-2 rounded-lg transition-all active:scale-95">
+                            Get a Quote
+                        </button>
+</div>
+</div>
+</header>
+<main class="pt-24">
+<!-- Hero Section -->
+<section class="px-6 md:px-20 py-20 flex flex-col items-center justify-center text-center">
+<div class="max-w-[960px] w-full">
+<div class="@container">
+<div class="flex min-h-[500px] flex-col gap-8 items-center justify-center p-8 rounded-xl bg-gradient-to-br from-primary/10 to-primary/5 dark:from-primary/20 dark:to-transparent border border-primary/10">
+<div class="flex flex-col gap-4">
+<h1 class="text-4xl md:text-7xl font-black leading-[1.1] tracking-[-0.05em] text-[#111517] dark:text-white">
+                                        Transforming Ideas into <span class="text-primary">Digital Reality</span>
+</h1>
+<p class="text-lg md:text-xl font-light leading-relaxed text-[#647987] dark:text-gray-400 max-w-2xl mx-auto">
+                                        A bold minimalist agency crafting avant-garde digital experiences with high-impact design and strategy.
+                                    </p>
+</div>
+<div class="flex gap-4">
+<button class="bg-primary text-white text-lg font-bold px-8 py-4 rounded-lg hover:shadow-lg hover:shadow-primary/30 transition-all">
+                                        Start a Project
+                                    </button>
+<button class="bg-white dark:bg-white/10 border border-[#dce1e5] dark:border-white/10 text-[#111517] dark:text-white text-lg font-bold px-8 py-4 rounded-lg hover:bg-gray-50 dark:hover:bg-white/20 transition-all">
+                                        View Our Work
+                                    </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Section -->
+<section class="px-6 md:px-20 py-20 bg-white dark:bg-background-dark/50" id="services">
+<div class="max-w-[1200px] mx-auto">
+<div class="mb-12">
+<span class="text-primary font-bold tracking-widest uppercase text-xs">Expertise</span>
+<h2 class="text-4xl font-black tracking-tight mt-2">Our Specialized Services</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Service 1 -->
+<div class="group flex flex-col gap-4 p-8 rounded-xl border border-[#dce1e5] dark:border-white/10 bg-background-light dark:bg-white/5 hover:border-primary transition-all">
+<div class="w-12 h-12 flex items-center justify-center rounded-lg bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined">explore</span>
+</div>
+<div>
+<h3 class="text-xl font-bold mb-2">Brand Strategy</h3>
+<p class="text-[#647987] dark:text-gray-400 text-sm leading-relaxed">
+                                        Defining your core identity and market position through deep research and strategic vision.
+                                    </p>
+</div>
+</div>
+<!-- Service 2 -->
+<div class="group flex flex-col gap-4 p-8 rounded-xl border border-[#dce1e5] dark:border-white/10 bg-background-light dark:bg-white/5 hover:border-primary transition-all">
+<div class="w-12 h-12 flex items-center justify-center rounded-lg bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined">polyline</span>
+</div>
+<div>
+<h3 class="text-xl font-bold mb-2">UI/UX Design</h3>
+<p class="text-[#647987] dark:text-gray-400 text-sm leading-relaxed">
+                                        Crafting intuitive, beautiful, and high-converting interfaces tailored to your users.
+                                    </p>
+</div>
+</div>
+<!-- Service 3 -->
+<div class="group flex flex-col gap-4 p-8 rounded-xl border border-[#dce1e5] dark:border-white/10 bg-background-light dark:bg-white/5 hover:border-primary transition-all">
+<div class="w-12 h-12 flex items-center justify-center rounded-lg bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined">terminal</span>
+</div>
+<div>
+<h3 class="text-xl font-bold mb-2">Full-stack Dev</h3>
+<p class="text-[#647987] dark:text-gray-400 text-sm leading-relaxed">
+                                        Building robust, scalable digital solutions with the latest modern web technologies.
+                                    </p>
+</div>
+</div>
+<!-- Service 4 -->
+<div class="group flex flex-col gap-4 p-8 rounded-xl border border-[#dce1e5] dark:border-white/10 bg-background-light dark:bg-white/5 hover:border-primary transition-all">
+<div class="w-12 h-12 flex items-center justify-center rounded-lg bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined">campaign</span>
+</div>
+<div>
+<h3 class="text-xl font-bold mb-2">Content Marketing</h3>
+<p class="text-[#647987] dark:text-gray-400 text-sm leading-relaxed">
+                                        Spreading your message through strategic storytelling and data-driven campaigns.
+                                    </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Case Studies Section -->
+<section class="px-6 md:px-20 py-20" id="work">
+<div class="max-w-[1200px] mx-auto">
+<div class="flex items-end justify-between mb-12">
+<div>
+<span class="text-primary font-bold tracking-widest uppercase text-xs">Portfolio</span>
+<h2 class="text-4xl font-black tracking-tight mt-2">Case Studies</h2>
+</div>
+<a class="text-primary font-bold flex items-center gap-2 hover:gap-3 transition-all" href="#">
+                                All Projects <span class="material-symbols-outlined">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+<!-- Case Study 1 -->
+<div class="group cursor-pointer">
+<div class="relative overflow-hidden rounded-xl aspect-[4/3] bg-[#e5e7eb]">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Modern dashboard UI design showcase" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDwuP7qy-TDy_UvreWRqV2xBxoUxwgWPQEKSJDIEzuCQ53j5agQbMs7K1f5YbVDc4TlGruiXTGUWXg8QYeTMGb5PnmhN687KW1wudWZs-ldojZReJGZKcHB3Sk5zQSba4V6lzx1HyGiWGqznpbH8zj-RAgsMyx4UqaYRSDhlZI37nLYDRrbjPOo65MIp24nRj0uzeciyJiQzzOXibDM6r306JVvN4Y2snq55KHyNSzweZ0mDi4XafeiZD2LFv85bntlJG6_jUOvUrol');"></div>
+<div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<button class="bg-white text-black font-bold px-6 py-3 rounded-full flex items-center gap-2">
+                                            View Project <span class="material-symbols-outlined">open_in_new</span>
+</button>
+</div>
+</div>
+<div class="mt-6">
+<span class="text-xs font-bold uppercase tracking-wider text-primary">Web Application</span>
+<h3 class="text-2xl font-black mt-1 group-hover:text-primary transition-colors">E-commerce Redesign for X-Brands</h3>
+<p class="text-[#647987] mt-2">A 40% increase in conversion rates through simplified user flows and bold visual hierarchy.</p>
+</div>
+</div>
+<!-- Case Study 2 -->
+<div class="group cursor-pointer">
+<div class="relative overflow-hidden rounded-xl aspect-[4/3] bg-[#e5e7eb]">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Abstract brand identity design" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDYQ4kqOAnQQgnXchCIRtOSdC4TGQ9H0gD0cPes_3MgHscO4WfB7EtJBGNiOlYf402USSK5wNQqNCZOPaNRwdd8Z4sFoqFraA2uvpw3RxQ1G4Wm8bDZ7LdFx458rKhNbHwkqxeY-PjZgJb2YcCtmnaspU1nnaSWmgEVsEUHrVe8sGTwhkzvwC3ztP4kI4BugAdedPeJ9dTVDSIqDhyW2HZcaqlqgfPraHdJoJSOXTUs9y83MzWWgopwYtu1ykqwi_D7ciDXBQRy9N5v');"></div>
+<div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<button class="bg-white text-black font-bold px-6 py-3 rounded-full flex items-center gap-2">
+                                            View Project <span class="material-symbols-outlined">open_in_new</span>
+</button>
+</div>
+</div>
+<div class="mt-6">
+<span class="text-xs font-bold uppercase tracking-wider text-primary">Branding</span>
+<h3 class="text-2xl font-black mt-1 group-hover:text-primary transition-colors">Identity Branding for Lumina</h3>
+<p class="text-[#647987] mt-2">Creating a futuristic visual language for a sustainable energy pioneer in the European market.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Team Section -->
+<section class="px-6 md:px-20 py-20 bg-primary/5 dark:bg-white/5" id="team">
+<div class="max-w-[1200px] mx-auto text-center">
+<div class="mb-16">
+<span class="text-primary font-bold tracking-widest uppercase text-xs">The Minds</span>
+<h2 class="text-4xl font-black tracking-tight mt-2">Meet Our Creative Team</h2>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Team Member 1 -->
+<div class="flex flex-col items-center">
+<div class="w-48 h-48 rounded-2xl overflow-hidden mb-6 grayscale hover:grayscale-0 transition-all duration-500 border-4 border-white dark:border-white/10 shadow-xl">
+<img alt="Profile picture of founder" class="w-full h-full object-cover" data-alt="Professional portrait of a male agency founder" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_BQ0fw-0sDJkKUs7Le6raeO6sdIkdQNcAkaFQJIqmSb4xO22ZwDAHl7wboFBSF-vyCWssj71Fh6sSP2yg20JaCUTUliVtEJjR1KpMn8BSj76kt03enz_zNH3RKRB1U1WMp_k6tYagLYZ0iAoGNEfaq2qW7uGfCmnEH5oEWrp0xoul3Zz-wlq8kl28uYSTZDv4qtzJKKkrGUAV-nPkI3pNTEZVQXYgR3-Y_JP8TvpUVSWOI9QO6H9MzUy1NaT7up_j1Qqop-w6tS1T"/>
+</div>
+<h3 class="text-xl font-bold">Alex Thorne</h3>
+<p class="text-primary font-medium text-sm">Founder &amp; Creative Director</p>
+<div class="flex gap-4 mt-3 text-gray-400">
+<span class="material-symbols-outlined cursor-pointer hover:text-primary">language</span>
+<span class="material-symbols-outlined cursor-pointer hover:text-primary">hub</span>
+</div>
+</div>
+<!-- Team Member 2 -->
+<div class="flex flex-col items-center">
+<div class="w-48 h-48 rounded-2xl overflow-hidden mb-6 grayscale hover:grayscale-0 transition-all duration-500 border-4 border-white dark:border-white/10 shadow-xl">
+<img alt="Profile picture of lead designer" class="w-full h-full object-cover" data-alt="Professional portrait of a female lead designer" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFzqRYgZ-AWR82xJo8ZvD8qZzjKn2mfd4QnmVZ_9SWi2Iyj-BbxWlzInLgzaABDG1t8XcixMd5RBH8f_zjWO1ZyATOF3mfif_bo6EZFwLmzJoAVyft4324c-OkFuQdf1zPq0HWtd_Bns1EqWGUvHgFvWLsEJaziUcB_JsgJudTrQ7LJT0z_OSYhL8VhExFGrw7oUXBtcm_JuQnJNNG5SiF3VL917c5IdYUj8wMzcz0GZRug2_wXuwnK4IjWx3mXEhGWrLThv5LfjS8"/>
+</div>
+<h3 class="text-xl font-bold">Sarah Jenkins</h3>
+<p class="text-primary font-medium text-sm">Lead UI/UX Designer</p>
+<div class="flex gap-4 mt-3 text-gray-400">
+<span class="material-symbols-outlined cursor-pointer hover:text-primary">language</span>
+<span class="material-symbols-outlined cursor-pointer hover:text-primary">hub</span>
+</div>
+</div>
+<!-- Team Member 3 -->
+<div class="flex flex-col items-center">
+<div class="w-48 h-48 rounded-2xl overflow-hidden mb-6 grayscale hover:grayscale-0 transition-all duration-500 border-4 border-white dark:border-white/10 shadow-xl">
+<img alt="Profile picture of tech lead" class="w-full h-full object-cover" data-alt="Professional portrait of a male tech lead" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDDIGPILiRUj4M1zSeU1hsTD_gnql3cbREapN4qxbCJB1AaizHi5MvZv8EHf6kHUl1iC6DagsN2WzSihsCkBqONhADfFDbsyypWfFN1CyAknYcpd-z_tE1isWGSZhomIdsfep-r4EYRySoflLQzxmjXrnpeeL1DKf4p3ssF6kxlIrBfhK32dMrV96NO3sPfDVL0jMuPKmNWURFQtbyA5gJF2DIFcGW9EQ8rdKoFIQuAXngxs675M_aE1JskLZbfaCrI-S3E29rzWDj6"/>
+</div>
+<h3 class="text-xl font-bold">Marcus Vane</h3>
+<p class="text-primary font-medium text-sm">Technical Lead</p>
+<div class="flex gap-4 mt-3 text-gray-400">
+<span class="material-symbols-outlined cursor-pointer hover:text-primary">language</span>
+<span class="material-symbols-outlined cursor-pointer hover:text-primary">hub</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact/Get Quote Section -->
+<section class="px-6 md:px-20 py-24">
+<div class="max-w-[800px] mx-auto bg-white dark:bg-white/5 border border-[#dce1e5] dark:border-white/10 rounded-2xl p-8 md:p-16 shadow-2xl">
+<div class="text-center mb-10">
+<h2 class="text-4xl font-black tracking-tight">Let's Create Together</h2>
+<p class="text-[#647987] dark:text-gray-400 mt-4">Have a project in mind? We'd love to hear about it.</p>
+</div>
+<form class="flex flex-col gap-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="flex flex-col gap-2">
+<label class="text-sm font-bold">Full Name</label>
+<input class="rounded-lg border-[#dce1e5] dark:bg-white/5 dark:border-white/20 focus:ring-primary focus:border-primary" placeholder="John Doe" type="text"/>
+</div>
+<div class="flex flex-col gap-2">
+<label class="text-sm font-bold">Email Address</label>
+<input class="rounded-lg border-[#dce1e5] dark:bg-white/5 dark:border-white/20 focus:ring-primary focus:border-primary" placeholder="john@example.com" type="email"/>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<label class="text-sm font-bold">Project Description</label>
+<textarea class="rounded-lg border-[#dce1e5] dark:bg-white/5 dark:border-white/20 focus:ring-primary focus:border-primary" placeholder="Tell us about your project..." rows="4"></textarea>
+</div>
+<button class="w-full bg-primary text-white font-bold py-4 rounded-lg text-lg hover:shadow-xl hover:shadow-primary/40 transition-all mt-4">
+                                Send Message
+                            </button>
+</form>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="px-6 md:px-20 py-12 border-t border-[#f0f3f4] dark:border-white/10">
+<div class="max-w-[1200px] mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="flex items-center gap-3">
+<div class="text-primary/50">
+<svg class="w-6 h-6" fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M24 4H42V17.3333V30.6667H24V44H6V30.6667V17.3333H24V4Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h2 class="text-lg font-black tracking-tighter uppercase opacity-50">Creative.Agy</h2>
+</div>
+<div class="flex gap-8 text-sm text-[#647987] font-medium">
+<a class="hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="hover:text-primary transition-colors" href="#">Terms of Service</a>
+<a class="hover:text-primary transition-colors" href="#">Dribbble</a>
+<a class="hover:text-primary transition-colors" href="#">LinkedIn</a>
+</div>
+<p class="text-sm text-gray-400">© 2024 Creative Agency. All rights reserved.</p>
+</div>
+</footer>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Personal Portfolio - Developer &amp; Designer</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#fbbc05",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#121212",
+                        "surface-dark": "#1e1e1e",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .text-stroke-yellow {
+            -webkit-text-stroke: 1px #fbbc05;
+            color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-[#111517] dark:text-gray-100 font-display">
+<!-- Top Navigation Bar -->
+<header class="sticky top-0 z-50 w-full border-b border-white/5 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md">
+<div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="size-8 bg-primary rounded-lg flex items-center justify-center">
+<span class="material-symbols-outlined text-background-dark font-bold">terminal</span>
+</div>
+<h2 class="text-xl font-black tracking-tighter uppercase">Portfolio<span class="text-primary">.</span></h2>
+</div>
+<nav class="hidden md:flex items-center gap-10">
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#about">About</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#skills">Skills</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#projects">Projects</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#blog">Blog</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#contact">Contact</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="hidden sm:flex bg-primary text-background-dark px-6 py-2.5 rounded-lg text-sm font-bold tracking-wide hover:brightness-110 transition-all">
+                    Hire Me
+                </button>
+<div class="size-10 rounded-full border-2 border-primary/30 p-0.5">
+<div class="w-full h-full rounded-full bg-cover bg-center" data-alt="Close up professional portrait photo of developer" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDGBP6gxcN_cZVW8AhtlHNI8OFDtCY9rVqjdoLUt0aPZNyb6ViYX1ylygpfrhZAToMRI0IHTQGS8IkzB3NJEDAS4NRvSlfqCnRUoCiM3FKDBfRw_1Nsy3Yq28eDHEAb5WFsnHf7vCmhK7SDJiRSLUEBLrtRoT5_ij-nc7FYGKpwR_duT8kb9-y-J8P8mpl6XPeU4wTijDBEoxkLjyi4rGQCNU9KqvlK39FZ9B-yRwUXTQyg4o8ileWRm9afDh1j2aMragrSRHcDWwqk");'></div>
+</div>
+</div>
+</div>
+</header>
+<main class="max-w-7xl mx-auto px-6">
+<!-- Hero Section -->
+<section class="py-20 md:py-32" id="about">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<div class="order-2 lg:order-1 flex flex-col gap-8">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 w-fit">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+</span>
+<span class="text-xs font-bold text-primary uppercase tracking-widest">Available for projects</span>
+</div>
+<div class="flex flex-col gap-4">
+<h1 class="text-5xl md:text-7xl font-black leading-none tracking-tight">
+                            Crafting <span class="text-primary">Digital</span> Experiences.
+                        </h1>
+<p class="text-lg text-gray-600 dark:text-gray-400 max-w-xl leading-relaxed">
+                            I'm a full-stack developer and UI designer specializing in building scalable web applications with high-performance and user-centric design.
+                        </p>
+</div>
+<div class="flex flex-wrap gap-4">
+<button class="bg-primary text-background-dark px-8 py-4 rounded-xl font-bold flex items-center gap-2 hover:translate-y-[-2px] transition-transform">
+                            View My Work
+                            <span class="material-symbols-outlined">arrow_outward</span>
+</button>
+<button class="bg-white/5 border border-white/10 dark:bg-surface-dark dark:border-white/10 px-8 py-4 rounded-xl font-bold flex items-center gap-2 hover:bg-white/10 transition-colors">
+                            Download CV
+                            <span class="material-symbols-outlined">download</span>
+</button>
+</div>
+</div>
+<div class="order-1 lg:order-2 flex justify-center">
+<div class="relative w-full max-w-md aspect-square">
+<div class="absolute inset-0 bg-primary/20 blur-[100px] rounded-full"></div>
+<div class="relative z-10 w-full h-full rounded-3xl overflow-hidden border-2 border-white/10 bg-surface-dark shadow-2xl">
+<div class="w-full h-full bg-cover bg-center grayscale hover:grayscale-0 transition-all duration-700" data-alt="Modern professional portrait with yellow accent lighting" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDeFsUabljnJK8BANExKi5ab-sLBjGN5V7DTWr6qhtlt69Er8VOxjfHHluxLnvYYlyxxAWfMOZ2AazcTDs36-b8WQFqIl2ZP5nPTmmEso3l--KAZuKbKFqkBwWutESatIfsTl2_cN-j4cI9z1Ny3D3DWPdlnZs4DdeiAFVaDkYNYiYp33mCC36cp65u0oruZYLIOGfI8SljadKQD8mVMMan88ZYcIHN3WBSy71NWQdryD2947ILjIm1L2HMrbgo3JJ8kVb732RDTNEf");'></div>
+</div>
+<div class="absolute -bottom-6 -right-6 z-20 bg-background-dark border border-white/10 p-6 rounded-2xl shadow-xl flex gap-6">
+<div class="text-center">
+<div class="text-3xl font-black text-primary">05+</div>
+<div class="text-[10px] uppercase font-bold tracking-widest text-gray-500">Years Exp.</div>
+</div>
+<div class="w-px bg-white/10"></div>
+<div class="text-center">
+<div class="text-3xl font-black text-primary">48</div>
+<div class="text-[10px] uppercase font-bold tracking-widest text-gray-500">Projects</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Skills Section -->
+<section class="py-24 border-t border-white/5" id="skills">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+<div>
+<h2 class="text-primary font-bold uppercase tracking-[0.3em] text-sm mb-4">Expertise</h2>
+<h3 class="text-4xl font-black">My Skill Set.</h3>
+</div>
+<p class="text-gray-400 max-w-md">
+                    Constantly evolving my stack to stay at the forefront of modern web technologies and design trends.
+                </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Skill Group 1: Frontend -->
+<div class="p-8 rounded-2xl bg-surface-dark border border-white/5 hover:border-primary/30 transition-all group">
+<div class="size-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">data_object</span>
+</div>
+<h4 class="text-xl font-bold mb-6">Frontend Engineering</h4>
+<div class="space-y-6">
+<div>
+<div class="flex justify-between mb-2">
+<span class="text-sm font-medium">React / Next.js</span>
+<span class="text-sm font-bold text-primary">95%</span>
+</div>
+<div class="h-1.5 w-full bg-white/5 rounded-full overflow-hidden">
+<div class="h-full bg-primary rounded-full" style="width: 95%"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between mb-2">
+<span class="text-sm font-medium">Tailwind CSS</span>
+<span class="text-sm font-bold text-primary">90%</span>
+</div>
+<div class="h-1.5 w-full bg-white/5 rounded-full overflow-hidden">
+<div class="h-full bg-primary rounded-full" style="width: 90%"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Skill Group 2: Backend -->
+<div class="p-8 rounded-2xl bg-surface-dark border border-white/5 hover:border-primary/30 transition-all group">
+<div class="size-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">dns</span>
+</div>
+<h4 class="text-xl font-bold mb-6">Backend &amp; APIs</h4>
+<div class="space-y-6">
+<div>
+<div class="flex justify-between mb-2">
+<span class="text-sm font-medium">Node.js / Express</span>
+<span class="text-sm font-bold text-primary">85%</span>
+</div>
+<div class="h-1.5 w-full bg-white/5 rounded-full overflow-hidden">
+<div class="h-full bg-primary rounded-full" style="width: 85%"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between mb-2">
+<span class="text-sm font-medium">PostgreSQL / MongoDB</span>
+<span class="text-sm font-bold text-primary">80%</span>
+</div>
+<div class="h-1.5 w-full bg-white/5 rounded-full overflow-hidden">
+<div class="h-full bg-primary rounded-full" style="width: 80%"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Skill Group 3: Design -->
+<div class="p-8 rounded-2xl bg-surface-dark border border-white/5 hover:border-primary/30 transition-all group">
+<div class="size-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">brush</span>
+</div>
+<h4 class="text-xl font-bold mb-6">UI/UX Design</h4>
+<div class="space-y-6 flex flex-wrap gap-2">
+<span class="px-4 py-2 rounded-lg bg-white/5 border border-white/10 text-xs font-bold uppercase tracking-wider">Figma</span>
+<span class="px-4 py-2 rounded-lg bg-white/5 border border-white/10 text-xs font-bold uppercase tracking-wider">Adobe XD</span>
+<span class="px-4 py-2 rounded-lg bg-white/5 border border-white/10 text-xs font-bold uppercase tracking-wider">Prototyping</span>
+<span class="px-4 py-2 rounded-lg bg-white/5 border border-white/10 text-xs font-bold uppercase tracking-wider">Webflow</span>
+<span class="px-4 py-2 rounded-lg bg-white/5 border border-white/10 text-xs font-bold uppercase tracking-wider">Motion Design</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Projects Section (Grid) -->
+<section class="py-24" id="projects">
+<div class="flex flex-col items-center text-center mb-16">
+<h2 class="text-primary font-bold uppercase tracking-[0.3em] text-sm mb-4">Portfolio</h2>
+<h3 class="text-4xl font-black mb-4">Featured Projects.</h3>
+<div class="w-20 h-1 bg-primary rounded-full"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Project 1 -->
+<div class="group relative overflow-hidden rounded-3xl bg-surface-dark border border-white/10 aspect-[4/3]">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="Screenshot of an AI-powered SaaS dashboard UI" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC5qeuaJ70zTqWwdppGIeMz7MUXUqOoqT0dGUOlaJRvWoeh23uQWDqeNuHJkwpx4wsHzwnIlqQKriKDt5KvLkg83ID4iwQJzyMnRzooPA8sENfRic5SLFIzuHpnJhbGFRPLRypTbhF5lP_aFeH8iak6ZZVnsPh0311RRiDTiG_yIWpGO91Kyia7O_e5F47RUK8k7PIPxUzknhqBtH7kANAyGPOt67Y71825TnBS1K-vmdBDJEe-u37vWN5LPRIa9QvKmx7zQEeLSjCZ");'></div>
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark via-background-dark/20 to-transparent opacity-90"></div>
+<div class="absolute bottom-0 p-8 w-full flex flex-col gap-4 translate-y-4 group-hover:translate-y-0 transition-transform">
+<div class="flex gap-2">
+<span class="px-3 py-1 rounded-md bg-primary text-background-dark text-[10px] font-black uppercase tracking-wider">Web App</span>
+<span class="px-3 py-1 rounded-md bg-white/10 backdrop-blur-md text-[10px] font-black uppercase tracking-wider">2024</span>
+</div>
+<h4 class="text-2xl font-black">AI Analytics Pro</h4>
+<p class="text-sm text-gray-300 opacity-0 group-hover:opacity-100 transition-opacity duration-300 line-clamp-2">
+                            A complex data visualization dashboard using React, D3.js, and OpenAI's API for predictive analysis.
+                        </p>
+<a class="flex items-center gap-2 text-primary font-bold text-sm uppercase tracking-widest mt-2" href="#">
+                            View Case Study <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Project 2 -->
+<div class="group relative overflow-hidden rounded-3xl bg-surface-dark border border-white/10 aspect-[4/3]">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="Modern mobile app design for a fintech startup" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDYPIGgiNXMKvotsFAwV0f5K5S6N_qbcOrWTMh-mFdip6QPPnZffSCk1VG25Lbx4Zc44VPfGM_SiOfqSqwF6P0BsSyTmhxYn-kyoDLcvdM4I1re4lqut1ymW-KUC44Gy3XW_1SiVV1NpUmsFXt5Ho34r016B34Mql47eunax_DXk5ABfqUKSLPCjAaEiA2pa-1EDKUW9FukZWBwlTdpQVrAEvgqarn-Qjn_njXkBkPFKVQXHpjhD9bO2lYNDMeUuqXRbju80SnElwu8");'></div>
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark via-background-dark/20 to-transparent opacity-90"></div>
+<div class="absolute bottom-0 p-8 w-full flex flex-col gap-4 translate-y-4 group-hover:translate-y-0 transition-transform">
+<div class="flex gap-2">
+<span class="px-3 py-1 rounded-md bg-primary text-background-dark text-[10px] font-black uppercase tracking-wider">Fintech</span>
+<span class="px-3 py-1 rounded-md bg-white/10 backdrop-blur-md text-[10px] font-black uppercase tracking-wider">2023</span>
+</div>
+<h4 class="text-2xl font-black">NeoBank Interface</h4>
+<p class="text-sm text-gray-300 opacity-0 group-hover:opacity-100 transition-opacity duration-300 line-clamp-2">
+                            Full UI/UX redesign of a digital banking platform focusing on accessibility and seamless transactions.
+                        </p>
+<a class="flex items-center gap-2 text-primary font-bold text-sm uppercase tracking-widest mt-2" href="#">
+                            View Case Study <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<div class="mt-12 flex justify-center">
+<button class="bg-white/5 border border-white/10 hover:bg-white/10 px-10 py-4 rounded-xl font-bold transition-all flex items-center gap-2 group">
+                    See More Projects 
+                    <span class="material-symbols-outlined transition-transform group-hover:rotate-45">expand_more</span>
+</button>
+</div>
+</section>
+<!-- Blog Section -->
+<section class="py-24 border-t border-white/5" id="blog">
+<div class="flex items-center justify-between mb-16">
+<div>
+<h2 class="text-primary font-bold uppercase tracking-[0.3em] text-sm mb-4">Insights</h2>
+<h3 class="text-4xl font-black">Latest Blog Posts.</h3>
+</div>
+<button class="hidden md:block text-primary font-bold uppercase text-xs tracking-widest hover:underline decoration-2 underline-offset-8">Read All Stories</button>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+<!-- Blog Item 1 -->
+<article class="flex flex-col gap-6 group">
+<div class="overflow-hidden rounded-2xl aspect-[16/10] border border-white/5 bg-surface-dark">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" data-alt="Abstract yellow and black 3D shapes representing UI trends" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDHbPb1dM4cMddHu1v7yxwsjLdstlzFNlO58Qeojcl_AbN8aG7klV8TYo_oOwUWA7ih1fQu_4KA9YjCzObKRgiRfJnr2GECrLcTPSUJk84KoecnQj4PpuYlaxjCvc6Dsx3XGbHhB6Du9FX6Nr8olH_L2UasA2v2_-EGRKmoP08lbgrBabZ1rcTgK6ktTaTzyZ4DlXcHFuqEJSH3elOAyi5GaHxhf1_L05sTOZQkuQo_LKPTpm2P0cabK3kxV0CAae8FXorHQnJKWaam");'></div>
+</div>
+<div class="flex flex-col gap-3">
+<div class="flex items-center gap-4 text-[10px] font-black uppercase tracking-widest text-gray-500">
+<span>Mar 24, 2024</span>
+<span class="w-1 h-1 bg-primary rounded-full"></span>
+<span>Design</span>
+</div>
+<h4 class="text-xl font-bold group-hover:text-primary transition-colors leading-snug">The Future of UI: Embracing Dark Minimalist Interfaces</h4>
+<p class="text-sm text-gray-400 line-clamp-3 leading-relaxed">
+                            Discover why dark mode isn't just a trend anymore, and how to build layouts that reduce eye strain while maintaining accessibility...
+                        </p>
+</div>
+</article>
+<!-- Blog Item 2 -->
+<article class="flex flex-col gap-6 group">
+<div class="overflow-hidden rounded-2xl aspect-[16/10] border border-white/5 bg-surface-dark">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" data-alt="Code editor showing React code with yellow syntax highlighting" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAYPspyFegOhmby2n49B4AyKRrSGsKEsBbaEtnjlqgqLwdCS6Ylr12yZ3n00MW72ICT7nDfqqeLs2halXNAuC4CupulsdYDvHiKbR4w-8sivDQUQhR4Mi90Z7w91fefY5UUvUMy7Ke0iPxFLh-k2yb7h5NMvxMr38or2-WlVFlnHq0OsjGJppVWxCNrazKd99ww3xaLsFef0RtlMoOZoqKplgdMfZFy5S4DQ0LKhMcbGXf-wAGZ0qBvNbAjCHpI-wMGRZW8SnLYIIzW");'></div>
+</div>
+<div class="flex flex-col gap-3">
+<div class="flex items-center gap-4 text-[10px] font-black uppercase tracking-widest text-gray-500">
+<span>Feb 12, 2024</span>
+<span class="w-1 h-1 bg-primary rounded-full"></span>
+<span>Dev</span>
+</div>
+<h4 class="text-xl font-bold group-hover:text-primary transition-colors leading-snug">Optimizing React Performance for Massive Data Sets</h4>
+<p class="text-sm text-gray-400 line-clamp-3 leading-relaxed">
+                            A deep dive into memoization, virtualization techniques, and worker threads to keep your React applications butter smooth...
+                        </p>
+</div>
+</article>
+<!-- Blog Item 3 -->
+<article class="flex flex-col gap-6 group">
+<div class="overflow-hidden rounded-2xl aspect-[16/10] border border-white/5 bg-surface-dark">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" data-alt="Abstract light particles representing AI and technology" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCdyAfzKfinPkFhNx-Q9hx9TXyXZ1SulH2tWYmzdmiiChDrpeBR3VXRNyQE3OFyk-YPBoPbUUGe5UQ_85eORsSF9ivQvZuTKNeo8SpTZnxmrzQBd7pgZABAAlrYW3STEoL1t7dt-ynxpUoyhPBnWGqPnVgn62bYLSPq_9hrAZ5bvdJAE9BLk0g2pp5tnZrGw5quuXrN0sWVbXAijdCZPyyntQewG638hQr18wkFvUMEhK4B6EdAeNlYe6UoQHp9c36H2PMlizOWT3pL");'></div>
+</div>
+<div class="flex flex-col gap-3">
+<div class="flex items-center gap-4 text-[10px] font-black uppercase tracking-widest text-gray-500">
+<span>Jan 28, 2024</span>
+<span class="w-1 h-1 bg-primary rounded-full"></span>
+<span>Productivity</span>
+</div>
+<h4 class="text-xl font-bold group-hover:text-primary transition-colors leading-snug">How AI Changed My Development Workflow in 2024</h4>
+<p class="text-sm text-gray-400 line-clamp-3 leading-relaxed">
+                            From Copilot to local LLMs, I share the tools that doubled my coding speed and improved my documentation quality...
+                        </p>
+</div>
+</article>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-24 border-t border-white/5" id="contact">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+<div class="flex flex-col gap-8">
+<div>
+<h2 class="text-primary font-bold uppercase tracking-[0.3em] text-sm mb-4">Connect</h2>
+<h3 class="text-5xl font-black mb-6">Let's build something <span class="text-stroke-yellow">Epic</span>.</h3>
+<p class="text-gray-400 max-w-md leading-relaxed">
+                            Have a project in mind? Or just want to say hi? My inbox is always open. Let's create something meaningful together.
+                        </p>
+</div>
+<div class="space-y-6">
+<div class="flex items-center gap-4 group">
+<div class="size-12 rounded-xl bg-surface-dark flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-background-dark transition-all">
+<span class="material-symbols-outlined">mail</span>
+</div>
+<div>
+<div class="text-[10px] font-bold uppercase text-gray-500 tracking-widest">Email Me</div>
+<div class="text-lg font-bold">hello@johndoe.dev</div>
+</div>
+</div>
+<div class="flex items-center gap-4 group">
+<div class="size-12 rounded-xl bg-surface-dark flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-background-dark transition-all">
+<span class="material-symbols-outlined">location_on</span>
+</div>
+<div>
+<div class="text-[10px] font-bold uppercase text-gray-500 tracking-widest">Location</div>
+<div class="text-lg font-bold">San Francisco, CA</div>
+</div>
+</div>
+</div>
+<div class="flex gap-4">
+<a class="size-10 rounded-lg bg-surface-dark border border-white/5 flex items-center justify-center hover:border-primary transition-colors" href="#"><span class="material-symbols-outlined text-xl">share</span></a>
+<a class="size-10 rounded-lg bg-surface-dark border border-white/5 flex items-center justify-center hover:border-primary transition-colors" href="#"><span class="material-symbols-outlined text-xl">alternate_email</span></a>
+<a class="size-10 rounded-lg bg-surface-dark border border-white/5 flex items-center justify-center hover:border-primary transition-colors" href="#"><span class="material-symbols-outlined text-xl">code</span></a>
+</div>
+</div>
+<div class="bg-surface-dark p-8 md:p-12 rounded-[2rem] border border-white/5">
+<form action="#" class="space-y-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="flex flex-col gap-2">
+<label class="text-[10px] font-black uppercase tracking-widest text-gray-500 ml-1">Name</label>
+<input class="w-full bg-background-dark border-white/10 rounded-xl px-6 py-4 focus:border-primary focus:ring-primary text-white transition-all placeholder:text-white/20" placeholder="John Doe" type="text"/>
+</div>
+<div class="flex flex-col gap-2">
+<label class="text-[10px] font-black uppercase tracking-widest text-gray-500 ml-1">Email</label>
+<input class="w-full bg-background-dark border-white/10 rounded-xl px-6 py-4 focus:border-primary focus:ring-primary text-white transition-all placeholder:text-white/20" placeholder="john@example.com" type="email"/>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<label class="text-[10px] font-black uppercase tracking-widest text-gray-500 ml-1">Message</label>
+<textarea class="w-full bg-background-dark border-white/10 rounded-xl px-6 py-4 focus:border-primary focus:ring-primary text-white transition-all placeholder:text-white/20" placeholder="Tell me about your project..." rows="5"></textarea>
+</div>
+<button class="w-full bg-primary text-background-dark font-black py-5 rounded-xl uppercase tracking-widest hover:brightness-110 active:scale-[0.98] transition-all" type="submit">
+                            Send Message
+                        </button>
+</form>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-dark py-12 border-t border-white/5">
+<div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-8">
+<div class="flex flex-col gap-2">
+<div class="flex items-center gap-3">
+<div class="size-6 bg-primary rounded flex items-center justify-center">
+<span class="material-symbols-outlined text-[14px] text-background-dark font-bold">terminal</span>
+</div>
+<h2 class="text-sm font-black tracking-tighter uppercase">Portfolio<span class="text-primary">.</span></h2>
+</div>
+<p class="text-xs text-gray-500">© 2024 John Doe. All rights reserved.</p>
+</div>
+<nav class="flex gap-8">
+<a class="text-xs font-bold uppercase text-gray-500 hover:text-primary transition-colors tracking-widest" href="#">Privacy Policy</a>
+<a class="text-xs font-bold uppercase text-gray-500 hover:text-primary transition-colors tracking-widest" href="#">Terms of Service</a>
+<a class="text-xs font-bold uppercase text-gray-500 hover:text-primary transition-colors tracking-widest" href="#">Cookies</a>
+</nav>
+<div class="text-xs text-gray-500 font-medium">
+                Built with <span class="text-primary">Next.js</span> and <span class="text-primary">Tailwind</span>
+</div>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+
+<html class="light" dir="rtl" lang="ar"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>صفحة المنتج | متجر النخبة</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Noto+Sans+Arabic:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#e74d3c",
+                        "background-light": "#fdf6e3",
+                        "background-dark": "#211311",
+                    },
+                    fontFamily: {
+                        "display": ["Noto Sans Arabic", "Inter", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Noto Sans Arabic', 'Inter', sans-serif;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-[#181211] dark:text-white transition-colors duration-200">
+<!-- Top Navigation Bar -->
+<header class="sticky top-0 z-50 bg-white/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-[#f4f1f0] dark:border-white/10">
+<div class="max-w-[1280px] mx-auto px-4 lg:px-10 py-3 flex items-center justify-between gap-8">
+<div class="flex items-center gap-8">
+<div class="flex items-center gap-2 text-primary">
+<span class="material-symbols-outlined text-3xl">shopping_bag</span>
+<h2 class="text-xl font-bold leading-tight tracking-tight">متجر النخبة</h2>
+</div>
+<nav class="hidden md:flex items-center gap-6">
+<a class="text-[#181211] dark:text-gray-200 text-sm font-medium hover:text-primary transition-colors" href="#">الرئيسية</a>
+<a class="text-[#181211] dark:text-gray-200 text-sm font-medium hover:text-primary transition-colors" href="#">الأزياء</a>
+<a class="text-[#181211] dark:text-gray-200 text-sm font-medium hover:text-primary transition-colors" href="#">الإلكترونيات</a>
+<a class="text-primary text-sm font-bold" href="#">العروض</a>
+</nav>
+</div>
+<div class="flex-1 max-w-md hidden lg:block">
+<div class="relative group">
+<div class="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none text-gray-400 group-focus-within:text-primary transition-colors">
+<span class="material-symbols-outlined">search</span>
+</div>
+<input class="w-full bg-[#f4f1f0] dark:bg-white/5 border-none rounded-lg py-2 pr-10 pl-4 focus:ring-2 focus:ring-primary/50 text-sm" placeholder="ابحث عن منتجاتك المفضلة..." type="text"/>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<button class="p-2 rounded-lg bg-[#f4f1f0] dark:bg-white/5 hover:bg-primary/10 transition-colors">
+<span class="material-symbols-outlined">favorite</span>
+</button>
+<div class="relative">
+<button class="p-2 rounded-lg bg-[#f4f1f0] dark:bg-white/5 hover:bg-primary/10 transition-colors">
+<span class="material-symbols-outlined">shopping_cart</span>
+</button>
+<span class="absolute -top-1 -right-1 bg-primary text-white text-[10px] font-bold px-1.5 py-0.5 rounded-full">3</span>
+</div>
+<button class="p-2 rounded-lg bg-primary text-white flex items-center gap-2 px-4 font-medium text-sm">
+<span class="material-symbols-outlined text-sm">person</span>
+<span>دخول</span>
+</button>
+</div>
+</div>
+</header>
+<main class="max-w-[1280px] mx-auto px-4 lg:px-10 py-6">
+<!-- Breadcrumbs -->
+<nav class="flex flex-wrap gap-2 text-sm mb-6">
+<a class="text-gray-500 hover:text-primary" href="#">الرئيسية</a>
+<span class="text-gray-400">/</span>
+<a class="text-gray-500 hover:text-primary" href="#">الأزياء الرجالية</a>
+<span class="text-gray-400">/</span>
+<span class="text-primary font-medium">قميص كاجوال فاخر</span>
+</nav>
+<!-- Product Hero Section -->
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+<!-- Image Gallery -->
+<div class="space-y-4">
+<div class="aspect-[4/5] rounded-xl overflow-hidden bg-white dark:bg-white/5 shadow-sm border border-gray-100 dark:border-white/5">
+<div class="w-full h-full bg-center bg-cover" data-alt="Main product view of a luxury cream and red shirt" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCRNUSymZQWuqSwqZBf2mcXeQXlvvplw1zGHWZF4UgEyY5yJFH1LkHInqyl8g_8bj141hgfDI5qLwYvsLoMHPBC0M_pLN5Qvp7pss_x-12_v6EceFmNSDnGcl_KXpNHkVEsnG_MVt45D5NJEHUIfNn55S2ZbhrYIouKSy2mW4TkM_AfwaNv52CcKkMtzmRPNTfi7gSGJaW41ZZl4cPhK7NdNrCRTARmfOt3sTYq5-cG29sMpjVI0ElRI2WYKz_q7NmDee5O-7E_cMk4');"></div>
+</div>
+<div class="grid grid-cols-4 gap-4">
+<div class="aspect-square rounded-lg border-2 border-primary overflow-hidden cursor-pointer">
+<div class="w-full h-full bg-center bg-cover" data-alt="Front view of the product" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAwDDDZ9pRPuIAECYwWOKvZB_niPZVcfuHvQKoZLdM0ljL2dBVtK2N98Gx3alemaeg201ArxjM3KE7UxBQD9MDk6ST1V0XcUo7pbARM_fMu10tfhFWsWESVhkdKtPYsDPybKn7vmUoN5cYapx3S64mw0oGwQxayv8D-5SbH-gqYfR_S19IneLOxqZ6Feb8I9sQFqHFg4fdPPcI4_3edn3mIK74wgfmE46TnKHzU_ZLqwvv4G7IaO2cX94LdU_GmOf33XG6tDA91cATt');"></div>
+</div>
+<div class="aspect-square rounded-lg border border-gray-200 dark:border-white/10 overflow-hidden cursor-pointer hover:border-primary transition-colors">
+<div class="w-full h-full bg-center bg-cover" data-alt="Side view of the product" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD6ouzAXlZYZEIveFQq3R8MetFqnqhJjqW_m1VgLImGmuF2qlzmQTVHSbMigmkonFnj1Ld68l-ZD8xIrVfPjWnE5FtyuTKRkCiRkTKeJni-wgrlqWqosbsPMtKk0tKpMzzwwvkBQX3HsPIfS7H_l80uFBEpFD78lc_nf6JoRqKriRqkAcVEXjYkRhJEakuLascc2NVka9hdlCu61g1lFo8jm6nNkagwlyBch7sc_FGK_WgVyNOxRdAbU88wx4TQXkGwcUzLHNYyCVeE');"></div>
+</div>
+<div class="aspect-square rounded-lg border border-gray-200 dark:border-white/10 overflow-hidden cursor-pointer hover:border-primary transition-colors">
+<div class="w-full h-full bg-center bg-cover" data-alt="Back view of the product" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAJRo3i8jczk9gKpQyo2dF3ME3RP9HWBIS9lXwjRQ-qC6l9x_cyDNJfQA9iLbMJh7zf2ahYyCQ9_HgcgnpBTXFfxXbv_MFYLxzh_2P33o9cf9gdFleKTFBaqmmJR47bbn4CNJcBZmptfXqmCp4pSNunx5_uoPBxgKj6WRlMyfFxVAvJmzmRZYEvcYdpHCj_WCV1EzuRnTa7XPI2GU5vH_vRuKKN_7p_tm5vZDJzgzBRgm12MWbt0AdWKQeNEAthpNqfn7BzDY9KAXTi');"></div>
+</div>
+<div class="aspect-square rounded-lg border border-gray-200 dark:border-white/10 overflow-hidden cursor-pointer hover:border-primary transition-colors">
+<div class="w-full h-full bg-center bg-cover" data-alt="Detail view of fabric texture" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBNHZqMSC3eGqc4P2hzB872tsTkT3ChLwRFzDHVx0PPYcFO-V5C4u3C3h1dAP6g7SoHMAXQRHCumIPGGWAOBtSHnMI-7EKoIbLhsiffHG7Z9A_p2Dw0mkODBS5B27JhOhSX-k0oIrJpETedyjK3foCH_8Yq-az700p3vEZ8skjs39wcJmKiqWhmDghsV72_G1nBwQoURSuT4BWXyFJd2Z7SwBg6lHFKXgLW4WULSmoQrpGDsl2z2aHYtoePj9f4yvnEGSbzRmV-nNlE');"></div>
+</div>
+</div>
+</div>
+<!-- Product Details -->
+<div class="flex flex-col">
+<div class="flex items-center gap-2 mb-2">
+<span class="bg-primary/10 text-primary text-xs font-bold px-2.5 py-1 rounded">وصل حديثاً</span>
+<div class="flex items-center text-orange-400">
+<span class="material-symbols-outlined text-sm">star</span>
+<span class="material-symbols-outlined text-sm">star</span>
+<span class="material-symbols-outlined text-sm">star</span>
+<span class="material-symbols-outlined text-sm">star</span>
+<span class="material-symbols-outlined text-sm text-gray-300">star</span>
+<span class="text-xs text-gray-500 mr-2">(128 تقييم)</span>
+</div>
+</div>
+<h1 class="text-3xl font-bold text-[#181211] dark:text-white mb-4">قميص كاجوال فاخر - أحمر كريمي</h1>
+<div class="flex items-baseline gap-4 mb-6">
+<span class="text-4xl font-bold text-primary">299.00 ر.س</span>
+<span class="text-lg text-gray-400 line-through">450.00 ر.س</span>
+<span class="text-green-600 font-bold text-sm">وفر 35%</span>
+</div>
+<p class="text-gray-600 dark:text-gray-400 leading-relaxed mb-8">
+                    صُمم هذا القميص خصيصاً لمن يبحثون عن الأناقة والراحة في آن واحد. مصنوع من أجود أنواع القطن الطبيعي بنسبة 100%، مما يجعله مثالياً للاستخدام اليومي في المناخ الحار. يتميز بتفاصيل خياطة دقيقة ولون أحمر كريمي غني لا يبهت مع الغسيل.
+                </p>
+<!-- Configuration Options -->
+<div class="space-y-6 mb-8">
+<div>
+<span class="block text-sm font-bold mb-3">اختر المقاس</span>
+<div class="flex flex-wrap gap-3">
+<button class="w-12 h-12 flex items-center justify-center border-2 border-gray-200 dark:border-white/10 rounded-lg font-bold hover:border-primary transition-all">S</button>
+<button class="w-12 h-12 flex items-center justify-center border-2 border-primary text-primary bg-primary/5 rounded-lg font-bold">M</button>
+<button class="w-12 h-12 flex items-center justify-center border-2 border-gray-200 dark:border-white/10 rounded-lg font-bold hover:border-primary transition-all">L</button>
+<button class="w-12 h-12 flex items-center justify-center border-2 border-gray-200 dark:border-white/10 rounded-lg font-bold hover:border-primary transition-all">XL</button>
+</div>
+</div>
+<div>
+<span class="block text-sm font-bold mb-3">اللون المختار: أحمر كريمي</span>
+<div class="flex gap-3">
+<div class="w-8 h-8 rounded-full bg-primary border-4 border-white dark:border-background-dark shadow-lg cursor-pointer"></div>
+<div class="w-8 h-8 rounded-full bg-blue-900 border border-gray-200 cursor-pointer"></div>
+<div class="w-8 h-8 rounded-full bg-emerald-700 border border-gray-200 cursor-pointer"></div>
+</div>
+</div>
+</div>
+<!-- Purchase Actions -->
+<div class="flex gap-4 mb-10">
+<div class="flex items-center border border-gray-200 dark:border-white/10 rounded-lg overflow-hidden bg-white dark:bg-white/5">
+<button class="px-4 py-3 hover:bg-gray-100 dark:hover:bg-white/10 text-xl font-bold transition-colors">−</button>
+<span class="px-6 font-bold">1</span>
+<button class="px-4 py-3 hover:bg-gray-100 dark:hover:bg-white/10 text-xl font-bold transition-colors">+</button>
+</div>
+<button class="flex-1 bg-primary text-white font-bold rounded-lg py-4 flex items-center justify-center gap-3 shadow-lg shadow-primary/20 hover:scale-[1.02] active:scale-95 transition-all">
+<span class="material-symbols-outlined">add_shopping_cart</span>
+<span>أضف إلى السلة</span>
+</button>
+</div>
+<!-- Trust Badges -->
+<div class="grid grid-cols-3 gap-4 border-t border-gray-200 dark:border-white/10 pt-8">
+<div class="text-center">
+<span class="material-symbols-outlined text-primary text-2xl mb-1">local_shipping</span>
+<p class="text-[11px] font-bold">شحن سريع مجاني</p>
+</div>
+<div class="text-center">
+<span class="material-symbols-outlined text-primary text-2xl mb-1">security</span>
+<p class="text-[11px] font-bold">دفع آمن 100%</p>
+</div>
+<div class="text-center">
+<span class="material-symbols-outlined text-primary text-2xl mb-1">published_with_changes</span>
+<p class="text-[11px] font-bold">إرجاع سهل خلال 14 يوم</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Details Tabs -->
+<section class="mt-20">
+<div class="flex border-b border-gray-200 dark:border-white/10 mb-8">
+<button class="px-8 py-4 border-b-2 border-primary text-primary font-bold">الوصف</button>
+<button class="px-8 py-4 text-gray-500 font-medium hover:text-primary transition-colors">المواصفات</button>
+<button class="px-8 py-4 text-gray-500 font-medium hover:text-primary transition-colors">التقييمات (128)</button>
+</div>
+<div class="max-w-3xl">
+<h3 class="text-xl font-bold mb-4">تفاصيل المنتج</h3>
+<ul class="space-y-3 text-gray-600 dark:text-gray-400 list-disc pr-5">
+<li>خامة قطنية 100% عالية الجودة للتهوية المثالية.</li>
+<li>قصة كلاسيكية "Slim Fit" تناسب جميع الأجسام.</li>
+<li>ياقة مريحة وأزرار متينة بلون متناسق.</li>
+<li>سهل الكي ولا يحتاج إلى عناية خاصة عند الغسيل.</li>
+</ul>
+</div>
+</section>
+<!-- Related Products -->
+<section class="mt-20">
+<div class="flex items-center justify-between mb-8">
+<h2 class="text-2xl font-bold">منتجات قد تعجبك</h2>
+<a class="text-primary font-bold flex items-center gap-1 hover:underline" href="#">
+<span>عرض الكل</span>
+<span class="material-symbols-outlined text-sm">arrow_back</span>
+</a>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Related Item 1 -->
+<div class="bg-white dark:bg-white/5 rounded-xl overflow-hidden group border border-transparent hover:border-primary/20 transition-all shadow-sm">
+<div class="relative aspect-[3/4] overflow-hidden">
+<div class="w-full h-full bg-center bg-cover transition-transform duration-500 group-hover:scale-110" data-alt="Matching casual navy trousers" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAHeZWH8yOVQWs3NLC7M1FZ3woQiUsdV-XSG74yTmF_x_EdFQs55CV2PnWRM1wrq3iRUgNLVKPWZ-nW6oIxHxzUHM0BNwYsEvc7OF4vhXWwFGOk_Jgs32nHQnGp8jgjtb7DgEUfJb1r0BH0PCP2gkXn21zoU0-5XpfgKRF8S-iW2OLuAcgsbSknXvNYqjM3eT3e9BJY7U7SEhtGBv7y-J6pwec9dj5Quh3c0enEimr-MPjNnflRW_GEBtUeVmCNvAgR1m-I3QTSLH55');"></div>
+<button class="absolute top-3 right-3 p-2 bg-white/80 rounded-full opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-gray-600">favorite</span>
+</button>
+</div>
+<div class="p-4">
+<h4 class="font-bold mb-2 group-hover:text-primary transition-colors">بنطال كاجوال عصري - كحلي</h4>
+<div class="flex items-center gap-2">
+<span class="text-primary font-bold">185.00 ر.س</span>
+<span class="text-xs text-gray-400 line-through">220.00 ر.س</span>
+</div>
+</div>
+</div>
+<!-- Related Item 2 -->
+<div class="bg-white dark:bg-white/5 rounded-xl overflow-hidden group border border-transparent hover:border-primary/20 transition-all shadow-sm">
+<div class="relative aspect-[3/4] overflow-hidden">
+<div class="w-full h-full bg-center bg-cover transition-transform duration-500 group-hover:scale-110" data-alt="Stylish leather brown belt" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBkUFsDYdYJ2AFiHaDMKXegUQu9B2bw4-pfS3-loZrhFCSKuK7RJ5xpSwwEvJXf5rZN9OeMWlvn8j1RyU-9xcZ4SEiv0HeWjax8xhaVAwgi5JOqggbAtLUtNzC1gFtHkcvusdJAVUemjd7XaJS5APzNSVSsqSB1o8whqzvm-F08ddiMmPJbBDEUK93LqZn7FdAiORrfvx8c6e15YKUWPRla00z_YOcmc4xPmJTooza-hBsH2CAHTFcCKgrRD9PRPqPOkKW3EQjWswlN');"></div>
+<button class="absolute top-3 right-3 p-2 bg-white/80 rounded-full opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-gray-600">favorite</span>
+</button>
+</div>
+<div class="p-4">
+<h4 class="font-bold mb-2 group-hover:text-primary transition-colors">حزام جلد طبيعي - بني</h4>
+<div class="flex items-center gap-2">
+<span class="text-primary font-bold">95.00 ر.س</span>
+</div>
+</div>
+</div>
+<!-- Related Item 3 -->
+<div class="bg-white dark:bg-white/5 rounded-xl overflow-hidden group border border-transparent hover:border-primary/20 transition-all shadow-sm">
+<div class="relative aspect-[3/4] overflow-hidden">
+<div class="w-full h-full bg-center bg-cover transition-transform duration-500 group-hover:scale-110" data-alt="White premium sneakers" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA4nHxsRGva04zeCXGnYldljMpb14hLcG4-1KI704OgOF9DVDYML-GPpUjdA7NVeisjhxU8iw4AMcLutdTGzJn4Fekwxi5zQgJOdGTc-iGbMKQ5IRMmzTo9V4rRE9aQmlAWTq2Uami_pQeeP7HksGTo3C9pagVKf4m5PLa4ybDbuusPNAcEWS0d0on8EENZuQZ3BbCuwZunY7eSH5ixufeoRqO8r408-tJlq5_d3OJArFrIwbUDPpaejUK2gOY-kdBirE1947LV8uKG');"></div>
+<button class="absolute top-3 right-3 p-2 bg-white/80 rounded-full opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-gray-600">favorite</span>
+</button>
+</div>
+<div class="p-4">
+<h4 class="font-bold mb-2 group-hover:text-primary transition-colors">حذاء رياضي كلاسيكي - أبيض</h4>
+<div class="flex items-center gap-2">
+<span class="text-primary font-bold">210.00 ر.س</span>
+<span class="text-xs text-gray-400 line-through">300.00 ر.س</span>
+</div>
+</div>
+</div>
+<!-- Related Item 4 -->
+<div class="bg-white dark:bg-white/5 rounded-xl overflow-hidden group border border-transparent hover:border-primary/20 transition-all shadow-sm">
+<div class="relative aspect-[3/4] overflow-hidden">
+<div class="w-full h-full bg-center bg-cover transition-transform duration-500 group-hover:scale-110" data-alt="Luxury wrist watch" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD29D6if1H9NwzAc0OYsaLKVKhtCUj5bgXuyqgUOrrADqOfXFe0dq1oG6E3HHBBfcIuSN6L8A93rGwp1aUaKnVe9uKml-s8rbARJKS7krpvfmGV0aN93VMcyFnUuBPfdRC16aGMXhbvXv1uPrqNsR-JEF7LObxE2r7IFLyAEy7u3FptAzRGNteFNwNANSmCcOPuZFODzrqX2lpuWYWrgol3U2vm2bGofME9lByiYJtfRiG-unGGvSzbSSbaI5aYyI0qHv4n6ES06wYa');"></div>
+<button class="absolute top-3 right-3 p-2 bg-white/80 rounded-full opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-gray-600">favorite</span>
+</button>
+</div>
+<div class="p-4">
+<h4 class="font-bold mb-2 group-hover:text-primary transition-colors">ساعة كاجوال فاخرة</h4>
+<div class="flex items-center gap-2">
+<span class="text-primary font-bold">399.00 ر.س</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-white dark:bg-background-dark border-t border-gray-200 dark:border-white/10 mt-20 pt-16 pb-8">
+<div class="max-w-[1280px] mx-auto px-4 lg:px-10">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+<div>
+<div class="flex items-center gap-2 text-primary mb-6">
+<span class="material-symbols-outlined text-3xl">shopping_bag</span>
+<h2 class="text-2xl font-bold">متجر النخبة</h2>
+</div>
+<p class="text-gray-500 leading-relaxed mb-6">وجهتكم الأولى للأزياء والأناقة في الشرق الأوسط. نسعى لتقديم أجود المنتجات العالمية بلمسة محلية.</p>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full bg-gray-100 dark:bg-white/5 flex items-center justify-center text-gray-600 hover:bg-primary hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined text-xl">public</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-gray-100 dark:bg-white/5 flex items-center justify-center text-gray-600 hover:bg-primary hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined text-xl">share</span>
+</a>
+</div>
+</div>
+<div>
+<h3 class="font-bold text-lg mb-6">روابط سريعة</h3>
+<ul class="space-y-4">
+<li><a class="text-gray-500 hover:text-primary" href="#">من نحن</a></li>
+<li><a class="text-gray-500 hover:text-primary" href="#">سياسة الخصوصية</a></li>
+<li><a class="text-gray-500 hover:text-primary" href="#">الشروط والأحكام</a></li>
+<li><a class="text-gray-500 hover:text-primary" href="#">الأسئلة الشائعة</a></li>
+</ul>
+</div>
+<div>
+<h3 class="font-bold text-lg mb-6">خدمة العملاء</h3>
+<ul class="space-y-4">
+<li><a class="text-gray-500 hover:text-primary" href="#">تتبع طلبك</a></li>
+<li><a class="text-gray-500 hover:text-primary" href="#">الشحن والتوصيل</a></li>
+<li><a class="text-gray-500 hover:text-primary" href="#">سياسة الإرجاع</a></li>
+<li><a class="text-gray-500 hover:text-primary" href="#">تواصل معنا</a></li>
+</ul>
+</div>
+<div>
+<h3 class="font-bold text-lg mb-6">اشترك في نشرتنا</h3>
+<p class="text-gray-500 mb-4 text-sm">كن أول من يعرف عن عروضنا الحصرية والمنتجات الجديدة.</p>
+<div class="flex gap-2">
+<input class="bg-[#f4f1f0] dark:bg-white/5 border-none rounded-lg flex-1 text-sm py-3" placeholder="بريدك الإلكتروني" type="email"/>
+<button class="bg-primary text-white font-bold px-4 rounded-lg">اشتراك</button>
+</div>
+</div>
+</div>
+<div class="border-t border-gray-100 dark:border-white/5 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
+<p class="text-gray-400 text-sm">© 2024 متجر النخبة. جميع الحقوق محفوظة.</p>
+<div class="flex gap-4 grayscale opacity-60">
+<span class="material-symbols-outlined text-2xl">credit_card</span>
+<span class="material-symbols-outlined text-2xl">payments</span>
+<span class="material-symbols-outlined text-2xl">account_balance_wallet</span>
+</div>
+</div>
+</div>
+</footer>
+</body></html>
